@@ -1,3 +1,4 @@
+import { ThemeManager } from "../services/theme/ThemeManager";
 import { AudyoraLogo } from "./AudyoraLogo";
 
 export class Navbar {
@@ -65,8 +66,13 @@ export class Navbar {
             ${desktopLinksHtml}
           </nav>
 
-          <!-- Desktop CTA -->
-          <div class="hidden md:flex items-center gap-4">
+          <!-- Desktop CTA & Theme Toggle -->
+          <div class="hidden md:flex items-center gap-3">
+            <button type="button" 
+                    class="theme-toggle-btn w-9 h-9 rounded-full bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/40 flex items-center justify-center transition-all cursor-pointer shadow-sm text-audyora-text"
+                    title="Toggle Dark / Light Theme"
+                    aria-label="Toggle theme">
+            </button>
             <a href="/contact/" 
                class="btn-magnetic relative inline-flex items-center justify-center px-6 py-2.5 rounded-full font-satoshi text-sm font-bold text-white bg-gradient-to-r from-audyora-indigo to-audyora-violet hover:shadow-glow-indigo transition-all duration-300">
               <span>Let's Talk</span>
@@ -76,17 +82,24 @@ export class Navbar {
             </a>
           </div>
 
-          <!-- Mobile Hamburger Button -->
-          <button id="mobile-menu-btn" 
-                  type="button"
-                  class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-lg text-white hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-audyora-indigo"
-                  aria-expanded="false" 
-                  aria-controls="mobile-menu" 
-                  aria-label="Toggle navigation menu">
-            <span class="w-6 h-0.5 bg-white transition-transform duration-300 mb-1.5" id="hamburger-line-1"></span>
-            <span class="w-6 h-0.5 bg-white transition-opacity duration-300 mb-1.5" id="hamburger-line-2"></span>
-            <span class="w-6 h-0.5 bg-white transition-transform duration-300" id="hamburger-line-3"></span>
-          </button>
+          <!-- Mobile Controls (Theme Toggle + Hamburger) -->
+          <div class="flex items-center gap-2 md:hidden">
+            <button type="button" 
+                    class="theme-toggle-btn w-9 h-9 rounded-lg bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/40 flex items-center justify-center transition-all cursor-pointer text-audyora-text"
+                    title="Toggle Dark / Light Theme"
+                    aria-label="Toggle theme">
+            </button>
+            <button id="mobile-menu-btn" 
+                    type="button"
+                    class="flex flex-col justify-center items-center w-10 h-10 rounded-lg text-white hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-audyora-indigo"
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu" 
+                    aria-label="Toggle navigation menu">
+              <span class="w-6 h-0.5 bg-white transition-transform duration-300 mb-1.5" id="hamburger-line-1"></span>
+              <span class="w-6 h-0.5 bg-white transition-opacity duration-300 mb-1.5" id="hamburger-line-2"></span>
+              <span class="w-6 h-0.5 bg-white transition-transform duration-300" id="hamburger-line-3"></span>
+            </button>
+          </div>
         </div>
 
         <!-- Mobile Drawer -->
@@ -112,6 +125,15 @@ export class Navbar {
   }
 
   public static initInteractions(): void {
+    // Initialize ThemeManager & wire toggle buttons
+    ThemeManager.init();
+    const themeButtons = document.querySelectorAll<HTMLButtonElement>(".theme-toggle-btn");
+    themeButtons.forEach((toggleBtn) => {
+      toggleBtn.addEventListener("click", () => {
+        ThemeManager.toggle();
+      });
+    });
+
     const btn = document.getElementById("mobile-menu-btn");
     const menu = document.getElementById("mobile-menu");
     const line1 = document.getElementById("hamburger-line-1");

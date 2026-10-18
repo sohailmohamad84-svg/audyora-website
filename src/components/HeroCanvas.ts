@@ -43,6 +43,11 @@ export class HeroCanvas {
       this.mouse.targetY = e.clientY - rect.top;
     });
 
+    // Theme listener to refresh particle colors
+    window.addEventListener("audyora-theme-change", () => {
+      this.createParticles();
+    });
+
     // Observer to pause animation when not on screen
     const observer = new IntersectionObserver(
       (entries) => {

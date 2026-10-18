@@ -40,7 +40,7 @@ export class AudyoraLogo {
       <div class="inline-flex items-center gap-3.5 group select-none ${className}">
         ${this.renderSymbol(symbolSize)}
         <div class="flex flex-col">
-          <span class="font-satoshi text-2xl font-black tracking-[-0.04em] text-white flex items-center leading-none">
+          <span class="font-satoshi text-2xl font-black tracking-[-0.04em] text-white audyora-logo-wordmark flex items-center leading-none">
             AUDYORA
             <span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan ml-1 inline-block animate-pulse"></span>
           </span>
