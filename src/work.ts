@@ -1,6 +1,7 @@
 import { CaseStudyCard } from "./components/CaseStudyCard";
 import { Footer } from "./components/Footer";
 import { Navbar } from "./components/Navbar";
+import { WhatsAppWidget } from "./components/WhatsAppWidget";
 import { siteConfig } from "./config/audyora.config";
 import { MotionEngine } from "./services/motion/MotionEngine";
 import "./styles/main.css";
@@ -9,8 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Mount Navigation & Footer
   const navRoot = document.getElementById("nav-root");
   const footerRoot = document.getElementById("footer-root");
+  const waRoot = document.getElementById("whatsapp-root");
+
   if (navRoot) navRoot.innerHTML = Navbar.render("/work/");
   if (footerRoot) footerRoot.innerHTML = Footer.render();
+  if (waRoot) waRoot.innerHTML = WhatsAppWidget.render();
   Navbar.initInteractions();
 
   const showcaseGrid = document.getElementById("work-showcase-grid");

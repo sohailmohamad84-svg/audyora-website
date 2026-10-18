@@ -46,14 +46,17 @@ export class Footer {
             <!-- Navigation Links -->
             <div class="space-y-4">
               <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-white">
-                Navigation
+                Platform & Solutions
               </h4>
               <ul class="space-y-2.5">
                 <li><a href="/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Home</a></li>
-                <li><a href="/about/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">About Audyora</a></li>
-                <li><a href="/services/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Our Capabilities</a></li>
-                <li><a href="/work/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Creative Showcase</a></li>
-                <li><a href="/contact/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Contact & Briefing</a></li>
+                <li><a href="/about/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/services/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">B2B Services</a></li>
+                <li><a href="/industries/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Industries Served</a></li>
+                <li><a href="/methodology/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Pipeline Methodology</a></li>
+                <li><a href="/media-kit/" class="text-sm font-inter text-audyora-cyan hover:text-white transition-colors font-semibold">Official Media Kit</a></li>
+                <li><a href="/work/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Pipeline Showcase</a></li>
+                <li><a href="/contact/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Book Pipeline Audit</a></li>
               </ul>
             </div>
 
@@ -106,11 +109,11 @@ export class Footer {
           <!-- Bottom Copyright & Legal Notice -->
           <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-xs font-inter text-audyora-subtle gap-4">
             <div>
-              © 2026 ${siteConfig.companyName}. All rights reserved. Registered Creative & Media Architecture.
+              © 2026 ${siteConfig.companyName}. All rights reserved. Registered B2B Pipeline Architecture &amp; Growth Engine.
             </div>
             <div class="flex items-center gap-6">
-              <span class="hover:text-white transition-colors cursor-pointer">Privacy & Data Governance</span>
-              <span class="hover:text-white transition-colors cursor-pointer">Terms of Commercial Engagement</span>
+              <a href="/privacy/" class="hover:text-white transition-colors">Privacy &amp; Data Governance</a>
+              <a href="/terms/" class="hover:text-white transition-colors">Terms of Commercial Engagement</a>
               <a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
             </div>
           </div>

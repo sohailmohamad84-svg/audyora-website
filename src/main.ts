@@ -4,16 +4,21 @@ import { HeroCanvas } from "./components/HeroCanvas";
 import { Navbar } from "./components/Navbar";
 import { PipelineCalculator } from "./components/PipelineCalculator";
 import { ServiceCard } from "./components/ServiceCard";
+import { WhatsAppWidget } from "./components/WhatsAppWidget";
 import { siteConfig } from "./config/audyora.config";
 import { MotionEngine } from "./services/motion/MotionEngine";
 import "./styles/main.css";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Mount Navigation & Footer
+  // 1. Mount Navigation, Footer & WhatsApp
   const navRoot = document.getElementById("nav-root");
   const footerRoot = document.getElementById("footer-root");
+  const waRoot = document.getElementById("whatsapp-root");
+
   if (navRoot) navRoot.innerHTML = Navbar.render("/");
   if (footerRoot) footerRoot.innerHTML = Footer.render();
+  if (waRoot) waRoot.innerHTML = WhatsAppWidget.render();
+
   Navbar.initInteractions();
 
   // 2. Initialize Hero Canvas Particle Wave

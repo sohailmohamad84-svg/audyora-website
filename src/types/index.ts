@@ -8,6 +8,7 @@ export interface SocialLinks {
 export interface BusinessCoordinates {
   emailPlaceholder: string;
   phonePlaceholder: string;
+  whatsappPlaceholder: string;
   addressPlaceholder: string;
   operatingHours: string;
 }

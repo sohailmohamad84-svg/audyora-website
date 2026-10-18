@@ -6,6 +6,8 @@ export class Navbar {
       { name: "Home", href: "/" },
       { name: "About", href: "/about/" },
       { name: "Services", href: "/services/" },
+      { name: "Industries", href: "/industries/" },
+      { name: "Media Kit", href: "/media-kit/" },
       { name: "Work", href: "/work/" },
       { name: "Contact", href: "/contact/" },
     ];

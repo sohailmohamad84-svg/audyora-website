@@ -13,6 +13,7 @@ export const siteConfig: SiteConfig = {
   coordinates: {
     emailPlaceholder: "pipeline@audyora.com",
     phonePlaceholder: "+1 (888) 492-0198",
+    whatsappPlaceholder: "+18884920198",
     addressPlaceholder: "Enterprise B2B Pipeline Operations (Global Distributed Delivery)",
     operatingHours: "Monday – Friday: 08:00 – 19:00 (EST / GMT / CET)",
   },
