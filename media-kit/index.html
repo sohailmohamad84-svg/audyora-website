@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Primary Meta Tags -->
-    <title>Official Media Kit & Sponsorship Architecture | Audyora</title>
-    <meta name="title" content="Official Media Kit & Sponsorship Architecture | Audyora" />
-    <meta name="description" content="Download and review the official Audyora B2B Media Kit. Explore our audience demographics, enterprise decision-maker reach, advertising opportunities, and co-marketing partnerships." />
+    <title>Official Media Kit 2026 | Audyora Global Media Solutions</title>
+    <meta name="title" content="Official Media Kit 2026 | Audyora Global Media Solutions" />
+    <meta name="description" content="Review and download the complete 2026 Audyora Media Kit. 108M+ verified B2B audience database, 10 core demand generation services, 7-stage process cycle, and global enterprise reach." />
     <meta name="robots" content="index, follow" />
     <meta name="author" content="Audyora" />
     <link rel="canonical" href="https://homdo.services/media-kit/" />
@@ -15,417 +15,1535 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://homdo.services/media-kit/" />
-    <meta property="og:title" content="Official Media Kit | Audyora" />
-    <meta property="og:description" content="Explore audience demographics, enterprise reach, and advertising partnerships." />
+    <meta property="og:title" content="Official Media Kit 2026 | Audyora" />
+    <meta property="og:description" content="Audyora Media Kit: 108M+ verified decision-makers, 10 core B2B services, and pipeline architecture." />
     <meta property="og:image" content="https://homdo.services/assets/images/logo.svg" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#090A0F" />
   </head>
 
-  <body class="bg-audyora-bg text-audyora-text font-inter antialiased overflow-x-hidden">
+  <body class="bg-audyora-bg text-audyora-text font-inter antialiased overflow-x-hidden min-h-screen">
     <div id="nav-root"></div>
 
-    <main class="relative pt-32 pb-24">
-      <!-- MEDIA KIT HERO -->
-      <section class="px-6 py-16 sm:py-24 border-b border-audyora-border/60 relative overflow-hidden">
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[45rem] h-[30rem] bg-audyora-indigo/15 rounded-full blur-[140px] pointer-events-none"></div>
-
-        <div class="max-w-4xl mx-auto text-center relative z-10" data-reveal="fade-up">
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-audyora-border bg-audyora-card/80 backdrop-blur-md shadow-sm mb-8">
-            <span class="w-2 h-2 rounded-full bg-audyora-cyan animate-pulse"></span>
-            <span class="font-satoshi text-xs font-semibold text-audyora-cyan uppercase tracking-widest">
-              Partnership &amp; Advertiser Guide
-            </span>
+    <!-- PRESENTATION TOOLBAR (STICKY CONTROL BAR) -->
+    <aside class="no-print sticky top-20 z-40 bg-audyora-surface/90 backdrop-blur-xl border-y border-audyora-border/80 px-4 py-3">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-4">
+        <!-- Mode & Jump Controls -->
+        <div class="flex items-center gap-3">
+          <div class="inline-flex p-1 bg-audyora-card rounded-xl border border-audyora-border text-xs font-satoshi font-bold">
+            <button id="view-mode-deck" class="px-3.5 py-1.5 rounded-lg bg-audyora-indigo text-white transition-all">
+              Interactive Deck (16:9)
+            </button>
+            <button id="view-mode-doc" class="px-3.5 py-1.5 rounded-lg text-audyora-muted hover:text-white transition-all">
+              Document View
+            </button>
           </div>
 
-          <h1 class="text-4xl sm:text-6xl font-black font-satoshi text-white tracking-tight leading-[1.1] mb-6">
-            Official B2B Media Kit &amp; <br class="hidden sm:inline" />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-audyora-indigo to-audyora-cyan">
-              Sponsorship Architecture.
+          <!-- Slide Navigator (Deck Mode) -->
+          <div id="deck-nav-controls" class="flex items-center gap-2">
+            <button id="slide-prev-btn" title="Previous Slide (Left Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/40 text-white flex items-center justify-center transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <span id="slide-indicator" class="font-satoshi text-xs font-bold text-white px-2">
+              Slide 01 / 23
+            </span>
+            <button id="slide-next-btn" title="Next Slide (Right Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/40 text-white flex items-center justify-center transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+            <!-- Quick Slide Selector -->
+            <select id="slide-select" class="bg-audyora-card text-white text-xs border border-audyora-border rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-audyora-cyan cursor-pointer hidden sm:block">
+              <option value="1">01. Cover Slide</option>
+              <option value="2">02. Table of Contents</option>
+              <option value="3">03. Who We Are</option>
+              <option value="4">04. What We Do (Triad)</option>
+              <option value="5">05. Mission &amp; Vision</option>
+              <option value="6">06. Enterprise Ecosystem</option>
+              <option value="7">07. Client Testimonials</option>
+              <option value="8">08. 10 Core Services</option>
+              <option value="9">09. 7-Stage Process Cycle</option>
+              <option value="10">10. B2B Lead Generation</option>
+              <option value="11">11. Demand Generation</option>
+              <option value="12">12. Appointment Setting</option>
+              <option value="13">13. Email Marketing</option>
+              <option value="14">14. Lead Nurturing</option>
+              <option value="15">15. Account-Based Marketing</option>
+              <option value="16">16. Contact Discovery</option>
+              <option value="17">17. Lead Verification</option>
+              <option value="18">18. Content Syndication</option>
+              <option value="19">19. Data Cleansing</option>
+              <option value="20">20. Future Goals</option>
+              <option value="21">21. Our Data Count (108M)</option>
+              <option value="22">22. Global Contact</option>
+              <option value="23">23. Thank You</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Actions: Print & Contact -->
+        <div class="flex items-center gap-3">
+          <button id="print-media-kit-btn" 
+                  type="button"
+                  class="btn-magnetic px-4 py-2 rounded-xl font-satoshi font-bold text-xs text-white bg-blue-600 hover:bg-blue-700 shadow-glow-indigo transition-all flex items-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <a href="/contact/?brief=Media%20Kit%20Sponsorship" 
+             class="btn-magnetic px-4 py-2 rounded-xl font-satoshi font-bold text-xs text-audyora-text hover:text-white bg-audyora-card border border-audyora-border transition-all">
+            Schedule Briefing
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <main id="media-kit-main" class="deck-mode max-w-7xl mx-auto px-4 sm:px-6 py-8">
+
+      <!-- ==========================================
+           SLIDE 01: COVER SLIDE
+           ========================================== -->
+      <section data-slide="1" class="media-kit-slide active-slide relative bg-gradient-to-br from-[#0B0E1B] via-[#090A0F] to-[#0D1226] border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-20 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <!-- Background Neon Mesh & Wave -->
+        <div class="absolute -top-32 -right-32 w-96 h-96 bg-audyora-indigo/25 rounded-full blur-[130px] pointer-events-none"></div>
+        <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-audyora-cyan/20 rounded-full blur-[130px] pointer-events-none"></div>
+        
+        <!-- Abstract Flowing Wave SVG -->
+        <div class="absolute inset-0 opacity-25 pointer-events-none flex items-center justify-center">
+          <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none">
+            <path d="M-100 300 C 200 100, 400 500, 700 250 C 1000 50, 1100 450, 1300 300" stroke="url(#paint0_linear)" stroke-width="2.5" stroke-dasharray="6 6" />
+            <path d="M-100 350 C 180 150, 420 520, 720 280 C 1020 80, 1120 480, 1300 350" stroke="url(#paint1_linear)" stroke-width="2" />
+            <path d="M-100 400 C 160 200, 440 540, 740 310 C 1040 110, 1140 510, 1300 400" stroke="#00F5D4" stroke-width="1.2" stroke-opacity="0.6" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#6366F1" />
+                <stop offset="0.5" stop-color="#3B82F6" />
+                <stop offset="1" stop-color="#00F5D4" />
+              </linearGradient>
+              <linearGradient id="paint1_linear" x1="0" y1="0" x2="1200" y2="600" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#A855F7" />
+                <stop offset="1" stop-color="#6366F1" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Top Row: Tagline & Year -->
+        <div class="relative z-10 flex items-center justify-between border-b border-audyora-border/60 pb-6">
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-audyora-cyan/30 bg-audyora-card/70 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-audyora-cyan animate-pulse"></span>
+            <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-widest">
+              Empowering Businesses, Amplifying Success
+            </span>
+          </div>
+          <span class="font-satoshi font-black text-xs uppercase tracking-widest text-audyora-muted">
+            Global Edition • 2026
+          </span>
+        </div>
+
+        <!-- Main Center: Cover Typography -->
+        <div class="relative z-10 my-auto py-10 max-w-4xl">
+          <span class="font-satoshi text-sm uppercase font-bold tracking-[0.25em] text-audyora-indigo block mb-3">
+            Digital Marketing &amp; Advertising Solutions
+          </span>
+          <h1 class="font-satoshi text-5xl sm:text-7xl lg:text-8xl font-black text-white tracking-tight leading-[1.05] mb-6">
+            MEDIA KIT <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-audyora-cyan via-blue-400 to-audyora-indigo">
+              2026
             </span>
           </h1>
-          <p class="font-inter text-base sm:text-lg text-audyora-muted leading-relaxed max-w-2xl mx-auto mb-10">
-            A comprehensive guide to Audyora's audience demographics, verified decision-maker reach, content syndication channels, and commercial sponsorship opportunities.
+          <p class="font-inter text-base sm:text-xl text-audyora-muted max-w-2xl leading-relaxed">
+            Architecting predictable B2B revenue pipelines through qualified lead generation, multi-tier account marketing, and global data intelligence.
+          </p>
+        </div>
+
+        <!-- Bottom Row: Company Signature -->
+        <div class="relative z-10 flex flex-wrap items-end justify-between gap-6 border-t border-audyora-border/60 pt-6">
+          <div>
+            <div class="flex items-center gap-2.5 mb-1">
+              <span class="font-satoshi text-2xl font-black text-white tracking-tight">AUDYORA</span>
+              <span class="w-2 h-2 rounded-full bg-audyora-cyan"></span>
+            </div>
+            <p class="font-inter text-xs text-audyora-muted">
+              Audyora Global Media Solutions Private Ltd • B2B Pipeline Architecture
+            </p>
+          </div>
+          <div class="text-right">
+            <span class="font-satoshi text-[11px] font-bold uppercase tracking-wider text-audyora-subtle block">Official Document</span>
+            <span class="font-mono text-xs text-audyora-cyan">CONFIDENTIAL &amp; PROPRIETARY</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 02: TABLE OF CONTENTS
+           ========================================== -->
+      <section data-slide="2" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Navigation Framework</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Table of Contents</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 02 / 23</span>
+        </div>
+
+        <!-- 9 Core Chapters (Matching Axris structure) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-auto">
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">01</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 03-04</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Company Overview &amp; Triad</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Who we are, executive philosophy, and Create-Distribute-Analyze engine.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">02</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 05</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Mission and Vision</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Core strategic compass, ROI maximizers, and long-term enterprise horizons.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">03</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 06</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Clients &amp; Technology Verticals</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Enterprise ecosystems: Cloud, Cyber, DevOps, Interconnection &amp; Data.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">04</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 07</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Client Testimonials</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Direct feedback and verified conversion ratings from marketing leaders.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">05</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 08</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Our 10 Core Services</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Comprehensive lead gen, ABM, nurturing, deliverability, and syndication.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">06</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 09</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">7-Stage Process Cycle</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">End-to-end roadmap from campaign acquisition to benchmarked SLA delivery.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">07</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 10-19</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Service Deep-Dives</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Detailed operational breakdowns, workflows, and deliverables for each pillar.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">08</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 21</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Our Global Data Count</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">108M+ verified B2B decision-maker universe across NA, EMEA, APAC, DACH, ANZ.</p>
+          </div>
+
+          <div class="bg-audyora-surface/60 border border-audyora-border/60 rounded-2xl p-5 hover:border-audyora-cyan/40 transition-all group">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan">09</span>
+              <span class="font-inter text-[10px] text-audyora-subtle uppercase">Slide 22-23</span>
+            </div>
+            <h3 class="font-satoshi text-lg font-bold text-white group-hover:text-audyora-cyan transition-colors">Contact Us &amp; Closing</h3>
+            <p class="font-inter text-xs text-audyora-muted mt-1">Global delivery hub coordinates, direct email, and strategy consultation.</p>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Use keyboard arrows [← / →] to navigate slides</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 03: WHO WE ARE (COMPANY OVERVIEW)
+           ========================================== -->
+      <section data-slide="3" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Company Overview</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Who We Are</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 03 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center my-auto">
+          <!-- Text Body -->
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              At <strong class="text-audyora-cyan">Audyora Global Media Solutions</strong>, we're more than just a marketing and advertising agency — we're your strategic partner in achieving unparalleled commercial success.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Specializing in comprehensive B2B pipeline architecture and high-converting demand generation tailored to the unique needs of enterprise business owners, we pride ourselves on delivering exceptional results that drive revenue growth and maximize marketing ROI.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              From search engine optimization (SEO) and email deliverability to qualified B2B appointment setting and content syndication, we seamlessly integrate cutting-edge strategies and innovative solutions to propel your enterprise forward in today's fiercely competitive landscape.
+            </p>
+            <div class="p-4 rounded-2xl bg-audyora-surface border border-audyora-border/60 text-xs font-inter text-audyora-cyan flex items-center gap-3">
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>Trust Audyora to elevate your brand, amplify your message, and exceed your commercial targets with mathematical precision and disciplined execution.</span>
+            </div>
+          </div>
+
+          <!-- Graphic Showcase -->
+          <div class="lg:col-span-5">
+            <div class="bg-gradient-to-br from-audyora-surface to-audyora-card border border-audyora-border rounded-3xl p-8 relative overflow-hidden">
+              <div class="w-12 h-12 rounded-2xl bg-audyora-indigo/20 border border-audyora-indigo/40 flex items-center justify-center text-audyora-cyan mb-6">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <h3 class="font-satoshi text-xl font-bold text-white mb-2">The Strategic Growth Mandate</h3>
+              <p class="font-inter text-xs text-audyora-muted mb-6 leading-relaxed">
+                We bridge the gap between creative storytelling and hard pipeline revenue. Every dollar spent on outbound is measured against pipeline contribution.
+              </p>
+              <div class="space-y-3 font-inter text-xs">
+                <div class="flex items-center justify-between p-3 rounded-xl bg-audyora-bg/60 border border-audyora-border/40">
+                  <span class="text-audyora-muted">Verified Enterprise Reach</span>
+                  <span class="font-bold text-white">108M+ Contacts</span>
+                </div>
+                <div class="flex items-center justify-between p-3 rounded-xl bg-audyora-bg/60 border border-audyora-border/40">
+                  <span class="text-audyora-muted">Average Pipeline ROI</span>
+                  <span class="font-bold text-audyora-cyan">4.2x Attributed Return</span>
+                </div>
+                <div class="flex items-center justify-between p-3 rounded-xl bg-audyora-bg/60 border border-audyora-border/40">
+                  <span class="text-audyora-muted">Compliance Standard</span>
+                  <span class="font-bold text-white">100% GDPR, CCPA &amp; CAN-SPAM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 1 • Corporate Profile</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 04: WHAT WE DO (TRIAD: CREATE - DISTRIBUTE - ANALYZE)
+           ========================================== -->
+      <section data-slide="4" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Execution Architecture</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">What We Do</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 04 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <!-- Text Introduction -->
+          <div class="lg:col-span-4 space-y-4">
+            <h3 class="font-satoshi text-2xl font-bold text-white leading-snug">
+              The Engine: <br />
+              <span class="text-audyora-cyan">Create • Distribute • Analyze</span>
+            </h3>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              At Audyora Global Media Solutions, we specialize in end-to-end B2B revenue orchestration: from high-converting content creation and targeted advertising to multi-domain email deliverability and real-time intent telemetry.
+            </p>
+            <p class="font-inter text-xs text-audyora-subtle leading-relaxed">
+              We combine creative assets with precision distribution and granular pipeline analytics to guarantee predictable sales acceleration.
+            </p>
+          </div>
+
+          <!-- 3 Triad Pillars -->
+          <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- CREATE -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-blue-500/50 rounded-2xl p-6 transition-all shadow-card flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                </div>
+                <span class="font-satoshi text-xs font-bold text-blue-400 uppercase tracking-widest block mb-1">Stage 01</span>
+                <h4 class="font-satoshi text-xl font-bold text-white mb-3">CREATE</h4>
+                <p class="font-inter text-xs text-audyora-muted leading-relaxed mb-4">
+                  Crafting irresistible collateral that solves executive pain points and establishes domain authority.
+                </p>
+              </div>
+              <ul class="space-y-2 border-t border-audyora-border/60 pt-3 font-inter text-xs text-white/80">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>Whitepapers &amp; Research Reports</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>Executive Video &amp; Briefings</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-blue-400"></span>High-Converting Product Pages</li>
+              </ul>
+            </div>
+
+            <!-- DISTRIBUTE -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/50 rounded-2xl p-6 transition-all shadow-card flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-audyora-cyan/10 border border-audyora-cyan/30 flex items-center justify-center text-audyora-cyan mb-4">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                </div>
+                <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-widest block mb-1">Stage 02</span>
+                <h4 class="font-satoshi text-xl font-bold text-white mb-3">DISTRIBUTE</h4>
+                <p class="font-inter text-xs text-audyora-muted leading-relaxed mb-4">
+                  Broadcasting across high-authority publisher channels and cold outbound sending clusters.
+                </p>
+              </div>
+              <ul class="space-y-2 border-t border-audyora-border/60 pt-3 font-inter text-xs text-white/80">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Multi-Domain Warm Email Drops</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Targeted Social &amp; Communities</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Content Syndication Networks</li>
+              </ul>
+            </div>
+
+            <!-- ANALYZE -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-audyora-indigo/50 rounded-2xl p-6 transition-all shadow-card flex flex-col justify-between">
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-audyora-indigo/10 border border-audyora-indigo/30 flex items-center justify-center text-audyora-indigo mb-4">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                </div>
+                <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-widest block mb-1">Stage 03</span>
+                <h4 class="font-satoshi text-xl font-bold text-white mb-3">ANALYZE</h4>
+                <p class="font-inter text-xs text-audyora-muted leading-relaxed mb-4">
+                  Telemetry verification, BANT qualification, and full attribution to enterprise pipeline.
+                </p>
+              </div>
+              <ul class="space-y-2 border-t border-audyora-border/60 pt-3 font-inter text-xs text-white/80">
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>SEO &amp; Intent Signal Telemetry</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>BANT &amp; SQL Lead Qualification</li>
+                <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Campaign ROI &amp; Revenue Attribution</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 1 • Operating Model</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 05: OUR MISSION & VISION
+           ========================================== -->
+      <section data-slide="5" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Strategic Foundation</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Our Mission &amp; Vision</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 05 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-auto">
+          <!-- MISSION -->
+          <div class="bg-gradient-to-br from-audyora-surface to-audyora-card border border-audyora-border hover:border-audyora-cyan/40 rounded-3xl p-8 sm:p-10 transition-all shadow-xl relative overflow-hidden">
+            <div class="w-12 h-12 rounded-2xl bg-audyora-cyan/10 border border-audyora-cyan/30 flex items-center justify-center text-audyora-cyan mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-2">Immediate Mandate</span>
+            <h3 class="font-satoshi text-3xl font-extrabold text-white mb-4">Our Mission</h3>
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed mb-6">
+              Deliver innovative marketing solutions that drive growth and maximize ROI for our clients.
+            </p>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              We eliminate the waste, spam filters, and unqualified conversations that plague modern outbound. By engineering mathematically rigorous outreach and content delivery, we guarantee genuine business impact for every partner.
+            </p>
+          </div>
+
+          <!-- VISION -->
+          <div class="bg-gradient-to-br from-audyora-surface to-audyora-card border border-audyora-border hover:border-audyora-indigo/40 rounded-3xl p-8 sm:p-10 transition-all shadow-xl relative overflow-hidden">
+            <div class="w-12 h-12 rounded-2xl bg-audyora-indigo/10 border border-audyora-indigo/30 flex items-center justify-center text-audyora-indigo mb-6">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            </div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-indigo block mb-2">Long-Term Horizon</span>
+            <h3 class="font-satoshi text-3xl font-extrabold text-white mb-4">Our Vision</h3>
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed mb-6">
+              To be the leading marketing partner, empowering businesses with cutting-edge strategies and exceptional results, fostering long-term success in a competitive landscape.
+            </p>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              We envision an interconnected commercial ecosystem where enterprise marketing is recognized not as an uncertain expense, but as the primary, predictable engine of sustained enterprise valuation.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 2 • Guiding Principles</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 06: CLIENTS & ENTERPRISE VERTICALS
+           ========================================== -->
+      <section data-slide="6" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Enterprise Alignment</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Clients &amp; Technology Sectors</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 06 / 23</span>
+        </div>
+
+        <div class="my-auto space-y-8">
+          <p class="font-inter text-sm sm:text-base text-audyora-muted max-w-3xl leading-relaxed">
+            Audyora architects demand pipelines for tier-1 enterprises and high-growth disruptors across global technology ecosystems. Our campaign models are calibrated for high ACV, multi-stakeholder enterprise sales cycles:
           </p>
 
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button id="print-media-kit-btn" 
-                    type="button"
-                    class="btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-glow-indigo transition-all flex items-center justify-center gap-2 cursor-pointer">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
-              <span>Export Media Kit (PDF / Print)</span>
-            </button>
-            <a href="/contact/?brief=Media%20Kit%20Sponsorship" 
-               class="btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-audyora-text hover:text-white bg-audyora-card border border-audyora-border transition-all">
-              Request Rate Card &amp; Inventory
+          <!-- 6 Enterprise Sectors -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-audyora-cyan">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Cloud &amp; DevOps</h4>
+              <span class="font-inter text-[11px] text-audyora-muted block">Virtualization &amp; Hyperscalers</span>
+            </div>
+
+            <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-audyora-indigo">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Cybersecurity</h4>
+              <span class="font-inter text-[11px] text-audyora-muted block">Threat Intel &amp; SOC Defense</span>
+            </div>
+
+            <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-blue-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Data &amp; Analytics</h4>
+              <span class="font-inter text-[11px] text-audyora-muted block">Self-Service AI &amp; BI</span>
+            </div>
+
+            <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-emerald-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Interconnection</h4>
+              <span class="font-inter text-[11px] text-audyora-muted block">Internet Exchanges &amp; IX</span>
+            </div>
+
+            <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-amber-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Open Source / OS</h4>
+              <span class="font-inter text-[11px] text-audyora-muted block">Enterprise Linux &amp; K8s</span>
+            </div>
+
+            <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
+              <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-purple-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Supply Chain SaaS</h4>
+              <span class="font-inter text-[11px] text-audyora-muted block">Enterprise Labeling &amp; ERP</span>
+            </div>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-audyora-surface/60 border border-audyora-border flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+              <span class="text-3xl font-black font-satoshi text-audyora-cyan">100%</span>
+              <div class="text-xs font-inter text-audyora-muted">
+                <strong class="text-white block font-satoshi">B2B Qualified Decision-Makers</strong>
+                Every contact delivered is manually and algorithmically validated for authority and intent.
+              </div>
+            </div>
+            <a href="/work/" class="text-xs font-satoshi font-bold text-audyora-cyan hover:underline flex items-center gap-1.5 flex-shrink-0">
+              <span>View Conceptual Case Models</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
           </div>
         </div>
-      </section>
 
-      <!-- 12-SECTION MEDIA KIT CONTAINER -->
-      <section class="py-20 px-6">
-        <div class="max-w-5xl mx-auto space-y-16">
-
-          <!-- Section 1: Brand Introduction & Company Profile -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-cyan mb-4">
-              <span>Section 01</span>
-              <span>•</span>
-              <span>Company Profile</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-4">
-              1. Brand Introduction &amp; Corporate Profile
-            </h2>
-            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-6">
-              Audyora is a premier B2B pipeline architecture and growth media company. We build predictable outbound revenue engines for technology, cybersecurity, enterprise SaaS, and cloud infrastructure companies across North America and Europe.
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-audyora-border/60 text-xs font-inter">
-              <div>
-                <span class="block text-audyora-subtle uppercase tracking-wider mb-1">Core Industry Focus</span>
-                <span class="font-bold text-white">B2B Tech, SaaS, Cybersecurity &amp; IT</span>
-              </div>
-              <div>
-                <span class="block text-audyora-subtle uppercase tracking-wider mb-1">Primary Operating Regions</span>
-                <span class="font-bold text-white">North America, United Kingdom, DACH, Nordics</span>
-              </div>
-              <div>
-                <span class="block text-audyora-subtle uppercase tracking-wider mb-1">Model</span>
-                <span class="font-bold text-white">Pipeline Architecture &amp; Demand Syndication</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 2: About the Media Platform -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-indigo mb-4">
-              <span>Section 02</span>
-              <span>•</span>
-              <span>Platform Architecture</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-4">
-              2. About the Media Platform &amp; Revenue Engine
-            </h2>
-            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-6">
-              Unlike traditional broadcast media or passive banner networks, Audyora operates an active distribution architecture. We pair dedicated warm email infrastructure and content syndication channels with direct decision-maker outreach to deliver guaranteed commercial engagement.
-            </p>
-            <div class="bg-audyora-surface rounded-2xl p-6 border border-audyora-border/60">
-              <h3 class="font-satoshi text-lg font-bold text-white mb-2">The Multi-Channel Distribution Engine</h3>
-              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
-                Every syndicated research asset or sponsor message is routed through verified 1:1 decision-maker channels, bypassing low-intent social feeds and landing directly in primary enterprise inboxes.
-              </p>
-            </div>
-          </article>
-
-          <!-- Section 3: Vision, Mission & Audience Profile -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-cyan mb-4">
-              <span>Section 03</span>
-              <span>•</span>
-              <span>Mission &amp; Audience</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-4">
-              3. Vision, Mission &amp; Audience Profile
-            </h2>
-            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-6">
-              Our mission is to eliminate B2B sales inefficiency by connecting world-class technology providers with the exact budget holders who require their solutions.
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="block font-satoshi font-bold text-white text-base mb-2">Audience Persona Focus</span>
-                <p class="font-inter text-xs text-audyora-muted leading-relaxed">
-                  Enterprise Chief Information Officers (CIOs), Chief Information Security Officers (CISOs), VPs of Engineering, VPs of Sales, Heads of Infrastructure, and FinTech product directors.
-                </p>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="block font-satoshi font-bold text-white text-base mb-2">Commercial Intent</span>
-                <p class="font-inter text-xs text-audyora-muted leading-relaxed">
-                  Our network members actively evaluate vendors, benchmark enterprise architectures, and allocate annual technology budgets ranging from $100k to $10M+.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 4: Content Categories & Coverage Areas -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-indigo mb-4">
-              <span>Section 04</span>
-              <span>•</span>
-              <span>Coverage Verticals</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-6">
-              4. Content Categories &amp; Coverage Areas
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="font-satoshi text-base font-bold text-white block mb-1">Cybersecurity</span>
-                <p class="font-inter text-xs text-audyora-muted">Zero trust, threat intelligence, cloud security, compliance, SIEM/SOC.</p>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="font-satoshi text-base font-bold text-white block mb-1">Enterprise Cloud</span>
-                <p class="font-inter text-xs text-audyora-muted">DevOps, Kubernetes, multi-cloud management, infrastructure observability.</p>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="font-satoshi text-base font-bold text-white block mb-1">B2B SaaS</span>
-                <p class="font-inter text-xs text-audyora-muted">Enterprise resource planning, CRM, workflow automation, RevOps platforms.</p>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="font-satoshi text-base font-bold text-white block mb-1">FinTech &amp; Data</span>
-                <p class="font-inter text-xs text-audyora-muted">Regulatory compliance, embedded banking, risk intelligence, blockchain tooling.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 5: Audience Demographics -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-cyan mb-4">
-              <span>Section 05</span>
-              <span>•</span>
-              <span>Demographics</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-6">
-              5. Audience Demographics &amp; Seniority Distribution
-            </h2>
-            <div class="space-y-4">
-              <div>
-                <div class="flex justify-between text-xs font-inter mb-1.5">
-                  <span class="font-bold text-white">C-Level Executives &amp; Vice Presidents (CIO, CISO, CTO, VP)</span>
-                  <span class="text-audyora-cyan font-bold">62%</span>
-                </div>
-                <div class="w-full h-2.5 bg-audyora-surface rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-audyora-indigo to-audyora-cyan rounded-full w-[62%]"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="flex justify-between text-xs font-inter mb-1.5">
-                  <span class="font-bold text-white">Directors &amp; Heads of Department</span>
-                  <span class="text-audyora-cyan font-bold">28%</span>
-                </div>
-                <div class="w-full h-2.5 bg-audyora-surface rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-audyora-indigo to-audyora-cyan rounded-full w-[28%]"></div>
-                </div>
-              </div>
-
-              <div>
-                <div class="flex justify-between text-xs font-inter mb-1.5">
-                  <span class="font-bold text-white">Senior Technical Architects &amp; Program Leads</span>
-                  <span class="text-audyora-cyan font-bold">10%</span>
-                </div>
-                <div class="w-full h-2.5 bg-audyora-surface rounded-full overflow-hidden">
-                  <div class="h-full bg-gradient-to-r from-audyora-indigo to-audyora-cyan rounded-full w-[10%]"></div>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 6: Verified Reach & Database Scale -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-indigo mb-4">
-              <span>Section 06</span>
-              <span>•</span>
-              <span>Reach Metrics</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-6">
-              6. Network Reach &amp; TAM Scale
-            </h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="block font-satoshi text-4xl font-black text-white mb-1">5M+</span>
-                <span class="font-inter text-xs text-audyora-muted">Total Verified B2B Records</span>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="block font-satoshi text-4xl font-black text-white mb-1">65%</span>
-                <span class="font-inter text-xs text-audyora-muted">North American Coverage</span>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="block font-satoshi text-4xl font-black text-white mb-1">35%</span>
-                <span class="font-inter text-xs text-audyora-muted">European Tech Markets</span>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="block font-satoshi text-4xl font-black text-white mb-1">100%</span>
-                <span class="font-inter text-xs text-audyora-muted">GDPR/CAN-SPAM Compliant</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 7: Social Media & Multi-Channel Engagement -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-cyan mb-4">
-              <span>Section 07</span>
-              <span>•</span>
-              <span>Outreach Engagement</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-4">
-              7. Multi-Channel Presence &amp; Outbound Performance
-            </h2>
-            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-6">
-              Our direct multi-channel syndication consistently maintains market-leading conversion benchmarks:
-            </p>
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="text-3xl font-black text-audyora-cyan block mb-1 font-satoshi">98.2%</span>
-                <span class="font-satoshi text-xs font-bold text-white block mb-1">Primary Deliverability</span>
-                <p class="font-inter text-xs text-audyora-muted">Hardened DNS setups preventing spam filtration.</p>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="text-3xl font-black text-white block mb-1 font-satoshi">42%–64%</span>
-                <span class="font-satoshi text-xs font-bold text-white block mb-1">Executive Open Rates</span>
-                <p class="font-inter text-xs text-audyora-muted">Hyper-personalized subject line engineering.</p>
-              </div>
-              <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <span class="text-3xl font-black text-emerald-400 block mb-1 font-satoshi">5.8%–11%</span>
-                <span class="font-satoshi text-xs font-bold text-white block mb-1">Qualified Reply Rates</span>
-                <p class="font-inter text-xs text-audyora-muted">Value-led, problem-specific messaging cadences.</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 8: Advertising Opportunities & Available Placements -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-indigo mb-4">
-              <span>Section 08</span>
-              <span>•</span>
-              <span>Placements</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-6">
-              8. Advertising Opportunities &amp; Placements
-            </h2>
-            <div class="space-y-4">
-              <div class="p-6 rounded-2xl bg-audyora-surface border border-audyora-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div>
-                  <h4 class="font-satoshi text-lg font-bold text-white mb-1">Dedicated Outbound Enterprise Cohorts</h4>
-                  <p class="font-inter text-xs text-audyora-muted max-w-xl">
-                    Sponsor dedicated outbound cadences targeting 1,000 to 10,000 verified accounts with your product positioning.
-                  </p>
-                </div>
-                <span class="px-4 py-2 rounded-full text-xs font-satoshi font-bold uppercase tracking-wider bg-blue-600/20 text-audyora-cyan border border-audyora-cyan/30 shrink-0">
-                  Custom Tier
-                </span>
-              </div>
-
-              <div class="p-6 rounded-2xl bg-audyora-surface border border-audyora-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div>
-                  <h4 class="font-satoshi text-lg font-bold text-white mb-1">Executive Whitepaper &amp; Research Syndication</h4>
-                  <p class="font-inter text-xs text-audyora-muted max-w-xl">
-                    Broadcast your research report to C-Suite buyers with guaranteed minimum opt-in downloads and tele-verification.
-                  </p>
-                </div>
-                <span class="px-4 py-2 rounded-full text-xs font-satoshi font-bold uppercase tracking-wider bg-indigo-600/20 text-indigo-300 border border-indigo-400/30 shrink-0">
-                  Cost-Per-Lead (CPL)
-                </span>
-              </div>
-
-              <div class="p-6 rounded-2xl bg-audyora-surface border border-audyora-border/60 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                <div>
-                  <h4 class="font-satoshi text-lg font-bold text-white mb-1">Account-Based Marketing (ABM) Sponsorship</h4>
-                  <p class="font-inter text-xs text-audyora-muted max-w-xl">
-                    Exclusive penetration of up to 100 named enterprise accounts with personalized co-branded research and executive meetings.
-                  </p>
-                </div>
-                <span class="px-4 py-2 rounded-full text-xs font-satoshi font-bold uppercase tracking-wider bg-violet-600/20 text-violet-300 border border-violet-400/30 shrink-0">
-                  Enterprise Retainer
-                </span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 9: Sponsorship & Collaboration Opportunities -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-cyan mb-4">
-              <span>Section 09</span>
-              <span>•</span>
-              <span>Collaboration Models</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-4">
-              9. Sponsorship &amp; Collaboration Opportunities
-            </h2>
-            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-6">
-              We collaborate with enterprise software vendors, cybersecurity innovators, venture capital portfolio firms, and cloud consultancies to co-author benchmark reports, host roundtables, and syndicate proprietary datasets.
-            </p>
-            <ul class="space-y-3 font-inter text-xs text-white/90">
-              <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span> Co-Branded Annual Industry Benchmarks</li>
-              <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span> Virtual Executive Roundtables with Vetted CISOs/CIOs</li>
-              <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span> Joint Pipeline Acceleration Webinars</li>
-            </ul>
-          </article>
-
-          <!-- Section 10: Advertising Formats & Promotional Options -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-indigo mb-4">
-              <span>Section 10</span>
-              <span>•</span>
-              <span>Promotional Formats</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-6">
-              10. Advertising Formats &amp; Promotional Options
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div class="p-6 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <h4 class="font-satoshi text-lg font-bold text-white mb-2">BANT Qualified Meetings</h4>
-                <p class="font-inter text-xs text-audyora-muted leading-relaxed">
-                  Direct calendar bookings with validated buyers holding verified Budget, Authority, Need, and a defined purchasing Timeline.
-                </p>
-              </div>
-
-              <div class="p-6 rounded-2xl bg-audyora-surface border border-audyora-border/60">
-                <h4 class="font-satoshi text-lg font-bold text-white mb-2">Custom Survey &amp; Intelligence Reports</h4>
-                <p class="font-inter text-xs text-audyora-muted leading-relaxed">
-                  We poll 200+ target enterprise buyers on current tech stack challenges to generate proprietary lead data for your sales team.
-                </p>
-              </div>
-            </div>
-          </article>
-
-          <!-- Section 11: Brand Partnerships & Previous Work -->
-          <article class="bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-xl">
-            <div class="flex items-center gap-3 text-xs font-satoshi font-bold uppercase tracking-wider text-audyora-cyan mb-4">
-              <span>Section 11</span>
-              <span>•</span>
-              <span>Methodology Validation</span>
-            </div>
-            <h2 class="font-satoshi text-3xl font-extrabold text-white mb-4">
-              11. Brand Partnerships &amp; Conceptual Results
-            </h2>
-            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-6">
-              Audyora operates with strict confidentiality and integrity standards. We do not publish client names or disclose non-public deal figures without verified written consent.
-            </p>
-            <div class="bg-audyora-surface rounded-2xl p-6 border border-audyora-border/60">
-              <span class="block font-satoshi text-sm font-bold text-white mb-1">Audyora Verification Policy</span>
-              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
-                All performance metrics cited in this media kit reflect empirical deliverability audits and standardized B2B campaign models. Custom case studies and references are provided during formal non-disclosure agreement (NDA) partner briefings.
-              </p>
-            </div>
-          </article>
-
-          <!-- Section 12: Contact Information & Business Inquiries -->
-          <article class="bg-gradient-to-r from-audyora-indigo via-blue-900/60 to-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-indigo/30 shadow-glow-indigo text-center">
-            <span class="inline-block px-3.5 py-1.5 rounded-full text-xs font-satoshi font-semibold tracking-wider uppercase text-audyora-cyan bg-black/40 border border-white/10 mb-4">
-              Section 12 • Direct Booking
-            </span>
-            <h2 class="font-satoshi text-3xl sm:text-4xl font-black text-white mb-4">
-              12. Contact Information &amp; Media Inquiries
-            </h2>
-            <p class="font-inter text-sm text-white/80 max-w-xl mx-auto mb-8 leading-relaxed">
-              Connect directly with our partnership directors to reserve quarterly outbound inventory, discuss content syndication schedules, or request custom pricing.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="/contact/?brief=Media%20Kit%20Inventory%20Reservation" 
-                 class="btn-magnetic px-8 py-4 rounded-full font-satoshi font-bold text-sm text-audyora-bg bg-white hover:bg-slate-100 shadow-xl transition-all">
-                Submit Media Briefing Request →
-              </a>
-              <a href="https://wa.me/18884920198?text=Hello%20Audyora%2C%20I%20would%20like%20to%20request%20the%20Media%20Kit%20rate%20card." 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="btn-magnetic px-8 py-4 rounded-full font-satoshi font-bold text-sm text-white bg-[#25D366] hover:bg-[#20bd5a] shadow-xl transition-all flex items-center gap-2">
-                <span>WhatsApp Strategy Desk</span>
-              </a>
-            </div>
-          </article>
-
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 3 • Client Ecosystem</span>
         </div>
       </section>
+
+      <!-- ==========================================
+           SLIDE 07: CLIENT TESTIMONIALS
+           ========================================== -->
+      <section data-slide="7" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Verified Endorsements</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Client Testimonials</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 07 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-auto">
+          <!-- Card 1 -->
+          <div class="bg-audyora-surface border border-audyora-border rounded-3xl p-8 flex flex-col justify-between shadow-card hover:border-audyora-cyan/40 transition-all">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-6">
+                ★★★★★
+              </div>
+              <p class="font-inter text-sm sm:text-base text-white/90 leading-relaxed mb-6 italic">
+                "Working with Audyora has transformed our business. Their digital marketing and lead generation expertise helped us achieve our goals faster than we thought possible."
+              </p>
+            </div>
+            <div class="border-t border-audyora-border/60 pt-4">
+              <span class="font-satoshi font-bold text-white block text-sm">Jane Smith</span>
+              <span class="font-inter text-xs text-audyora-cyan">Marketing Manager, Enterprise Solutions</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-audyora-surface border border-audyora-border rounded-3xl p-8 flex flex-col justify-between shadow-card hover:border-audyora-indigo/40 transition-all">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-6">
+                ★★★★★
+              </div>
+              <p class="font-inter text-sm sm:text-base text-white/90 leading-relaxed mb-6 italic">
+                "The Audyora team is professional, responsive, and dedicated to client success. I highly recommend their services for elevating marketing efforts."
+              </p>
+            </div>
+            <div class="border-t border-audyora-border/60 pt-4">
+              <span class="font-satoshi font-bold text-white block text-sm">Mike Johnson</span>
+              <span class="font-inter text-xs text-audyora-indigo">Chief Operating Officer, Technology Group</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="bg-audyora-surface border border-audyora-border rounded-3xl p-8 flex flex-col justify-between shadow-card hover:border-blue-500/40 transition-all">
+            <div>
+              <div class="flex items-center gap-1 text-amber-400 mb-6">
+                ★★★★★
+              </div>
+              <p class="font-inter text-sm sm:text-base text-white/90 leading-relaxed mb-6 italic">
+                "Audyora's data-driven appointment setting cut our customer acquisition cost by 42%. Their ability to reach verified enterprise buyers is second to none."
+              </p>
+            </div>
+            <div class="border-t border-audyora-border/60 pt-4">
+              <span class="font-satoshi font-bold text-white block text-sm">Sarah Al-Mansoor</span>
+              <span class="font-inter text-xs text-blue-400">VP of Demand Generation, SaaS Cloud</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 4 • Customer Feedback</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 08: OUR 10 CORE SERVICES
+           ========================================== -->
+      <section data-slide="8" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Comprehensive Suite</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Our 10 Core Services</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 08 / 23</span>
+        </div>
+
+        <!-- 10 Services Grid (matching Axris page 8) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-6 my-auto">
+          <!-- Col 1 (01 to 05) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-cyan/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan w-10 text-center">01</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">B2B Lead Generation</h4>
+                <p class="font-inter text-xs text-audyora-muted">Targeted phone &amp; digital outreach connecting directly with decision-makers.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-cyan/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan w-10 text-center">02</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Demand Generation</h4>
+                <p class="font-inter text-xs text-audyora-muted">Multi-channel campaigns sparking interest and keeping your brand top-of-mind.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-cyan/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan w-10 text-center">03</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Appointment Setting</h4>
+                <p class="font-inter text-xs text-audyora-muted">Pre-qualified sales meetings booked on your calendar to free closing capacity.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-cyan/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan w-10 text-center">04</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Email Marketing</h4>
+                <p class="font-inter text-xs text-audyora-muted">Segmented, high-deliverability sequences delivering personalized relevance.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-cyan/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-cyan w-10 text-center">05</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Lead Nurturing</h4>
+                <p class="font-inter text-xs text-audyora-muted">Multi-touch relationship cultivation accelerating prospects along buyer journeys.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2 (06 to 10) -->
+          <div class="space-y-3">
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-indigo/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-indigo w-10 text-center">06</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Account-Based Marketing (ABM)</h4>
+                <p class="font-inter text-xs text-audyora-muted">Hyper-personalized outreach mapped to high-value target accounts.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-indigo/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-indigo w-10 text-center">07</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Contact Discovery</h4>
+                <p class="font-inter text-xs text-audyora-muted">Extracting direct-dial and executive email coordinates with custom TAM filters.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-indigo/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-indigo w-10 text-center">08</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Lead Verification</h4>
+                <p class="font-inter text-xs text-audyora-muted">Multi-layer SMTP handshake, phone validation, and duplicate elimination.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-indigo/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-indigo w-10 text-center">09</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Content Syndication</h4>
+                <p class="font-inter text-xs text-audyora-muted">Broadcasting whitepapers across authoritative B2B publisher networks.</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 p-3.5 rounded-2xl bg-audyora-surface/70 border border-audyora-border/60 hover:border-audyora-indigo/40 transition-all">
+              <span class="font-satoshi text-2xl font-black text-audyora-indigo w-10 text-center">10</span>
+              <div>
+                <h4 class="font-satoshi text-base font-bold text-white">Data Cleansing</h4>
+                <p class="font-inter text-xs text-audyora-muted">Removing decay, updating job shifts, and purifying enterprise CRM databases.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 5 • Service Catalog</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 09: 7-STAGE PROCESS CYCLE
+           ========================================== -->
+      <section data-slide="9" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Execution Pipeline</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Process Cycle</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 09 / 23</span>
+        </div>
+
+        <!-- 7 Stages Visual Road (matching Axris page 9) -->
+        <div class="my-auto py-6">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 relative">
+            
+            <!-- Stage 1 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-pink-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-pink-500/20 text-pink-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-pink-500/40">
+                1
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Campaign Acquired</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">Onboarding, ICP criteria, target account definition.</p>
+            </div>
+
+            <!-- Stage 2 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-emerald-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-emerald-500/20 text-emerald-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-emerald-500/40">
+                2
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Benchmarking</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">Baseline metrics, competitor audit &amp; KPI quotas.</p>
+            </div>
+
+            <!-- Stage 3 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-indigo-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-indigo-500/20 text-indigo-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-indigo-500/40">
+                3
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Generate Leads</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">Multi-channel outbound, phone outreach &amp; syndication.</p>
+            </div>
+
+            <!-- Stage 4 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-amber-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-amber-500/20 text-amber-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-amber-500/40">
+                4
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Quality Check</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">Strict BANT audit, phone verification &amp; deduplication.</p>
+            </div>
+
+            <!-- Stage 5 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-cyan-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-cyan-500/20 text-cyan-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-cyan-500/40">
+                5
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Monitoring &amp; Opt.</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">A/B copy testing, response pacing &amp; inbox health.</p>
+            </div>
+
+            <!-- Stage 6 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-fuchsia-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-fuchsia-500/20 text-fuchsia-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-fuchsia-500/40">
+                6
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Compare to Benchmark</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">Cohort validation against Stage 2 target performance.</p>
+            </div>
+
+            <!-- Stage 7 -->
+            <div class="bg-audyora-surface border border-audyora-border hover:border-blue-500/50 rounded-2xl p-4 text-center transition-all">
+              <div class="w-10 h-10 rounded-full bg-blue-500/20 text-blue-400 font-satoshi font-black text-base flex items-center justify-center mx-auto mb-3 border border-blue-500/40">
+                7
+              </div>
+              <h4 class="font-satoshi text-sm font-bold text-white mb-1">Delivery to Client</h4>
+              <p class="font-inter text-[11px] text-audyora-muted">Direct CRM upload, calendar sync &amp; SLA sign-off.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 6 • Operational Quality Standards</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDES 10 TO 19: DEEP-DIVES FOR 10 SERVICES
+           ========================================== -->
+
+      <!-- SLIDE 10: 01. B2B LEAD GENERATION -->
+      <section data-slide="10" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 01</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">B2B Lead Generation</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 10 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              At Audyora, we specialize in B2B lead generation strategies designed to help businesses identify and acquire high-quality leads tailored to their target audience.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Our comprehensive approach combines cutting-edge digital marketing techniques with personalized outreach to deliver measurable results and drive sustained business growth.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-cyan mb-2">Targeted Phone Outreach &amp; Intent Alignment</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Utilize targeted business phone outreach and digital marketing strategies, driven by data-driven insights, to connect with decision-makers and identify qualified leads through meaningful conversations and rapport-building.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Custom ICP TAM extraction</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Executive rapport &amp; pain qualification</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Direct-dial and mobile phone validation</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Bi-weekly calibration &amp; feedback loops</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.1 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 11: 02. DEMAND GENERATION -->
+      <section data-slide="11" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 02</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Demand Generation</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 11 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              Capture audience attention and drive action through strategic marketing campaigns by crafting engaging content that addresses pain points and positions your brand as an undeniable industry leader.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Utilize multiple coordinated channels like email, executive communities, and digital ads for targeted messaging and maximum impact.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-cyan mb-2">Intent-Driven Audience Engagement</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Engage prospects with compelling messaging and targeted outreach to spark curiosity and prompt action. We focus on generating high-quality leads primed for conversion, maximizing ROI, increasing brand awareness, and keeping your brand top-of-mind.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Full-funnel demand orchestration</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Omnichannel touchpoint synchronization</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>High-converting thought leadership assets</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Conversion-rate &amp; pipeline attribution tracking</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.2 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 12: 03. APPOINTMENT SETTING -->
+      <section data-slide="12" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 03</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Appointment Setting</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 12 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              We connect with decision-makers and key stakeholders through precise campaigns, leveraging our expertise and proprietary network for optimal outreach.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Each appointment meets your specific criteria, determined through rigorous qualification tailored to your ideal customer profile. We manage scheduling from start to finish, ensuring a seamless meeting experience for both parties.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-cyan mb-2">Unlocking Sales Closing Velocity</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Our targeted outreach enhances sales efficiency and boosts conversion rates by delivering high-quality leads genuinely interested in your offerings. This approach frees up your team's time for closing deals while we secure qualified appointments.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Direct calendar booking (Google / Outlook / ChiliPiper)</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Detailed discovery dossier before every call</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Pre-call confirmation &amp; reminder workflows</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Guaranteed show-rate SLA replacement</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.3 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 13: 04. EMAIL MARKETING -->
+      <section data-slide="13" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 04</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Email Marketing</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 13 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              Engaging newsletters, offers, and personalized messages resonate with your audience, delivering value and maintaining their interest.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Tailored emails based on demographics, purchase history, and engagement levels ensure each subscriber receives relevant content. Analytics track campaign effectiveness, including open, click-through, and conversion rates, providing valuable insights for optimizing future campaigns.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-cyan mb-2">High Deliverability &amp; Personalization</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Personalized messaging and offers boost conversion likelihood, improving ROI. Regular communication and valuable content foster stronger subscriber loyalty and retention, enhancing email engagement and strengthening commercial relationships.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Secondary domain warmup &amp; SPF/DKIM/DMARC architecture</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Dynamic personalization tokens &amp; spine testing</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Industry-beating 60%+ open &amp; 12%+ reply benchmarks</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Automated positive reply classification &amp; routing</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.4 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 14: 05. LEAD NURTURING -->
+      <section data-slide="14" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 05</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Lead Nurturing</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 14 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              Tailored strategies through emails, calls, and multi-channel touchpoints keep leads engaged and systematically moving towards commercial conversion.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Delivering informative blog posts, webinars, and case studies directly addresses lead pain points, establishing your brand as a trusted solution provider. Exclusive briefings and technical recommendations maintain lead interest throughout long purchase journeys.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-cyan mb-2">Compounding Customer Lifetime Value</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Nurturing fosters long-term relationships beyond initial sales, leading to repeat business and referrals. Strategic engagement builds trust and loyalty, increasing customer lifetime value and expanding market advantage.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Automated drip campaigns by buyer persona</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Behavior-triggered content delivery</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Re-engagement sequences for stalled enterprise deals</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan"></span>Lead scoring telemetry synced into CRM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.5 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 15: 06. ACCOUNT-BASED MARKETING (ABM) -->
+      <section data-slide="15" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 06</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Account-Based Marketing (ABM)</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 15 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              We align ABM strategies directly with your revenue targets and Named Account Lists, tailoring precise outreach campaigns via email, direct mail, and social media to engage decision-makers.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Crafting bespoke content for each strategic account builds high credibility, driving internal buying committees towards unified consensus and commercial conversion.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-indigo mb-2">Engaging Key Executive Committees</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                ABM fosters stronger customer relationships and loyalty by engaging key decision-makers with personalized content, leading to dramatically improved conversion rates and increased enterprise sales ROI.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>1:1, 1:Few, and 1:Many ABM tiers</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Buying committee org-chart mapping</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Account-specific landing experiences &amp; briefs</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Multi-touch surround sound: Email + Phone + LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.6 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 16: 07. CONTACT DISCOVERY -->
+      <section data-slide="16" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 07</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Contact Discovery</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 16 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              We employ advanced intelligence methods to gather accurate contact information from proprietary and public sources, ensuring validity through rigorous multi-channel checks.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Tailored to your exact technical requirements, we provide contacts targeting specific industries, geographies, or firmographic parameters, offering custom bespoke solutions.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-indigo mb-2">Eliminating Guesswork &amp; Wasted Outreach</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Eliminate guesswork, save SDR hours, and focus on engaging qualified prospects for higher conversion rates. Access to precise contact details enables highly targeted outreach to true decision-makers and budget holders.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Direct corporate email &amp; direct-dial phone discovery</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Job title &amp; seniority verification (VP/Director/C-Suite)</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Tech stack &amp; software install intelligence</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>100% human-verified contact dossiers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.7 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 17: 08. LEAD VERIFICATION -->
+      <section data-slide="17" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 08</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Lead Verification</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 17 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              We thoroughly analyze lead data for inconsistencies, inaccuracies, and duplicate records through comprehensive automated analysis and rigorous manual validation.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Each lead undergoes rigorous email handshake and phone verification for pinpoint accuracy. Tailored to your custom requirements, our quality gate delivers only verified leads meeting your strict criteria.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-indigo mb-2">Zero Wasted Sales Cycles</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Verified leads provide accurate data, streamlining sales operations and ensuring superior pipeline velocity. Engagement with genuine prospects eliminates wasted time on bounces and invalid phone numbers.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Live SMTP handshake &amp; catch-all resolution</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Tele-verification &amp; switchboard confirmation</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Under 2% bounce rate replacement guarantee</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>CAN-SPAM &amp; GDPR compliance validation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.8 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 18: 09. CONTENT SYNDICATION -->
+      <section data-slide="18" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 09</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Content Syndication</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 18 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              We engineer a tailored content distribution strategy to reach your target buyers across authoritative B2B publisher platforms and executive networks.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              We leverage premium syndication partners to distribute your whitepapers, eBooks, and benchmark reports, while monitoring intent telemetry to measure consumption depth and buyer engagement.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-indigo mb-2">Authority Building &amp; Top-of-Funnel Scale</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Engage your audience to drive traffic and qualified opt-ins, extending reach and establishing credibility as a recognized thought leader within your industry vertical.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Guaranteed CPL (Cost-Per-Lead) models</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>100% opt-in, permission-based whitepaper downloads</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Custom screening questions (budget &amp; timeframe)</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Real-time lead webhook integration into your CRM</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.9 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- SLIDE 19: 10. DATA CLEANSING -->
+      <section data-slide="19" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Service Deep-Dive 10</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Data Cleansing</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 19 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-7 space-y-6">
+            <p class="font-inter text-base sm:text-lg text-white font-medium leading-relaxed">
+              We identify data inconsistencies, decayed records, and duplicates to create a tailored cleansing and enrichment plan for your marketing operations.
+            </p>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Using advanced algorithmic tools and human researchers, our team ensures your enterprise data remains clean, accurate, and actionable. We continuously monitor and refresh data to preserve pipeline integrity.
+            </p>
+            <div class="p-5 rounded-2xl bg-audyora-surface border border-audyora-border/80">
+              <h4 class="font-satoshi text-sm font-bold text-audyora-indigo mb-2">High Data Reliability &amp; Sales Productivity</h4>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Data cleansing removes inaccuracies, providing reliable foundational data. Clean data improves leadership decision-making, protects sender reputation, enhances targeting, and boosts overall sales productivity.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 bg-audyora-surface border border-audyora-border rounded-3xl p-8">
+            <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-wider block mb-4">Core Deliverables</span>
+            <ul class="space-y-3 font-inter text-xs text-audyora-text">
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Deduplication &amp; record normalization</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Job-change detection &amp; title updates</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Firmographic enrichment (revenue, size, tech stack)</li>
+              <li class="flex items-center gap-2.5"><span class="w-1.5 h-1.5 rounded-full bg-audyora-indigo"></span>Salesforce / HubSpot database health score audit</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 7.10 • Core Capabilities</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 20: FUTURE GOALS
+           ========================================== -->
+      <section data-slide="20" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Strategic Roadmap</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Future Goals</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 20 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 my-auto">
+          <div class="bg-audyora-surface border border-audyora-border/80 hover:border-audyora-cyan/40 rounded-3xl p-8 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-audyora-cyan/10 border border-audyora-cyan/30 flex items-center justify-center text-audyora-cyan mb-4 font-satoshi font-bold">
+              01
+            </div>
+            <h3 class="font-satoshi text-xl font-bold text-white mb-3">Service Expansion</h3>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              Expand our service offerings to include emerging digital marketing trends, AI-powered intent scoring, and dynamic buyer-journey personalization.
+            </p>
+          </div>
+
+          <div class="bg-audyora-surface border border-audyora-border/80 hover:border-audyora-cyan/40 rounded-3xl p-8 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-audyora-cyan/10 border border-audyora-cyan/30 flex items-center justify-center text-audyora-cyan mb-4 font-satoshi font-bold">
+              02
+            </div>
+            <h3 class="font-satoshi text-xl font-bold text-white mb-3">Client Retention &amp; Quality</h3>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              Increase client satisfaction and retention through continuous process improvement, rigorous quality checks, and transparent attribution reporting.
+            </p>
+          </div>
+
+          <div class="bg-audyora-surface border border-audyora-border/80 hover:border-audyora-indigo/40 rounded-3xl p-8 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-audyora-indigo/10 border border-audyora-indigo/30 flex items-center justify-center text-audyora-indigo mb-4 font-satoshi font-bold">
+              03
+            </div>
+            <h3 class="font-satoshi text-xl font-bold text-white mb-3">Global Market Presence</h3>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              Strengthen our operational delivery footprint in both established and emerging markets across North America, Europe, the Middle East, and Asia-Pacific.
+            </p>
+          </div>
+
+          <div class="bg-audyora-surface border border-audyora-border/80 hover:border-audyora-indigo/40 rounded-3xl p-8 transition-all">
+            <div class="w-10 h-10 rounded-xl bg-audyora-indigo/10 border border-audyora-indigo/30 flex items-center justify-center text-audyora-indigo mb-4 font-satoshi font-bold">
+              04
+            </div>
+            <h3 class="font-satoshi text-xl font-bold text-white mb-3">Technology Investment</h3>
+            <p class="font-inter text-sm text-audyora-muted leading-relaxed">
+              Invest heavily in cutting-edge deliverability technologies, proprietary phone verification models, and automated intent signals to enhance campaign effectiveness.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 8 • Growth Objectives</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 21: OUR DATA COUNT (108M+ VERIFIED AUDIENCE)
+           ========================================== -->
+      <section data-slide="21" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Global Data Universe</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Our Data Count</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 21 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center my-auto">
+          <!-- Data Table (Exact numbers matching Axris page 21) -->
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="font-satoshi text-2xl font-bold text-white">
+              108M+ Verified B2B Decision-Makers
+            </h3>
+            <p class="font-inter text-xs text-audyora-muted">
+              Live database distribution across five major global commercial theatres:
+            </p>
+
+            <div class="overflow-x-auto rounded-2xl border border-audyora-border bg-audyora-surface/80">
+              <table class="w-full text-left font-inter text-xs">
+                <thead>
+                  <tr class="bg-audyora-card border-b border-audyora-border text-audyora-cyan font-satoshi font-bold">
+                    <th class="py-3 px-4">Region</th>
+                    <th class="py-3 px-4">Count</th>
+                    <th class="py-3 px-4">Share (%)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-audyora-border/50 text-white">
+                  <tr class="hover:bg-audyora-card/50">
+                    <td class="py-3 px-4 font-bold flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+                      North America
+                    </td>
+                    <td class="py-3 px-4 font-satoshi font-bold">42M</td>
+                    <td class="py-3 px-4 text-audyora-cyan">38.9%</td>
+                  </tr>
+                  <tr class="hover:bg-audyora-card/50">
+                    <td class="py-3 px-4 font-bold flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+                      EMEA
+                    </td>
+                    <td class="py-3 px-4 font-satoshi font-bold">38M</td>
+                    <td class="py-3 px-4 text-blue-400">35.2%</td>
+                  </tr>
+                  <tr class="hover:bg-audyora-card/50">
+                    <td class="py-3 px-4 font-bold flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                      APAC
+                    </td>
+                    <td class="py-3 px-4 font-satoshi font-bold">18.5M</td>
+                    <td class="py-3 px-4 text-indigo-400">17.1%</td>
+                  </tr>
+                  <tr class="hover:bg-audyora-card/50">
+                    <td class="py-3 px-4 font-bold flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                      DACH
+                    </td>
+                    <td class="py-3 px-4 font-satoshi font-bold">5.6M</td>
+                    <td class="py-3 px-4 text-purple-400">5.2%</td>
+                  </tr>
+                  <tr class="hover:bg-audyora-card/50">
+                    <td class="py-3 px-4 font-bold flex items-center gap-2">
+                      <span class="w-2.5 h-2.5 rounded-full bg-pink-500"></span>
+                      ANZ
+                    </td>
+                    <td class="py-3 px-4 font-satoshi font-bold">3.9M</td>
+                    <td class="py-3 px-4 text-pink-400">3.6%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Interactive SVG Donut Visualization -->
+          <div class="lg:col-span-6 flex flex-col items-center justify-center p-6 bg-audyora-surface rounded-3xl border border-audyora-border">
+            <div class="relative w-64 h-64 sm:w-72 sm:h-72">
+              <svg viewBox="0 0 100 100" class="w-full h-full transform -rotate-90">
+                <!-- North America: 38.9% (stroke-dasharray: 38.9, 61.1) -->
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#22D3EE" stroke-width="14" stroke-dasharray="38.9 61.1" stroke-dashoffset="0" />
+                <!-- EMEA: 35.2% -->
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#3B82F6" stroke-width="14" stroke-dasharray="35.2 64.8" stroke-dashoffset="-38.9" />
+                <!-- APAC: 17.1% -->
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#6366F1" stroke-width="14" stroke-dasharray="17.1 82.9" stroke-dashoffset="-74.1" />
+                <!-- DACH: 5.2% -->
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#A855F7" stroke-width="14" stroke-dasharray="5.2 94.8" stroke-dashoffset="-91.2" />
+                <!-- ANZ: 3.6% -->
+                <circle cx="50" cy="50" r="38" fill="transparent" stroke="#EC4899" stroke-width="14" stroke-dasharray="3.6 96.4" stroke-dashoffset="-96.4" />
+              </svg>
+              <!-- Center Metric Tag -->
+              <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+                <span class="font-satoshi text-3xl font-black text-white tracking-tight">108M</span>
+                <span class="font-inter text-[10px] uppercase tracking-wider text-audyora-cyan font-bold">Verified B2B</span>
+              </div>
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-3 mt-6 text-[11px] font-inter text-audyora-muted">
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>NA (38.9%)</span>
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-blue-500"></span>EMEA (35.2%)</span>
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-indigo-500"></span>APAC (17.1%)</span>
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-purple-500"></span>DACH (5.2%)</span>
+              <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-pink-500"></span>ANZ (3.6%)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 9 • Verified Decision-Maker Reach</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 22: CONTACT US
+           ========================================== -->
+      <section data-slide="22" class="media-kit-slide relative bg-audyora-card/60 backdrop-blur-md border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-16 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px]">
+        <div class="flex items-center justify-between border-b border-audyora-border/60 pb-6 mb-8">
+          <div>
+            <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-1">Get In Touch</span>
+            <h2 class="font-satoshi text-3xl sm:text-5xl font-black text-white">Contact Us</h2>
+          </div>
+          <span class="font-satoshi text-sm text-audyora-muted">Slide 22 / 23</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center my-auto">
+          <div class="lg:col-span-6 space-y-6">
+            <h3 class="font-satoshi text-3xl font-extrabold text-white">
+              Let's Build Your Scalable Revenue Engine.
+            </h3>
+            <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed">
+              Contact us for service inquiries, pipeline audits, customized volume quotes, or strategic distribution partnerships.
+            </p>
+            <div class="flex items-center gap-4 text-xs font-satoshi font-bold">
+              <a href="/contact/" class="btn-magnetic px-6 py-3 rounded-full bg-audyora-indigo hover:bg-blue-600 text-white shadow-glow-indigo transition-all">
+                Submit Project Briefing
+              </a>
+              <a href="https://wa.me/18884920198" target="_blank" rel="noopener noreferrer" class="btn-magnetic px-6 py-3 rounded-full bg-emerald-600/90 hover:bg-emerald-600 text-white transition-all flex items-center gap-2">
+                <span>WhatsApp Desk</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-4">
+            <!-- Global Delivery Hub -->
+            <div class="bg-audyora-surface border border-audyora-border rounded-2xl p-6">
+              <div class="flex items-center gap-3 mb-2 text-audyora-cyan">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                <span class="font-satoshi font-bold text-white text-base">Global Operational Hub</span>
+              </div>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                7/5, Ganesh Nagar, Yerwada, Pune – 411006, IN<br />
+                <span class="text-audyora-subtle">North America &amp; EMEA Strategy Coverage</span>
+              </p>
+            </div>
+
+            <!-- Email & Direct Lines -->
+            <div class="bg-audyora-surface border border-audyora-border rounded-2xl p-6">
+              <div class="flex items-center gap-3 mb-2 text-audyora-indigo">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <span class="font-satoshi font-bold text-white text-base">Direct Channels</span>
+              </div>
+              <p class="font-inter text-xs text-audyora-muted leading-relaxed">
+                Email: <a href="mailto:contact@audyora.com" class="text-audyora-cyan hover:underline">contact@audyora.com</a><br />
+                Phone: <span class="text-white">+1 (888) 492-0198</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-audyora-border/60 pt-4 flex items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Media Kit 2026</span>
+          <span>Section 10 • Inquiries &amp; Engagement</span>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           SLIDE 23: THANK YOU SLIDE
+           ========================================== -->
+      <section data-slide="23" class="media-kit-slide relative bg-gradient-to-br from-[#0B0E1B] via-[#090A0F] to-[#0D1226] border border-audyora-border/80 rounded-3xl p-8 sm:p-14 lg:p-20 overflow-hidden shadow-2xl flex flex-col justify-between min-h-[580px] lg:min-h-[680px] text-center">
+        <!-- Glowing Constellation Background -->
+        <div class="absolute inset-0 bg-radial-glow opacity-40 pointer-events-none"></div>
+
+        <div class="relative z-10 flex items-center justify-between border-b border-audyora-border/60 pb-6">
+          <div class="flex items-center gap-2">
+            <span class="font-satoshi font-black text-xl text-white">AUDYORA</span>
+            <span class="w-2 h-2 rounded-full bg-audyora-cyan"></span>
+          </div>
+          <span class="font-satoshi text-xs text-audyora-muted uppercase tracking-widest">End of Presentation</span>
+        </div>
+
+        <div class="relative z-10 my-auto py-12 max-w-2xl mx-auto">
+          <h2 class="font-satoshi text-6xl sm:text-8xl font-black text-white tracking-tight mb-6">
+            THANK YOU
+          </h2>
+          <p class="font-inter text-base sm:text-lg text-audyora-muted leading-relaxed mb-8">
+            Empowering your revenue architecture. Let’s accelerate your pipeline together.
+          </p>
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="/contact/" class="btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-glow-indigo transition-all">
+              Book a Strategy Session
+            </a>
+            <button onclick="window.print()" class="btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-audyora-text hover:text-white bg-audyora-card border border-audyora-border transition-all">
+              Export Presentation as PDF
+            </button>
+          </div>
+        </div>
+
+        <div class="relative z-10 border-t border-audyora-border/60 pt-6 flex flex-wrap items-center justify-between text-xs text-audyora-subtle">
+          <span>Audyora Global Media Solutions Private Ltd</span>
+          <span>© 2026 Audyora • All rights reserved</span>
+        </div>
+      </section>
+
     </main>
 
     <div id="footer-root"></div>
