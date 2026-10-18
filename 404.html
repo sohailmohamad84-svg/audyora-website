@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-audyora-bg text-audyora-text selection:bg-audyora-indigo selection:text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Page Not Found (404) | Audyora</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#090A0F" />
+  </head>
+
+  <body class="bg-audyora-bg text-audyora-text font-inter antialiased overflow-x-hidden min-h-screen flex flex-col justify-between">
+    <div id="nav-root"></div>
+
+    <main class="flex-grow flex items-center justify-center px-6 py-40 relative">
+      <div class="absolute inset-0 bg-radial-glow opacity-30 pointer-events-none"></div>
+
+      <div class="max-w-xl mx-auto text-center relative z-10">
+        <span class="font-satoshi text-8xl font-black text-transparent bg-clip-text bg-gradient-to-r from-audyora-indigo to-audyora-cyan block mb-4">
+          404
+        </span>
+        <h1 class="font-satoshi text-3xl font-extrabold text-white mb-4">
+          Destination Uncharted
+        </h1>
+        <p class="font-inter text-sm sm:text-base text-audyora-muted leading-relaxed mb-8">
+          The requested coordinate does not exist or has been relocated within our strategic architecture.
+        </p>
+        <a href="/" 
+           class="btn-magnetic inline-flex items-center justify-center px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-white bg-gradient-to-r from-audyora-indigo to-audyora-violet hover:shadow-glow-indigo transition-all duration-300">
+          Return to Audyora Home
+        </a>
+      </div>
+    </main>
+
+    <div id="footer-root"></div>
+
+    <script type="module" src="/src/notFound.ts"></script>
+  </body>
+</html>
