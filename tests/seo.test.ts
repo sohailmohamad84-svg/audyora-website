@@ -16,12 +16,12 @@ describe("SEOManager", () => {
     const org = parsed["@graph"].find((item: any) => item["@type"] === "Organization");
     expect(org).toBeDefined();
     expect(org.name).toBe("Audyora");
-    expect(org.url).toBe("https://audyora.com/");
+    expect(org.url).toBe("https://homdo.services/");
     expect(org.review).toBeUndefined(); // Truthfulness verification
     expect(org.aggregateRating).toBeUndefined(); // Truthfulness verification
 
     const webPage = parsed["@graph"].find((item: any) => item["@type"] === "WebPage");
     expect(webPage).toBeDefined();
-    expect(webPage.url).toBe("https://audyora.com/services/");
+    expect(webPage.url).toBe("https://homdo.services/services/");
   });
 });

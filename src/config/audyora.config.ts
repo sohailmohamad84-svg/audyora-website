@@ -7,8 +7,8 @@ export const siteConfig: SiteConfig = {
     "Strategy, creativity and media solutions that help ambitious brands connect with the right audiences and create meaningful impact.",
   description:
     "Audyora is a full-service advertising, marketing, media, and creative solutions company. We unite brand strategy, campaign creativity, and media engineering to build resonant, market-leading brands.",
-  productionDomain: "https://audyora.com/",
-  canonicalUrl: "https://audyora.com/",
+  productionDomain: "https://homdo.services/",
+  canonicalUrl: "https://homdo.services/",
 
   // Central configurable business placeholders (no fabricated real numbers or addresses)
   coordinates: {
