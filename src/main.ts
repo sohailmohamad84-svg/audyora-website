@@ -2,6 +2,7 @@ import { CaseStudyCard } from "./components/CaseStudyCard";
 import { Footer } from "./components/Footer";
 import { HeroCanvas } from "./components/HeroCanvas";
 import { Navbar } from "./components/Navbar";
+import { PipelineCalculator } from "./components/PipelineCalculator";
 import { ServiceCard } from "./components/ServiceCard";
 import { siteConfig } from "./config/audyora.config";
 import { MotionEngine } from "./services/motion/MotionEngine";
@@ -21,7 +22,14 @@ document.addEventListener("DOMContentLoaded", () => {
     new HeroCanvas(canvasElement);
   }
 
-  // 3. Render Service Overview (First 4 on Home with link to full page)
+  // 3. Mount Pipeline ROI Calculator
+  const calcContainer = document.getElementById("pipeline-calc-root");
+  if (calcContainer) {
+    calcContainer.innerHTML = PipelineCalculator.render();
+    PipelineCalculator.init();
+  }
+
+  // 4. Render Service Overview (Top 4 on Home with link to full services page)
   const servicesContainer = document.getElementById("home-services-grid");
   if (servicesContainer) {
     servicesContainer.innerHTML = siteConfig.services
@@ -30,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // 4. Render Why Audyora (Values)
+  // 5. Render Why Audyora (B2B Pillars)
   const valuesContainer = document.getElementById("home-values-grid");
   if (valuesContainer) {
     valuesContainer.innerHTML = siteConfig.values
@@ -55,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // 5. Render Working Process
+  // 6. Render 4-Stage Full-Funnel Pipeline Process
   const processContainer = document.getElementById("home-process-grid");
   if (processContainer) {
     processContainer.innerHTML = siteConfig.processStages
@@ -75,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${stage.description}
           </p>
           <div class="border-t border-audyora-border/60 pt-4">
-            <span class="block font-satoshi text-[10px] font-bold uppercase tracking-wider text-audyora-subtle mb-2">Key Outcomes</span>
+            <span class="block font-satoshi text-[10px] font-bold uppercase tracking-wider text-audyora-subtle mb-2">Deliverables</span>
             <ul class="space-y-1.5">
               ${stage.deliverables
                 .map(
@@ -95,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // 6. Render Creative Showcase preview
+  // 7. Render Creative Pipeline Showcase
   const showcaseContainer = document.getElementById("home-showcase-grid");
   if (showcaseContainer) {
     showcaseContainer.innerHTML = siteConfig.caseStudies
@@ -104,6 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
   }
 
-  // 7. Initialize GSAP Motion & Lenis Scroll Engine
+  // 8. Initialize Motion Engine
   MotionEngine.init();
 });

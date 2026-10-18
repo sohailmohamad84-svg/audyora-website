@@ -1,105 +1,98 @@
 /**
- * Original SVG Icon compositions for Audyora's 8 comprehensive service lines.
- * 100% original, copyright-safe, scalable vector illustrations.
+ * Original SVG Icon compositions for Audyora's 8 B2B Pipeline Architecture disciplines.
+ * 100% original vector illustrations designed for B2B growth engines.
  */
 export class ServiceIcons {
   public static getIcon(serviceId: string, size = 32): string {
     switch (serviceId) {
-      case "brand-strategy":
-        // Compass & Geometric Foundation
+      case "b2b-lead-generation":
+        // Outbound Pipeline & Funnel Conversion
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-indigo">
-            <circle cx="16" cy="16" r="13" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 3" opacity="0.4"/>
-            <circle cx="16" cy="16" r="7" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M16 5V9M16 23V27M5 16H9M23 16H27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <polygon points="16,11 18.5,16 16,21 13.5,16" fill="#38BDF8"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-blue-500">
+            <path d="M4 6H28L19 17V26L13 22V17L4 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="23" cy="23" r="3" fill="#38BDF8"/>
           </svg>
         `;
 
-      case "advertising-creative":
-        // Spark of Creative Energy / Radiant Prism
+      case "account-based-marketing":
+        // Tier-1 Target Account Precision / Crosshairs
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-cyan">
-            <path d="M16 4L19.5 12.5L28 16L19.5 19.5L16 28L12.5 19.5L4 16L12.5 12.5L16 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-            <circle cx="16" cy="16" r="3" fill="#6366F1"/>
-            <path d="M7 7L10 10M25 7L22 10M25 25L22 22M7 25L10 22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-cyan-400">
+            <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.8" stroke-dasharray="2 3"/>
+            <circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="2"/>
+            <circle cx="16" cy="16" r="2.5" fill="#6366F1"/>
+            <path d="M16 2V6M16 26V30M2 16H6M26 16H30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         `;
 
-      case "digital-marketing":
-        // Interconnected Nodes & Funnel Synthesis
+      case "demand-generation":
+        // Multi-Channel Pipeline Engine & Flywheel
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-violet">
-            <rect x="5" y="6" width="22" height="15" rx="3" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M11 26H21M16 21V26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M9 13L14 17L18 11L23 15" stroke="#38BDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="23" cy="15" r="2" fill="#38BDF8"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-indigo-400">
+            <path d="M16 4V10M16 22V28M4 16H10M22 16H28" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M8 8L12 12M20 20L24 24M24 8L20 12M12 20L8 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="16" cy="16" r="4.5" stroke="#38BDF8" stroke-width="2"/>
           </svg>
         `;
 
-      case "social-media":
-        // Resonant Network Orbit & Amplification
+      case "bant-qualification":
+        // Shield of Verified Criteria (Budget, Authority, Need, Timeline)
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-indigo">
-            <circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="2"/>
-            <circle cx="8" cy="9" r="3" fill="#38BDF8"/>
-            <circle cx="24" cy="9" r="3" fill="#8B5CF6"/>
-            <circle cx="16" cy="26" r="3" fill="#6366F1"/>
-            <path d="M10.5 10.5L13.5 13.5M21.5 10.5L18.5 13.5M16 21V23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-blue-400">
+            <path d="M16 4L26 8V16C26 22 21 27 16 29C11 27 6 22 6 16V8L16 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M11 16L14.5 19.5L21 13" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         `;
 
-      case "media-planning":
-        // Precision Radar / Target Attention Matrix
+      case "content-syndication":
+        // Whitepaper / Research Broadcast to Target Buyers
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-cyan">
-            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
-            <circle cx="16" cy="16" r="8" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
-            <circle cx="16" cy="16" r="4" stroke="currentColor" stroke-width="1.8"/>
-            <line x1="16" y1="4" x2="16" y2="28" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-            <line x1="4" y1="16" x2="28" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-            <circle cx="22" cy="10" r="2" fill="#6366F1"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-cyan-400">
+            <rect x="6" y="6" width="14" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 11H16M10 15H16M10 19H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M23 10C25 12 26 14 26 16C26 18 25 20 23 22" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 13C21 14 21.5 15 21.5 16C21.5 17 21 18 20 19" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
           </svg>
         `;
 
-      case "content-production":
-        // Film Shutter & Dynamic 3D Aperture
+      case "email-infrastructure":
+        // Inbound / Outbound Inbox & Deliverability DNS Hardening
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-violet">
-            <rect x="5" y="7" width="22" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/>
-            <circle cx="16" cy="16" r="5" stroke="currentColor" stroke-width="1.5"/>
-            <polygon points="15,14 19,16 15,18" fill="#38BDF8"/>
-            <path d="M9 7L11 11M17 7L19 11M25 7L27 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-indigo-400">
+            <rect x="4" y="7" width="24" height="18" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M4 10L16 18L28 10" stroke="#38BDF8" stroke-width="2" stroke-linejoin="round"/>
+            <circle cx="23" cy="20" r="2.5" fill="#6366F1"/>
           </svg>
         `;
 
-      case "performance-marketing":
-        // Algorithmic Growth Curve & Metric Calibration
+      case "data-cleansing":
+        // Real-Time Contact Verification & Database Hygiene
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-indigo">
-            <path d="M6 26H26" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-            <path d="M6 22L13 15L18 20L26 8" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-blue-500">
+            <ellipse cx="16" cy="8" rx="10" ry="4" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M6 8V16C6 18 10.5 20 16 20C21.5 20 26 18 26 16V8" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M6 16V24C6 26 10.5 28 16 28C21.5 28 26 26 26 24V16" stroke="currentColor" stroke-width="1.8"/>
+            <circle cx="20" cy="22" r="2" fill="#38BDF8"/>
+          </svg>
+        `;
+
+      case "revenue-operations":
+        // RevOps Architecture & Continuous A/B Growth
+        return `
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-cyan-400">
+            <path d="M5 26H27" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M6 22L12 15L17 19L26 8" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
             <polygon points="26,8 21,8 26,13" fill="#38BDF8"/>
-            <circle cx="13" cy="15" r="2" fill="#6366F1"/>
-            <circle cx="18" cy="20" r="2" fill="#8B5CF6"/>
-          </svg>
-        `;
-
-      case "marketing-consulting":
-        // Strategic Chess & Vision Architecture
-        return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-cyan">
-            <path d="M12 26H20M14 22H18M13 14C11 12 11 9 13 7C14.5 5.5 17.5 5.5 19 7C21 9 21 12 19 14L18 18H14L13 14Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-            <line x1="16" y1="10" x2="16" y2="14" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="16" cy="10" r="1.5" fill="#38BDF8"/>
+            <circle cx="12" cy="15" r="2" fill="#6366F1"/>
+            <circle cx="17" cy="19" r="2" fill="#6366F1"/>
           </svg>
         `;
 
       default:
         return `
-          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-audyora-indigo">
-            <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="1.8"/>
-            <path d="M16 11V16L19 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <svg width="${size}" height="${size}" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-blue-500">
+            <circle cx="16" cy="16" r="11" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 11V16L19 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
           </svg>
         `;
     }

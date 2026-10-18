@@ -6,21 +6,21 @@ describe("Audyora Site Configuration", () => {
     expect(siteConfig.companyName).toBe("Audyora");
     expect(siteConfig.productionDomain).toBe("https://homdo.services/");
     expect(siteConfig.canonicalUrl).toBe("https://homdo.services/");
-    expect(siteConfig.tagline).toBe("Make Your Brand Impossible to Ignore.");
+    expect(siteConfig.tagline).toBe("Engineer Pipeline. Accelerate Revenue.");
   });
 
   it("defines all 8 required comprehensive service categories", () => {
     expect(siteConfig.services.length).toBe(8);
 
     const expectedServices = [
-      "Brand Strategy & Identity",
-      "Advertising & Creative Campaigns",
-      "Digital Marketing",
-      "Social Media Marketing & Management",
-      "Media Planning & Buying",
-      "Content Creation & Production",
-      "Performance Marketing & Campaign Optimisation",
-      "Marketing Strategy & Consulting",
+      "B2B Lead Generation",
+      "Account-Based Marketing (ABM)",
+      "Demand Generation",
+      "BANT Qualified Leads",
+      "Content Syndication",
+      "Cold Email & Deliverability Infrastructure",
+      "Data Intelligence & ICP Cleansing",
+      "Pipeline Architecture & RevOps",
     ];
 
     expectedServices.forEach((expectedTitle) => {
