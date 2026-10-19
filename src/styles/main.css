@@ -320,6 +320,19 @@ html:not(.dark) #site-header {
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
 }
 
+/* Service card anchor offset for fixed navbar + sticky discipline jump bar */
+#services-grid > div,
+.service-card-anchor {
+  scroll-margin-top: 190px !important;
+}
+
+/* Light mode styling for the sticky jump bar */
+html:not(.dark) .sticky.top-20 {
+  background-color: rgba(255, 255, 255, 0.88) !important;
+  border-color: rgba(226, 232, 240, 0.9) !important;
+  backdrop-filter: blur(16px);
+}
+
 html:not(.dark) nav[aria-label="Main Navigation"] {
   background-color: #F1F5F9 !important;
   border-color: #E2E8F0 !important;

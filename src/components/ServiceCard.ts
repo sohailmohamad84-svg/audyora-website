@@ -16,7 +16,7 @@ export class ServiceCard {
 
     return `
       <div id="${service.id}" 
-           class="group relative bg-audyora-card hover:bg-audyora-cardHover rounded-3xl p-8 border border-audyora-border hover:border-audyora-borderHover transition-all duration-300 shadow-card flex flex-col justify-between"
+           class="service-card-anchor group relative scroll-mt-48 bg-audyora-card hover:bg-audyora-cardHover rounded-3xl p-8 border border-audyora-border hover:border-audyora-borderHover transition-all duration-300 shadow-card flex flex-col justify-between"
            data-reveal="fade-up">
         <!-- Top category tag & number -->
         <div>

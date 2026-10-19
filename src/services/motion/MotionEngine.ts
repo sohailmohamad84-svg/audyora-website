@@ -133,6 +133,22 @@ export class MotionEngine {
     });
   }
 
+  public static scrollTo(target: string | HTMLElement, offset: number = -190): void {
+    if (this.lenisInstance) {
+      this.lenisInstance.scrollTo(target, { offset, duration: 1.0 });
+    } else {
+      const el = typeof target === "string" ? (document.querySelector(target) as HTMLElement | null) : target;
+      if (el) {
+        const top = el.getBoundingClientRect().top + window.scrollY + offset;
+        window.scrollTo({ top, behavior: "smooth" });
+      }
+    }
+  }
+
+  public static getLenis(): Lenis | null {
+    return this.lenisInstance;
+  }
+
   public static destroy(): void {
     this.lenisInstance?.destroy();
     this.lenisInstance = null;
