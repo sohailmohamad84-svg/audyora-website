@@ -293,17 +293,23 @@ html:not(.dark) {
   color: #0F172A !important;
 }
 
-html:not(.dark) h1,
-html:not(.dark) h2,
-html:not(.dark) h3,
-html:not(.dark) h4,
-html:not(.dark) h5,
-html:not(.dark) h6 {
+html:not(.dark) h1:not(.no-theme-invert *):not([class*="no-theme-invert"] *),
+html:not(.dark) h2:not(.no-theme-invert *):not([class*="no-theme-invert"] *),
+html:not(.dark) h3:not(.no-theme-invert *):not([class*="no-theme-invert"] *),
+html:not(.dark) h4:not(.no-theme-invert *):not([class*="no-theme-invert"] *),
+html:not(.dark) h5:not(.no-theme-invert *):not([class*="no-theme-invert"] *),
+html:not(.dark) h6:not(.no-theme-invert *):not([class*="no-theme-invert"] *) {
   color: #0F172A;
 }
 
-/* Override ANY text-white class (including opacity variants like text-white/90, text-white/80, etc.) outside of buttons */
-html:not(.dark) [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *):not([class*="bg-blue-"]):not([class*="bg-blue-"] *):not([class*="bg-indigo-"]):not([class*="bg-indigo-"] *):not([class*="bg-gradient-"]):not([class*="bg-gradient-"] *):not([class*="bg-emerald-"]):not([class*="bg-emerald-"] *):not([class*="bg-[#25D366]"]):not([class*="bg-[#25D366]"] *):not(.no-theme-invert) {
+/* Explicit rule: White pill buttons must always render deep pitch-dark text in both themes */
+.btn-magnetic.bg-white,
+.btn-magnetic.bg-white span:not(.text-audyora-indigo) {
+  color: #020617 !important;
+}
+
+/* Override ANY text-white class (including opacity variants like text-white/90, text-white/80, etc.) outside of buttons and preserved dark banners */
+html:not(.dark) [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *):not([class*="bg-blue-"]):not([class*="bg-blue-"] *):not([class*="bg-indigo-"]):not([class*="bg-indigo-"] *):not([class*="bg-gradient-"]):not([class*="bg-gradient-"] *):not([class*="bg-emerald-"]):not([class*="bg-emerald-"] *):not([class*="bg-[#25D366]"]):not([class*="bg-[#25D366]"] *):not(.no-theme-invert):not(.no-theme-invert *) {
   color: #0F172A !important;
 }
 
