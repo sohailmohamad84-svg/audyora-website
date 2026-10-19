@@ -99,13 +99,25 @@ html.dark, :root.dark {
 }
 
 /* Media Kit Slide Deck & Print Architecture */
+.media-kit-slide {
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+.media-kit-slide > * {
+  width: 100% !important;
+}
 .deck-mode .media-kit-slide {
-  display: none;
+  display: none !important;
 }
 .deck-mode .media-kit-slide.active-slide {
-  display: flex;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
 }
 #media-kit-main:not(.deck-mode) .media-kit-slide {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
   margin-bottom: 2.5rem;
 }
 

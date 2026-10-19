@@ -2,11 +2,8 @@
 export default {
   content: [
     "./index.html",
-    "./about/**/*.html",
-    "./services/**/*.html",
-    "./work/**/*.html",
-    "./contact/**/*.html",
     "./404.html",
+    "./**/*.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",
   ],
   darkMode: "class",
