@@ -122,33 +122,166 @@ html.dark, :root.dark {
 }
 
 @media print {
-  body {
+  @page {
+    size: A4 landscape;
+    margin: 0.25in;
+  }
+
+  html, body {
     background-color: #090A0F !important;
     color: #F8FAFC !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
-  #nav-root, #footer-root, #whatsapp-root, .no-print {
+
+  #nav-root, #footer-root, #whatsapp-root, .no-print, header, footer, aside {
     display: none !important;
   }
-  main {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+
+  main, #media-kit-main {
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
+
   .media-kit-slide {
     display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
     page-break-after: always !important;
     break-after: page !important;
-    min-height: 100vh !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    height: 98vh !important;
+    max-height: 98vh !important;
+    min-height: 0 !important;
     box-sizing: border-box !important;
-    padding: 2.5rem !important;
+    padding: 1.25rem 2rem !important;
     margin: 0 !important;
-    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 1rem !important;
     background-color: #0E111C !important;
+    overflow: hidden !important;
+    position: relative !important;
   }
-  @page {
-    size: landscape;
-    margin: 0.4in;
+
+  /* Force Desktop Grid Columns in Print (Overcoming Mobile-Default Print Viewport) */
+  .grid-cols-1.lg\:grid-cols-12 {
+    display: grid !important;
+    grid-template-columns: repeat(12, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    gap: 1.25rem !important;
+    align-items: center !important;
+  }
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7 !important;
+  }
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5 !important;
+  }
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4 !important;
+  }
+  .lg\:col-span-8 {
+    grid-column: span 8 / span 8 !important;
+  }
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6 !important;
+  }
+  .sm\:grid-cols-2:not([class*="lg:"]):not([class*="md:"]) {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+  .md\:grid-cols-2:not([class*="lg:"]) {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+  .lg\:grid-cols-3,
+  .md\:grid-cols-3 {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+  .lg\:grid-cols-6 {
+    display: grid !important;
+    grid-template-columns: repeat(6, minmax(0, 1fr)) !important;
+    gap: 0.5rem !important;
+  }
+  .lg\:grid-cols-7 {
+    display: grid !important;
+    grid-template-columns: repeat(7, minmax(0, 1fr)) !important;
+    gap: 0.4rem !important;
+  }
+
+  /* Print Typography & Spacing Optimization */
+  .media-kit-slide h1 {
+    font-size: 2.75rem !important;
+    line-height: 1.08 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .media-kit-slide h2 {
+    font-size: 1.85rem !important;
+    line-height: 1.15 !important;
+  }
+  .media-kit-slide h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+  .media-kit-slide h4 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+  .media-kit-slide p {
+    font-size: 0.75rem !important;
+    line-height: 1.35 !important;
+  }
+  .media-kit-slide .mb-8 {
+    margin-bottom: 0.75rem !important;
+  }
+  .media-kit-slide .mb-6 {
+    margin-bottom: 0.5rem !important;
+  }
+  .media-kit-slide .pb-6 {
+    padding-bottom: 0.5rem !important;
+  }
+  .media-kit-slide .pt-6 {
+    padding-top: 0.5rem !important;
+  }
+  .media-kit-slide .p-8,
+  .media-kit-slide .p-6 {
+    padding: 0.75rem 1rem !important;
+  }
+  .media-kit-slide .p-5,
+  .media-kit-slide .p-4 {
+    padding: 0.5rem 0.75rem !important;
+  }
+  .media-kit-slide .space-y-6 > * + * {
+    margin-top: 0.5rem !important;
+  }
+  .media-kit-slide .space-y-4 > * + * {
+    margin-top: 0.35rem !important;
+  }
+  .media-kit-slide .space-y-3 > * + * {
+    margin-top: 0.25rem !important;
+  }
+  .media-kit-slide .my-auto {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+  }
+  .media-kit-slide svg.w-64,
+  .media-kit-slide svg.w-72 {
+    width: 11rem !important;
+    height: 11rem !important;
+  }
+  .media-kit-slide .w-64,
+  .media-kit-slide .w-72 {
+    width: 12rem !important;
+    height: 12rem !important;
   }
 }
 
