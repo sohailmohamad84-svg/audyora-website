@@ -11,7 +11,7 @@ export class PipelineCalculator {
           <span class="inline-block px-3.5 py-1.5 rounded-full text-xs font-satoshi font-semibold tracking-wider uppercase text-audyora-cyan bg-audyora-cyan/10 border border-audyora-cyan/20 mb-3">
             Interactive Forecast
           </span>
-          <h3 class="font-satoshi text-3xl font-extrabold text-white">
+          <h3 class="font-satoshi text-3xl font-extrabold text-slate-900 dark:text-white">
             B2B Pipeline & ROI Simulator
           </h3>
           <p class="font-inter text-sm text-audyora-muted mt-2">
@@ -28,7 +28,7 @@ export class PipelineCalculator {
                 <label for="calc-acv" class="font-inter text-xs font-medium uppercase tracking-wider text-audyora-muted">
                   Average Deal Size (ACV)
                 </label>
-                <span id="display-acv" class="font-satoshi text-lg font-bold text-white">$25,000</span>
+                <span id="display-acv" class="font-satoshi text-lg font-bold text-slate-900 dark:text-white">$25,000</span>
               </div>
               <input type="range" id="calc-acv" min="10000" max="150000" step="5000" value="25000"
                      class="w-full h-2 bg-audyora-surface rounded-lg appearance-none cursor-pointer accent-audyora-cyan" />
@@ -45,7 +45,7 @@ export class PipelineCalculator {
                 <label for="calc-deals" class="font-inter text-xs font-medium uppercase tracking-wider text-audyora-muted">
                   Desired Monthly Closed Deals
                 </label>
-                <span id="display-deals" class="font-satoshi text-lg font-bold text-white">3 Deals / mo</span>
+                <span id="display-deals" class="font-satoshi text-lg font-bold text-slate-900 dark:text-white">3 Deals / mo</span>
               </div>
               <input type="range" id="calc-deals" min="1" max="15" step="1" value="3"
                      class="w-full h-2 bg-audyora-surface rounded-lg appearance-none cursor-pointer accent-audyora-indigo" />
@@ -84,7 +84,7 @@ export class PipelineCalculator {
             <div class="grid grid-cols-2 gap-4 py-4 border-y border-audyora-border/50 mb-6 text-left">
               <div>
                 <span class="block font-inter text-[11px] text-audyora-subtle">BANT Meetings Needed</span>
-                <span id="result-meetings" class="font-satoshi text-xl font-bold text-white">15 Meetings</span>
+                <span id="result-meetings" class="font-satoshi text-xl font-bold text-slate-900 dark:text-white">15 Meetings</span>
               </div>
               <div>
                 <span class="block font-inter text-[11px] text-audyora-subtle">Estimated ROI Yield</span>

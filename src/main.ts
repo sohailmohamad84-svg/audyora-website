@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="w-10 h-10 rounded-xl bg-audyora-surface border border-audyora-border flex items-center justify-center text-audyora-cyan font-satoshi font-bold text-sm mb-6">
             0${idx + 1}
           </div>
-          <h3 class="font-satoshi text-2xl font-bold text-white mb-2">
+          <h3 class="font-satoshi text-2xl font-bold text-slate-900 dark:text-white mb-2">
             ${val.title}
           </h3>
           <p class="font-inter text-xs text-audyora-cyan mb-4 font-medium">
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="font-satoshi text-4xl font-black text-audyora-border block mb-4">
             ${stage.number}
           </span>
-          <h3 class="font-satoshi text-xl font-bold text-white mb-1">
+          <h3 class="font-satoshi text-xl font-bold text-slate-900 dark:text-white mb-1">
             ${stage.name}
           </h3>
           <span class="font-inter text-xs text-audyora-cyan font-medium block mb-4">
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
               ${stage.deliverables
                 .map(
                   (d) => `
-                <li class="font-inter text-xs text-white/80 flex items-center gap-2">
+                <li class="font-inter text-xs text-slate-800 dark:text-white/80 flex items-center gap-2">
                   <span class="w-1 h-1 rounded-full bg-audyora-indigo"></span>
                   <span>${d}</span>
                 </li>

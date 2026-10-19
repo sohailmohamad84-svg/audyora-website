@@ -22,14 +22,14 @@ export class Navbar {
           <a href="${link.href}" 
              class="relative px-4 py-2 font-inter text-sm font-medium transition-colors duration-200 group ${
                isActive
-                 ? "text-white"
-                 : "text-audyora-muted hover:text-white"
+                 ? "text-slate-900 dark:text-white"
+                 : "text-audyora-muted hover:text-slate-900 dark:hover:text-white"
              }">
             ${link.name}
             ${
               isActive
                 ? `<span class="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-audyora-indigo to-audyora-cyan rounded-full"></span>`
-                : `<span class="absolute bottom-0 left-4 right-4 h-0.5 bg-white/0 group-hover:bg-white/40 transition-all rounded-full scale-x-0 group-hover:scale-x-100"></span>`
+                : `<span class="absolute bottom-0 left-4 right-4 h-0.5 bg-slate-900/0 dark:bg-white/0 group-hover:bg-slate-900/40 dark:group-hover:bg-white/40 transition-all rounded-full scale-x-0 group-hover:scale-x-100"></span>`
             }
           </a>
         `;
@@ -43,8 +43,8 @@ export class Navbar {
           (link.href !== "/" && activeRoute.startsWith(link.href));
         return `
           <a href="${link.href}" 
-             class="flex items-center justify-between py-4 text-2xl font-satoshi font-bold border-b border-white/5 transition-colors ${
-               isActive ? "text-audyora-cyan" : "text-white hover:text-audyora-cyan"
+             class="flex items-center justify-between py-4 text-2xl font-satoshi font-bold border-b border-audyora-border/40 transition-colors ${
+               isActive ? "text-audyora-cyan" : "text-slate-900 dark:text-white hover:text-audyora-cyan"
              }">
             <span>${link.name}</span>
             <span class="text-sm font-inter font-normal text-audyora-muted">→</span>
@@ -91,13 +91,13 @@ export class Navbar {
             </button>
             <button id="mobile-menu-btn" 
                     type="button"
-                    class="flex flex-col justify-center items-center w-10 h-10 rounded-lg text-white hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-audyora-indigo"
+                    class="flex flex-col justify-center items-center w-10 h-10 rounded-lg text-slate-900 dark:text-white hover:bg-slate-200/50 dark:hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-audyora-indigo"
                     aria-expanded="false" 
                     aria-controls="mobile-menu" 
                     aria-label="Toggle navigation menu">
-              <span class="w-6 h-0.5 bg-white transition-transform duration-300 mb-1.5" id="hamburger-line-1"></span>
-              <span class="w-6 h-0.5 bg-white transition-opacity duration-300 mb-1.5" id="hamburger-line-2"></span>
-              <span class="w-6 h-0.5 bg-white transition-transform duration-300" id="hamburger-line-3"></span>
+              <span class="w-6 h-0.5 bg-slate-900 dark:bg-white transition-transform duration-300 mb-1.5" id="hamburger-line-1"></span>
+              <span class="w-6 h-0.5 bg-slate-900 dark:bg-white transition-opacity duration-300 mb-1.5" id="hamburger-line-2"></span>
+              <span class="w-6 h-0.5 bg-slate-900 dark:bg-white transition-transform duration-300" id="hamburger-line-3"></span>
             </button>
           </div>
         </div>

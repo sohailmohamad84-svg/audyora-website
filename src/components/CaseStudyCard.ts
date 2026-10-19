@@ -38,7 +38,7 @@ export class CaseStudyCard {
         <div class="p-8 flex flex-col justify-between flex-grow">
           <div>
             <span class="block font-inter text-xs text-audyora-subtle mb-1">Scope: ${item.scope}</span>
-            <h3 class="font-satoshi text-2xl font-bold text-white mb-3 group-hover:text-audyora-cyan transition-colors">
+            <h3 class="font-satoshi text-2xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-audyora-cyan transition-colors">
               ${item.title}
             </h3>
 
@@ -52,7 +52,7 @@ export class CaseStudyCard {
 
               <div>
                 <span class="font-satoshi text-[11px] font-bold uppercase tracking-wider text-audyora-indigo block mb-1">Strategic Architecture</span>
-                <p class="font-inter text-xs text-white/90 leading-relaxed">
+                <p class="font-inter text-xs text-slate-800 dark:text-white/90 leading-relaxed">
                   ${item.conceptApproach}
                 </p>
               </div>

@@ -17,7 +17,7 @@ export class Footer {
       .join("");
 
     return `
-      <footer class="bg-audyora-darkNavy border-t border-audyora-border pt-20 pb-12 text-white relative overflow-hidden">
+      <footer class="bg-audyora-darkNavy border-t border-audyora-border pt-20 pb-12 text-slate-800 dark:text-white relative overflow-hidden">
         <!-- Ambient radial glow -->
         <div class="absolute bottom-0 right-0 w-[35rem] h-[35rem] bg-audyora-indigo/5 rounded-full blur-[140px] pointer-events-none"></div>
 
@@ -34,7 +34,7 @@ export class Footer {
               <div class="space-y-2 pt-2">
                 <div class="flex items-center gap-3 text-xs font-inter text-audyora-subtle">
                   <span class="w-2 h-2 rounded-full bg-audyora-cyan"></span>
-                  <span>Direct Inquiries: <a href="mailto:${siteConfig.coordinates.emailPlaceholder}" class="text-audyora-muted hover:text-white underline underline-offset-4">${siteConfig.coordinates.emailPlaceholder}</a></span>
+                  <span>Direct Inquiries: <a href="mailto:${siteConfig.coordinates.emailPlaceholder}" class="text-audyora-muted hover:text-slate-900 dark:hover:text-white underline underline-offset-4">${siteConfig.coordinates.emailPlaceholder}</a></span>
                 </div>
                 <div class="flex items-center gap-3 text-xs font-inter text-audyora-subtle">
                   <span class="w-2 h-2 rounded-full bg-audyora-indigo"></span>
@@ -45,24 +45,24 @@ export class Footer {
 
             <!-- Navigation Links -->
             <div class="space-y-4">
-              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-white">
+              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Platform & Solutions
               </h4>
               <ul class="space-y-2.5">
-                <li><a href="/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Home</a></li>
-                <li><a href="/about/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">About Us</a></li>
-                <li><a href="/services/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">B2B Services</a></li>
-                <li><a href="/industries/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Industries Served</a></li>
-                <li><a href="/methodology/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Pipeline Methodology</a></li>
-                <li><a href="/media-kit/" class="text-sm font-inter text-audyora-cyan hover:text-white transition-colors font-semibold">Official Media Kit</a></li>
-                <li><a href="/work/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Pipeline Showcase</a></li>
-                <li><a href="/contact/" class="text-sm font-inter text-audyora-muted hover:text-white transition-colors">Book Pipeline Audit</a></li>
+                <li><a href="/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Home</a></li>
+                <li><a href="/about/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">About Us</a></li>
+                <li><a href="/services/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">B2B Services</a></li>
+                <li><a href="/industries/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Industries Served</a></li>
+                <li><a href="/methodology/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Pipeline Methodology</a></li>
+                <li><a href="/media-kit/" class="text-sm font-inter text-audyora-cyan hover:text-audyora-indigo transition-colors font-semibold">Official Media Kit</a></li>
+                <li><a href="/work/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Pipeline Showcase</a></li>
+                <li><a href="/contact/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Book Pipeline Audit</a></li>
               </ul>
             </div>
 
             <!-- Capabilities (Services) -->
             <div class="lg:col-span-1 space-y-4">
-              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-white">
+              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Core Disciplines
               </h4>
               <ul class="space-y-2.5">
@@ -72,7 +72,7 @@ export class Footer {
 
             <!-- Operations & Socials -->
             <div class="space-y-4">
-              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-white">
+              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Global Network
               </h4>
               <p class="font-inter text-xs text-audyora-muted leading-relaxed">
@@ -112,9 +112,9 @@ export class Footer {
               © 2026 ${siteConfig.companyName}. All rights reserved. Registered B2B Pipeline Architecture &amp; Growth Engine.
             </div>
             <div class="flex items-center gap-6">
-              <a href="/privacy/" class="hover:text-white transition-colors">Privacy &amp; Data Governance</a>
-              <a href="/terms/" class="hover:text-white transition-colors">Terms of Commercial Engagement</a>
-              <a href="/sitemap.xml" class="hover:text-white transition-colors">Sitemap</a>
+              <a href="/privacy/" class="hover:text-slate-900 dark:hover:text-white transition-colors">Privacy &amp; Data Governance</a>
+              <a href="/terms/" class="hover:text-slate-900 dark:hover:text-white transition-colors">Terms of Commercial Engagement</a>
+              <a href="/sitemap.xml" class="hover:text-slate-900 dark:hover:text-white transition-colors">Sitemap</a>
             </div>
           </div>
         </div>
