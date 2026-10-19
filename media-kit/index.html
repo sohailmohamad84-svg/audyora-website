@@ -33,28 +33,28 @@
         <!-- Mode & Jump Controls -->
         <div class="flex items-center gap-3">
           <div class="inline-flex p-1 bg-audyora-card rounded-xl border border-audyora-border text-xs font-satoshi font-bold">
-            <button id="view-mode-deck" class="px-3.5 py-1.5 rounded-lg bg-audyora-indigo text-white transition-all">
+            <button id="view-mode-deck" class="px-3.5 py-1.5 rounded-lg bg-audyora-indigo text-white transition-all cursor-pointer">
               Interactive Deck (16:9)
             </button>
-            <button id="view-mode-doc" class="px-3.5 py-1.5 rounded-lg text-audyora-muted hover:text-white transition-all">
+            <button id="view-mode-doc" class="px-3.5 py-1.5 rounded-lg text-slate-700 dark:text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-all cursor-pointer">
               Document View
             </button>
           </div>
 
           <!-- Slide Navigator (Deck Mode) -->
           <div id="deck-nav-controls" class="flex items-center gap-2">
-            <button id="slide-prev-btn" title="Previous Slide (Left Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/40 text-white flex items-center justify-center transition-all">
+            <button id="slide-prev-btn" title="Previous Slide (Left Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/50 text-slate-800 dark:text-white hover:text-audyora-cyan flex items-center justify-center transition-all cursor-pointer shadow-sm">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
             </button>
-            <span id="slide-indicator" class="font-satoshi text-xs font-bold text-white px-2">
+            <span id="slide-indicator" class="font-satoshi text-xs font-bold text-slate-800 dark:text-white px-2 select-none">
               Slide 01 / 23
             </span>
-            <button id="slide-next-btn" title="Next Slide (Right Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/40 text-white flex items-center justify-center transition-all">
+            <button id="slide-next-btn" title="Next Slide (Right Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/50 text-slate-800 dark:text-white hover:text-audyora-cyan flex items-center justify-center transition-all cursor-pointer shadow-sm">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </button>
 
             <!-- Quick Slide Selector -->
-            <select id="slide-select" class="bg-audyora-card text-white text-xs border border-audyora-border rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-audyora-cyan cursor-pointer hidden sm:block">
+            <select id="slide-select" class="bg-audyora-card text-slate-800 dark:text-white text-xs border border-audyora-border rounded-lg px-2.5 py-1.5 focus:outline-none focus:border-audyora-cyan cursor-pointer hidden sm:block">
               <option value="1">01. Cover Slide</option>
               <option value="2">02. Table of Contents</option>
               <option value="3">03. Who We Are</option>
@@ -91,7 +91,7 @@
             <span>Print / Save as PDF</span>
           </button>
           <a href="/contact/?brief=Media%20Kit%20Sponsorship" 
-             class="btn-magnetic px-4 py-2 rounded-xl font-satoshi font-bold text-xs text-audyora-text hover:text-white bg-audyora-card border border-audyora-border transition-all">
+             class="btn-magnetic px-4 py-2 rounded-xl font-satoshi font-bold text-xs text-slate-800 dark:text-audyora-text hover:text-slate-950 dark:hover:text-white bg-audyora-card border border-audyora-border transition-all">
             Schedule Briefing
           </a>
         </div>
@@ -1533,7 +1533,7 @@
             <a href="/contact/" class="btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-glow-indigo transition-all">
               Book a Strategy Session
             </a>
-            <button onclick="window.print()" class="no-print btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-audyora-text hover:text-white bg-audyora-card border border-audyora-border transition-all">
+            <button onclick="window.print()" class="no-print btn-magnetic px-8 py-3.5 rounded-full font-satoshi font-bold text-sm text-slate-800 dark:text-audyora-text hover:text-slate-950 dark:hover:text-white bg-audyora-card border border-audyora-border transition-all cursor-pointer">
               Export Presentation as PDF
             </button>
           </div>

@@ -333,6 +333,39 @@ html:not(.dark) .sticky.top-20 {
   backdrop-filter: blur(16px);
 }
 
+/* Presentation toolbar controls in Light Mode */
+html:not(.dark) #slide-prev-btn,
+html:not(.dark) #slide-next-btn {
+  background-color: #FFFFFF !important;
+  border-color: #CBD5E1 !important;
+  color: #0F172A !important;
+}
+
+html:not(.dark) #slide-prev-btn svg,
+html:not(.dark) #slide-next-btn svg {
+  stroke: #0F172A !important;
+}
+
+html:not(.dark) #slide-prev-btn:hover,
+html:not(.dark) #slide-next-btn:hover {
+  border-color: #0284C7 !important;
+}
+
+html:not(.dark) #slide-prev-btn:hover svg,
+html:not(.dark) #slide-next-btn:hover svg {
+  stroke: #0284C7 !important;
+}
+
+html:not(.dark) #slide-indicator {
+  color: #0F172A !important;
+}
+
+html:not(.dark) #slide-select {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+  border-color: #CBD5E1 !important;
+}
+
 html:not(.dark) nav[aria-label="Main Navigation"] {
   background-color: #F1F5F9 !important;
   border-color: #E2E8F0 !important;

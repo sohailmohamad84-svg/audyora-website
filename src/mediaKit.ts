@@ -90,9 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
     viewDeckBtn.addEventListener("click", () => {
       mainContainer.classList.add("deck-mode");
       viewDeckBtn.classList.add("bg-audyora-indigo", "text-white");
-      viewDeckBtn.classList.remove("text-audyora-muted");
+      viewDeckBtn.classList.remove("text-slate-700", "dark:text-audyora-muted");
       viewDocBtn.classList.remove("bg-audyora-indigo", "text-white");
-      viewDocBtn.classList.add("text-audyora-muted");
+      viewDocBtn.classList.add("text-slate-700", "dark:text-audyora-muted");
       if (deckControls) deckControls.style.display = "flex";
       goToSlide(currentSlide);
     });
@@ -100,9 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
     viewDocBtn.addEventListener("click", () => {
       mainContainer.classList.remove("deck-mode");
       viewDocBtn.classList.add("bg-audyora-indigo", "text-white");
-      viewDocBtn.classList.remove("text-audyora-muted");
+      viewDocBtn.classList.remove("text-slate-700", "dark:text-audyora-muted");
       viewDeckBtn.classList.remove("bg-audyora-indigo", "text-white");
-      viewDeckBtn.classList.add("text-audyora-muted");
+      viewDeckBtn.classList.add("text-slate-700", "dark:text-audyora-muted");
       if (deckControls) deckControls.style.display = "none";
       // In document view, all slides are visible with margin
       slides.forEach((slide) => slide.classList.add("active-slide"));
