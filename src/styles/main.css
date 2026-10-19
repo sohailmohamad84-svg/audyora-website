@@ -323,7 +323,7 @@ html:not(.dark) #site-header {
 /* Service card anchor offset for fixed navbar + sticky discipline jump bar */
 #services-grid > div,
 .service-card-anchor {
-  scroll-margin-top: 190px !important;
+  scroll-margin-top: 160px;
 }
 
 /* Light mode styling for the sticky jump bar */

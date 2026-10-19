@@ -46,10 +46,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const scrollToHash = (hash: string) => {
     const target = document.querySelector(hash) as HTMLElement | null;
     if (target) {
-      MotionEngine.scrollTo(target, -190);
+      const stickyNav = document.getElementById("disciplines-nav");
+      const stickyHeight = stickyNav ? stickyNav.offsetHeight : 60;
+      const navbarHeight = 80;
+      const buffer = 16;
+
+      const elementTop = target.getBoundingClientRect().top + window.scrollY;
+      const targetScrollY = Math.max(0, Math.round(elementTop - (navbarHeight + stickyHeight + buffer)));
+
+      MotionEngine.scrollTo(targetScrollY);
       setActivePill(hash);
 
-      // Subtle pulse highlight on the target card
+      // Subtle pulse highlight on the target card so the user immediately identifies the selected tile
       target.classList.add("ring-2", "ring-audyora-cyan", "shadow-glow-indigo");
       setTimeout(() => {
         target.classList.remove("ring-2", "ring-audyora-cyan", "shadow-glow-indigo");
@@ -57,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Wire up jump link clicks with offset to clear sticky bar + navbar
+  // Wire up jump link clicks with exact pixel position to dock right below sticky bar
   disciplinePills.forEach((pill) => {
     pill.addEventListener("click", (e) => {
       const hash = pill.getAttribute("href");
@@ -69,10 +77,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // ScrollSpy to keep discipline pills synchronized as the user scrolls naturally
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            if (id) {
+              setActivePill(`#${id}`);
+            }
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "-20% 0px -60% 0px",
+        threshold: 0,
+      }
+    );
+
+    document.querySelectorAll("#services-grid > div").forEach((card) => {
+      observer.observe(card);
+    });
+  }
+
   // Smooth scroll to anchor if hash is present on initial load
   if (window.location.hash) {
     setTimeout(() => {
       scrollToHash(window.location.hash);
-    }, 250);
+    }, 300);
   }
 });

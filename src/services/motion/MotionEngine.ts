@@ -133,14 +133,22 @@ export class MotionEngine {
     });
   }
 
-  public static scrollTo(target: string | HTMLElement, offset: number = -190): void {
+  public static scrollTo(target: string | HTMLElement | number, offset: number = 0): void {
     if (this.lenisInstance) {
-      this.lenisInstance.scrollTo(target, { offset, duration: 1.0 });
+      if (typeof target === "number") {
+        this.lenisInstance.scrollTo(target, { duration: 0.85 });
+      } else {
+        this.lenisInstance.scrollTo(target, { offset, duration: 0.85 });
+      }
     } else {
-      const el = typeof target === "string" ? (document.querySelector(target) as HTMLElement | null) : target;
-      if (el) {
-        const top = el.getBoundingClientRect().top + window.scrollY + offset;
-        window.scrollTo({ top, behavior: "smooth" });
+      if (typeof target === "number") {
+        window.scrollTo({ top: target, behavior: "smooth" });
+      } else {
+        const el = typeof target === "string" ? (document.querySelector(target) as HTMLElement | null) : target;
+        if (el) {
+          const top = el.getBoundingClientRect().top + window.scrollY + offset;
+          window.scrollTo({ top, behavior: "smooth" });
+        }
       }
     }
   }
