@@ -32,7 +32,7 @@ export class ServiceCard {
           <h3 class="font-satoshi text-2xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-audyora-cyan transition-colors">
             ${service.title}
           </h3>
-          <p class="font-inter text-xs font-medium text-audyora-cyan/90 mb-4">
+          <p class="font-inter text-xs font-semibold text-audyora-cyan mb-4">
             ${service.tagline}
           </p>
 

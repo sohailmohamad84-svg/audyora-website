@@ -70,7 +70,6 @@ export class Navbar {
           <div class="hidden md:flex items-center gap-3">
             <button type="button" 
                     class="theme-toggle-btn w-9 h-9 rounded-full bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/40 flex items-center justify-center transition-all cursor-pointer shadow-sm text-audyora-text"
-                    title="Toggle Dark / Light Theme"
                     aria-label="Toggle theme">
             </button>
             <a href="/contact/" 
@@ -86,7 +85,6 @@ export class Navbar {
           <div class="flex items-center gap-2 md:hidden">
             <button type="button" 
                     class="theme-toggle-btn w-9 h-9 rounded-lg bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/40 flex items-center justify-center transition-all cursor-pointer text-audyora-text"
-                    title="Toggle Dark / Light Theme"
                     aria-label="Toggle theme">
             </button>
             <button id="mobile-menu-btn" 

@@ -75,7 +75,6 @@ export class ThemeManager {
     const buttons = document.querySelectorAll<HTMLButtonElement>(".theme-toggle-btn");
     buttons.forEach((btn) => {
       btn.setAttribute("aria-label", `Switch to ${theme === "dark" ? "light" : "dark"} theme`);
-      btn.title = `Switch to ${theme === "dark" ? "light" : "dark"} theme`;
 
       if (theme === "dark") {
         // Show Sun icon (to indicate clicking will switch to Light)

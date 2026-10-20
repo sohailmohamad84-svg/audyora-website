@@ -20,20 +20,20 @@
 }
 
 html.dark, :root.dark {
-  /* DARK THEME (Signature Dark Premium - WCAG AAA Compliant) */
-  --audyora-bg: #090A0F;
-  --audyora-surface: #0E1017;
-  --audyora-card: #12141F;
-  --audyora-card-hover: #181B2A;
-  --audyora-border: rgba(255, 255, 255, 0.08);
-  --audyora-border-hover: rgba(99, 102, 241, 0.3);
+  /* DARK THEME (Sophisticated Midnight Slate - Softer & Lighter) */
+  --audyora-bg: #0D131F;
+  --audyora-surface: #131B2E;
+  --audyora-card: #1A243B;
+  --audyora-card-hover: #222F4C;
+  --audyora-border: rgba(255, 255, 255, 0.11);
+  --audyora-border-hover: rgba(99, 102, 241, 0.45);
   --audyora-text: #F8FAFC;
   --audyora-muted: #CBD5E1;
   --audyora-subtle: #94A3B8;
   --audyora-indigo: #6366F1;
   --audyora-cyan: #38BDF8;
   --audyora-violet: #8B5CF6;
-  --audyora-dark-navy: #06070B;
+  --audyora-dark-navy: #090E17;
 }
 
 @layer base {
@@ -74,10 +74,10 @@ html.dark, :root.dark {
     width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #090A0F;
+    background: #0D131F;
   }
   ::-webkit-scrollbar-thumb {
-    background: #1E2235;
+    background: #222F4C;
     border-radius: 4px;
   }
   ::-webkit-scrollbar-thumb:hover {

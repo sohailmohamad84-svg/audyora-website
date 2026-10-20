@@ -88,7 +88,7 @@ export class PipelineCalculator {
               </div>
               <div>
                 <span class="block font-inter text-[11px] text-audyora-subtle">Estimated ROI Yield</span>
-                <span id="result-roi" class="font-satoshi text-xl font-bold text-emerald-400">4.8x ROI</span>
+                <span id="result-roi" class="font-satoshi text-xl font-bold text-emerald-600 dark:text-emerald-400">4.8x ROI</span>
               </div>
             </div>
 

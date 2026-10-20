@@ -45,9 +45,9 @@ export class Footer {
 
             <!-- Navigation Links -->
             <div class="space-y-4">
-              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+              <h3 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Platform & Solutions
-              </h4>
+              </h3>
               <ul class="space-y-2.5">
                 <li><a href="/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Home</a></li>
                 <li><a href="/about/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">About Us</a></li>
@@ -62,9 +62,9 @@ export class Footer {
 
             <!-- Capabilities (Services) -->
             <div class="lg:col-span-1 space-y-4">
-              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+              <h3 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Core Disciplines
-              </h4>
+              </h3>
               <ul class="space-y-2.5">
                 ${servicesListHtml}
               </ul>
@@ -72,9 +72,9 @@ export class Footer {
 
             <!-- Operations & Socials -->
             <div class="space-y-4">
-              <h4 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
+              <h3 class="font-satoshi text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white">
                 Global Network
-              </h4>
+              </h3>
               <p class="font-inter text-xs text-audyora-muted leading-relaxed">
                 ${siteConfig.coordinates.addressPlaceholder}
               </p>

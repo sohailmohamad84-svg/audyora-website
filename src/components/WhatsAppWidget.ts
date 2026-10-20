@@ -14,7 +14,7 @@ export class WhatsAppWidget {
         <a href="${whatsappUrl}" 
            target="_blank" 
            rel="noopener noreferrer"
-           class="flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-2xl hover:shadow-[#25D366]/40 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#25D366] focus:ring-offset-2 focus:ring-offset-audyora-bg"
+           class="flex items-center gap-3 bg-[#047857] hover:bg-[#065F46] text-white p-3.5 sm:px-4 sm:py-3 rounded-full shadow-2xl hover:shadow-[#047857]/40 transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#047857] focus:ring-offset-2 focus:ring-offset-audyora-bg"
            aria-label="Direct WhatsApp Chat with Pipeline Architect">
           <!-- WhatsApp Official SVG Icon -->
           <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
