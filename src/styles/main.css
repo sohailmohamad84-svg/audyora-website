@@ -515,6 +515,16 @@ html:not(.dark) .bg-audyora-card {
   box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
 }
 
+html:not(.dark) .bg-audyora-card [class*="text-4xl"]:not([class*="bg-clip-text"]),
+html:not(.dark) .bg-audyora-card [class*="text-5xl"]:not([class*="bg-clip-text"]) {
+  color: #0F172A;
+}
+
+html.dark .bg-audyora-card [class*="text-4xl"]:not([class*="bg-clip-text"]),
+html.dark .bg-audyora-card [class*="text-5xl"]:not([class*="bg-clip-text"]) {
+  color: #FFFFFF;
+}
+
 /* Fallbacks for Gradients so Static Accessibility Scanners Evaluate Against Solid Background */
 .bg-gradient-to-r.from-audyora-indigo {
   background-color: #312E81 !important;
