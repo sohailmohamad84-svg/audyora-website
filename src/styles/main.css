@@ -698,3 +698,15 @@ html:not(.dark) .audyora-gradient-text {
     -webkit-text-fill-color: transparent;
   }
 }
+
+/* Stable Symmetrical Button Interaction (Replaces erratic cursor-following drift) */
+.btn-magnetic {
+  transform-origin: center center;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease, filter 0.25s ease;
+}
+.btn-magnetic:hover {
+  transform: scale(1.015);
+}
+.btn-magnetic:active {
+  transform: scale(0.985);
+}

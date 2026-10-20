@@ -108,32 +108,8 @@ export class MotionEngine {
   }
 
   private static initMagneticButtons(): void {
-    if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) {
-      return; // Touch devices do not need magnetic cursor physics
-    }
-    const magneticButtons = document.querySelectorAll<HTMLElement>(".btn-magnetic");
-    magneticButtons.forEach((btn) => {
-      btn.addEventListener("mousemove", (e: MouseEvent) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        gsap.to(btn, {
-          x: x * 0.25,
-          y: y * 0.25,
-          duration: 0.3,
-          ease: "power2.out",
-        });
-      });
-
-      btn.addEventListener("mouseleave", () => {
-        gsap.to(btn, {
-          x: 0,
-          y: 0,
-          duration: 0.5,
-          ease: "elastic.out(1, 0.4)",
-        });
-      });
-    });
+    // Disabled asymmetrical magnetic cursor drift.
+    // Buttons now use stable, symmetrical CSS micro-interactions only.
   }
 
   public static scrollTo(target: string | HTMLElement | number, offset: number = 0): void {
