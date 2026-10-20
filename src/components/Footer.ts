@@ -22,7 +22,7 @@ export class Footer {
         <div class="absolute bottom-0 right-0 w-[35rem] h-[35rem] bg-audyora-indigo/5 rounded-full blur-[140px] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-6 relative z-10">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-audyora-border/60">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 pb-16 border-b border-audyora-border">
             <!-- Brand Column -->
             <div class="lg:col-span-2 space-y-6">
               <a href="/" aria-label="Audyora Home">
@@ -49,14 +49,14 @@ export class Footer {
                 Platform & Solutions
               </h3>
               <ul class="space-y-2.5">
-                <li><a href="/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Home</a></li>
+                <li><a href="/#hero" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Home</a></li>
                 <li><a href="/about/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">About Us</a></li>
                 <li><a href="/services/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">B2B Services</a></li>
                 <li><a href="/industries/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Industries Served</a></li>
                 <li><a href="/methodology/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Pipeline Methodology</a></li>
                 <li><a href="/media-kit/" class="text-sm font-inter text-audyora-cyan hover:text-audyora-indigo transition-colors font-semibold">Official Media Kit</a></li>
                 <li><a href="/work/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Pipeline Showcase</a></li>
-                <li><a href="/contact/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Book Pipeline Audit</a></li>
+                <li><a href="/contact/?source=footer" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Book Pipeline Audit</a></li>
               </ul>
             </div>
 

@@ -4,7 +4,7 @@ import { AudyoraLogo } from "./AudyoraLogo";
 export class Navbar {
   public static render(activeRoute = "/"): string {
     const navLinks = [
-      { name: "Home", href: "/" },
+      { name: "Home", href: "/#hero" },
       { name: "About", href: "/about/" },
       { name: "Services", href: "/services/" },
       { name: "Industries", href: "/industries/" },
@@ -17,7 +17,8 @@ export class Navbar {
       .map((link) => {
         const isActive =
           activeRoute === link.href ||
-          (link.href !== "/" && activeRoute.startsWith(link.href));
+          (link.href === "/#hero" && activeRoute === "/") ||
+          (link.href !== "/#hero" && link.href !== "/" && activeRoute.startsWith(link.href));
         return `
           <a href="${link.href}" 
              class="relative px-4 py-2 font-inter text-sm font-medium transition-colors duration-200 group ${
@@ -40,7 +41,8 @@ export class Navbar {
       .map((link) => {
         const isActive =
           activeRoute === link.href ||
-          (link.href !== "/" && activeRoute.startsWith(link.href));
+          (link.href === "/#hero" && activeRoute === "/") ||
+          (link.href !== "/#hero" && link.href !== "/" && activeRoute.startsWith(link.href));
         return `
           <a href="${link.href}" 
              class="flex items-center justify-between py-4 text-2xl font-satoshi font-bold border-b border-audyora-border/40 transition-colors ${
@@ -54,7 +56,7 @@ export class Navbar {
       .join("");
 
     return `
-      <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-audyora-bg/80 backdrop-blur-xl border-b border-audyora-border">
+      <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-audyora-bg backdrop-blur-xl border-b border-audyora-border">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <!-- Logo -->
           <a href="/" class="focus:outline-none focus-visible:ring-2 focus-visible:ring-audyora-indigo rounded-lg" aria-label="Audyora Home">
@@ -62,7 +64,7 @@ export class Navbar {
           </a>
 
           <!-- Desktop Navigation -->
-          <nav class="hidden md:flex items-center gap-1 bg-audyora-card/60 px-3 py-1.5 rounded-full border border-audyora-border/80 shadow-inner" aria-label="Main Navigation">
+          <nav class="hidden md:flex items-center gap-1 bg-audyora-surface px-3 py-1.5 rounded-full border border-audyora-border shadow-inner" aria-label="Main Navigation">
             ${desktopLinksHtml}
           </nav>
 
@@ -72,7 +74,7 @@ export class Navbar {
                     class="theme-toggle-btn w-9 h-9 rounded-full bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/40 flex items-center justify-center transition-all cursor-pointer shadow-sm text-audyora-text"
                     aria-label="Toggle theme">
             </button>
-            <a href="/contact/" 
+            <a href="/contact/?source=nav" 
                class="btn-magnetic relative inline-flex items-center justify-center px-6 py-2.5 rounded-full font-satoshi text-sm font-bold text-white bg-gradient-to-r from-audyora-indigo to-audyora-violet hover:shadow-glow-indigo transition-all duration-300">
               <span>Let's Talk</span>
               <svg class="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
@@ -100,16 +102,16 @@ export class Navbar {
           </div>
         </div>
 
-        <!-- Mobile Drawer -->
+        <!-- Mobile Drawer (hidden when closed for assistive tech & crawlers) -->
         <div id="mobile-menu" 
-             class="fixed inset-x-0 top-20 bottom-0 bg-audyora-bg/95 backdrop-blur-2xl px-6 py-8 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40 border-t border-audyora-border"
+             class="hidden fixed inset-x-0 top-20 bottom-0 bg-audyora-bg backdrop-blur-2xl px-6 py-8 flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40 border-t border-audyora-border"
              aria-hidden="true">
           <nav class="flex flex-col space-y-2">
             ${mobileLinksHtml}
           </nav>
 
           <div class="pt-8 pb-12 flex flex-col gap-4">
-            <a href="/contact/" 
+            <a href="/contact/?source=mobile-nav" 
                class="w-full py-4 text-center rounded-full font-satoshi font-bold text-white bg-gradient-to-r from-audyora-indigo to-audyora-violet shadow-glow-indigo">
               Let's Talk
             </a>
@@ -147,8 +149,12 @@ export class Navbar {
       menu.setAttribute("aria-hidden", String(!isOpen));
 
       if (isOpen) {
-        menu.classList.remove("translate-x-full");
-        menu.classList.add("translate-x-0");
+        menu.classList.remove("hidden");
+        menu.classList.add("flex");
+        requestAnimationFrame(() => {
+          menu.classList.remove("translate-x-full");
+          menu.classList.add("translate-x-0");
+        });
         document.body.style.overflow = "hidden";
         if (line1 && line2 && line3) {
           line1.style.transform = "translateY(8px) rotate(45deg)";
@@ -164,6 +170,12 @@ export class Navbar {
           line2.style.opacity = "1";
           line3.style.transform = "none";
         }
+        setTimeout(() => {
+          if (!isOpen) {
+            menu.classList.remove("flex");
+            menu.classList.add("hidden");
+          }
+        }, 300);
       }
     };
 

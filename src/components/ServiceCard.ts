@@ -38,8 +38,8 @@ export class ServiceCard {
 
           <!-- Problem & Value -->
           <div class="space-y-3.5 mb-6">
-            <div class="bg-audyora-surface/70 rounded-xl p-3.5 border border-audyora-border/40">
-              <span class="block font-satoshi text-[11px] font-bold uppercase tracking-wider text-audyora-subtle mb-1">
+            <div class="bg-audyora-surface rounded-xl p-3.5 border border-audyora-border">
+              <span class="block font-satoshi text-xs font-bold uppercase tracking-wider text-audyora-subtle mb-1">
                 The Business Challenge
               </span>
               <p class="font-inter text-xs text-audyora-muted leading-relaxed">
@@ -47,11 +47,11 @@ export class ServiceCard {
               </p>
             </div>
 
-            <div class="bg-audyora-surface/70 rounded-xl p-3.5 border border-audyora-border/40">
-              <span class="block font-satoshi text-[11px] font-bold uppercase tracking-wider text-audyora-indigo mb-1">
+            <div class="bg-audyora-surface rounded-xl p-3.5 border border-audyora-border">
+              <span class="block font-satoshi text-xs font-bold uppercase tracking-wider text-audyora-indigo mb-1">
                 The Strategic Solution
               </span>
-              <p class="font-inter text-xs text-slate-800 dark:text-white/90 leading-relaxed">
+              <p class="font-inter text-xs text-slate-800 dark:text-white leading-relaxed">
                 ${service.clientValue}
               </p>
             </div>
@@ -64,7 +64,7 @@ export class ServiceCard {
         </div>
 
         <!-- Action CTA -->
-        <div class="pt-4 border-t border-audyora-border/50 flex items-center justify-between">
+        <div class="pt-4 border-t border-audyora-border flex items-center justify-between">
           <a href="/contact/?service=${encodeURIComponent(service.title)}" 
              class="inline-flex items-center gap-2 font-satoshi text-xs font-bold text-slate-900 dark:text-white hover:text-audyora-cyan transition-colors">
             <span>${service.ctaText}</span>

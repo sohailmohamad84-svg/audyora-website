@@ -1,3 +1,12 @@
+function withOpacity(variableName) {
+  return ({ opacityValue }) => {
+    if (opacityValue !== undefined) {
+      return `rgba(var(${variableName}-rgb), ${opacityValue})`;
+    }
+    return `var(${variableName})`;
+  };
+}
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -11,19 +20,19 @@ export default {
     extend: {
       colors: {
         audyora: {
-          bg: "var(--audyora-bg)",
-          surface: "var(--audyora-surface)",
-          card: "var(--audyora-card)",
-          cardHover: "var(--audyora-card-hover)",
+          bg: withOpacity("--audyora-bg"),
+          surface: withOpacity("--audyora-surface"),
+          card: withOpacity("--audyora-card"),
+          cardHover: withOpacity("--audyora-card-hover"),
           border: "var(--audyora-border)",
           borderHover: "var(--audyora-border-hover)",
-          text: "var(--audyora-text)",
-          muted: "var(--audyora-muted)",
-          subtle: "var(--audyora-subtle)",
-          indigo: "var(--audyora-indigo)",
-          cyan: "var(--audyora-cyan)",
-          violet: "var(--audyora-violet)",
-          darkNavy: "var(--audyora-dark-navy)",
+          text: withOpacity("--audyora-text"),
+          muted: withOpacity("--audyora-muted"),
+          subtle: withOpacity("--audyora-subtle"),
+          indigo: withOpacity("--audyora-indigo"),
+          cyan: withOpacity("--audyora-cyan"),
+          violet: withOpacity("--audyora-violet"),
+          darkNavy: withOpacity("--audyora-dark-navy"),
         },
       },
       fontFamily: {

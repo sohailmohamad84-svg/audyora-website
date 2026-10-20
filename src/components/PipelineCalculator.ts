@@ -6,7 +6,7 @@
 export class PipelineCalculator {
   public static render(): string {
     return `
-      <div class="relative bg-audyora-card/95 rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-2xl backdrop-blur-xl">
+      <div class="relative bg-audyora-card rounded-3xl p-8 sm:p-12 border border-audyora-border shadow-2xl backdrop-blur-xl">
         <div class="mb-8">
           <span class="inline-block px-3.5 py-1.5 rounded-full text-xs font-satoshi font-semibold tracking-wider uppercase text-audyora-cyan bg-audyora-cyan/10 border border-audyora-cyan/20 mb-3">
             Interactive Forecast
@@ -32,7 +32,7 @@ export class PipelineCalculator {
               </div>
               <input type="range" id="calc-acv" min="10000" max="150000" step="5000" value="25000"
                      class="w-full h-2 bg-audyora-surface rounded-lg appearance-none cursor-pointer accent-audyora-cyan" />
-              <div class="flex justify-between text-[11px] font-inter text-audyora-subtle mt-1">
+              <div class="flex justify-between text-xs font-inter text-audyora-subtle mt-1">
                 <span>$10k</span>
                 <span>$75k</span>
                 <span>$150k+</span>
@@ -49,7 +49,7 @@ export class PipelineCalculator {
               </div>
               <input type="range" id="calc-deals" min="1" max="15" step="1" value="3"
                      class="w-full h-2 bg-audyora-surface rounded-lg appearance-none cursor-pointer accent-audyora-indigo" />
-              <div class="flex justify-between text-[11px] font-inter text-audyora-subtle mt-1">
+              <div class="flex justify-between text-xs font-inter text-audyora-subtle mt-1">
                 <span>1 Deal</span>
                 <span>8 Deals</span>
                 <span>15 Deals</span>
@@ -61,7 +61,7 @@ export class PipelineCalculator {
               <label for="calc-industry" class="block font-inter text-xs font-medium uppercase tracking-wider text-audyora-muted mb-2">
                 Target Sector / Vertical
               </label>
-              <select id="calc-industry" class="w-full px-4 py-3 rounded-xl bg-audyora-surface border border-audyora-border text-white text-sm focus:outline-none focus:border-audyora-cyan transition-colors">
+              <select id="calc-industry" class="w-full px-4 py-3 rounded-xl bg-audyora-surface border border-audyora-border text-slate-900 dark:text-white text-sm focus:outline-none focus:border-audyora-cyan transition-colors">
                 <option value="cybersecurity">Cybersecurity & SecOps (High Win Rate / High ACV)</option>
                 <option value="saas" selected>B2B SaaS & Cloud Tech (Velocity Outbound)</option>
                 <option value="enterprise-it">Enterprise IT & Cloud Infrastructure</option>
@@ -71,7 +71,7 @@ export class PipelineCalculator {
           </div>
 
           <!-- Right Calculation Results Card -->
-          <div class="lg:col-span-5 bg-audyora-surface rounded-2xl p-6 sm:p-8 border border-audyora-border/80 text-center relative overflow-hidden">
+          <div class="lg:col-span-5 bg-audyora-surface rounded-2xl p-6 sm:p-8 border border-audyora-border text-center relative overflow-hidden">
             <div class="absolute -right-12 -top-12 w-36 h-36 bg-audyora-cyan/10 rounded-full blur-2xl pointer-events-none"></div>
 
             <span class="block font-inter text-xs text-audyora-subtle uppercase tracking-wider mb-1">
@@ -81,14 +81,14 @@ export class PipelineCalculator {
               $375,000
             </div>
 
-            <div class="grid grid-cols-2 gap-4 py-4 border-y border-audyora-border/50 mb-6 text-left">
+            <div class="grid grid-cols-2 gap-4 py-4 border-y border-audyora-border mb-6 text-left">
               <div>
-                <span class="block font-inter text-[11px] text-audyora-subtle">BANT Meetings Needed</span>
+                <span class="block font-inter text-xs text-audyora-subtle">BANT Meetings Needed</span>
                 <span id="result-meetings" class="font-satoshi text-xl font-bold text-slate-900 dark:text-white">15 Meetings</span>
               </div>
               <div>
-                <span class="block font-inter text-[11px] text-audyora-subtle">Estimated ROI Yield</span>
-                <span id="result-roi" class="font-satoshi text-xl font-bold text-emerald-600 dark:text-emerald-400">4.8x ROI</span>
+                <span class="block font-inter text-xs text-audyora-subtle">Estimated ROI Yield</span>
+                <span id="result-roi" class="font-satoshi text-xl font-bold text-emerald-700 dark:text-emerald-400">4.8x ROI</span>
               </div>
             </div>
 

@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     processContainer.innerHTML = siteConfig.processStages
       .map(
         (stage) => `
-        <div class="relative bg-audyora-card/60 backdrop-blur-md rounded-3xl p-8 border border-audyora-border hover:border-audyora-indigo/40 transition-all duration-300 stagger-item">
+        <div class="relative bg-audyora-card rounded-3xl p-8 border border-audyora-border hover:border-audyora-indigo/40 transition-all duration-300 shadow-card stagger-item">
           <span class="font-satoshi text-4xl font-black text-audyora-border block mb-4">
             ${stage.number}
           </span>
@@ -87,13 +87,13 @@ document.addEventListener("DOMContentLoaded", () => {
           <p class="font-inter text-xs text-audyora-muted leading-relaxed mb-6">
             ${stage.description}
           </p>
-          <div class="border-t border-audyora-border/60 pt-4">
-            <span class="block font-satoshi text-[10px] font-bold uppercase tracking-wider text-audyora-muted mb-2">Deliverables</span>
+          <div class="border-t border-audyora-border pt-4">
+            <span class="block font-satoshi text-xs font-bold uppercase tracking-wider text-audyora-muted mb-2">Deliverables</span>
             <ul class="space-y-1.5">
               ${stage.deliverables
                 .map(
                   (d) => `
-                <li class="font-inter text-xs text-slate-800 dark:text-white/80 flex items-center gap-2">
+                <li class="font-inter text-xs text-slate-800 dark:text-white flex items-center gap-2">
                   <span class="w-1 h-1 rounded-full bg-audyora-indigo"></span>
                   <span>${d}</span>
                 </li>

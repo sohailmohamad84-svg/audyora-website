@@ -21,14 +21,14 @@ export class CaseStudyCard {
 
           <!-- Conceptual Flag Badge -->
           <div class="absolute top-4 left-4 z-10">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-satoshi font-bold uppercase tracking-wider bg-black/60 backdrop-blur-md text-audyora-cyan border border-white/10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-satoshi font-bold uppercase tracking-wider bg-black/70 backdrop-blur-md text-audyora-cyan border border-white/20">
               <span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan animate-pulse"></span>
               Conceptual Showcase
             </span>
           </div>
 
           <div class="absolute bottom-4 right-4 z-10">
-            <span class="px-2.5 py-1 rounded-md text-[11px] font-inter font-medium bg-audyora-card/80 backdrop-blur-md text-audyora-muted border border-white/5">
+            <span class="px-2.5 py-1 rounded-md text-xs font-inter font-medium bg-audyora-card text-audyora-muted border border-audyora-border shadow-sm">
               ${item.category}
             </span>
           </div>
@@ -44,15 +44,15 @@ export class CaseStudyCard {
 
             <div class="space-y-3 mb-6">
               <div>
-                <span class="font-satoshi text-[11px] font-bold uppercase tracking-wider text-audyora-subtle block mb-1">Conceptual Challenge</span>
+                <span class="font-satoshi text-xs font-bold uppercase tracking-wider text-audyora-subtle block mb-1">Conceptual Challenge</span>
                 <p class="font-inter text-xs text-audyora-muted leading-relaxed">
                   ${item.challenge}
                 </p>
               </div>
 
               <div>
-                <span class="font-satoshi text-[11px] font-bold uppercase tracking-wider text-audyora-indigo block mb-1">Strategic Architecture</span>
-                <p class="font-inter text-xs text-slate-800 dark:text-white/90 leading-relaxed">
+                <span class="font-satoshi text-xs font-bold uppercase tracking-wider text-audyora-indigo block mb-1">Strategic Architecture</span>
+                <p class="font-inter text-xs text-slate-800 dark:text-white leading-relaxed">
                   ${item.conceptApproach}
                 </p>
               </div>
@@ -60,8 +60,8 @@ export class CaseStudyCard {
           </div>
 
           <!-- Purpose note -->
-          <div class="pt-4 border-t border-audyora-border/50 flex items-center justify-between">
-            <span class="font-inter text-[11px] text-audyora-subtle italic">
+          <div class="pt-4 border-t border-audyora-border flex items-center justify-between">
+            <span class="font-inter text-xs text-audyora-subtle italic">
               Built as a demonstration of creative methodology.
             </span>
             <a href="/contact/?brief=${encodeURIComponent(item.title)}" 

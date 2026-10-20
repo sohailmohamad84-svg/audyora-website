@@ -8,7 +8,7 @@ export class AudyoraLogo {
    */
   public static renderSymbol(size = 36, className = "text-audyora-indigo"): string {
     return `
-      <svg width="${size}" height="${size}" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="${className} shrink-0" aria-hidden="true">
+      <svg width="${size}" height="${size}" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="${className} shrink-0" aria-hidden="true" focusable="false">
         <defs>
           <linearGradient id="audyora-sym-grad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#6366F1" />
@@ -44,7 +44,7 @@ export class AudyoraLogo {
             AUDYORA
             <span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan ml-1 inline-block animate-pulse"></span>
           </span>
-          <span class="font-inter text-[9px] font-semibold uppercase tracking-[0.28em] text-audyora-muted mt-0.5">
+          <span class="font-inter text-xs font-semibold uppercase tracking-[0.24em] text-audyora-muted mt-0.5">
             Creative & Media
           </span>
         </div>
