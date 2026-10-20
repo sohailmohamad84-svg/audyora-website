@@ -623,13 +623,17 @@ html:not(.dark) .text-audyora-subtle {
   color: #475569 !important;
 }
 
-html:not(.dark) .text-audyora-cyan,
-html:not(.dark) [class*="text-audyora-cyan"] {
+html:not(.dark) .text-audyora-cyan {
+  color: #0369A1 !important;
+}
+html:not(.dark) .hover\:text-audyora-cyan:hover {
   color: #0369A1 !important;
 }
 
-html:not(.dark) .text-audyora-indigo,
-html:not(.dark) [class*="text-audyora-indigo"] {
+html:not(.dark) .text-audyora-indigo {
+  color: #4338CA !important;
+}
+html:not(.dark) .hover\:text-audyora-indigo:hover {
   color: #4338CA !important;
 }
 

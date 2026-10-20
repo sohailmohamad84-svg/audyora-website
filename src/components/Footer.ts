@@ -8,7 +8,7 @@ export class Footer {
         (service) => `
           <li>
             <a href="/services/#${service.id}" 
-               class="text-sm font-inter text-audyora-muted hover:text-audyora-cyan transition-colors duration-200">
+               class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">
               ${service.title}
             </a>
           </li>
@@ -54,7 +54,7 @@ export class Footer {
                 <li><a href="/services/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">B2B Services</a></li>
                 <li><a href="/industries/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Industries Served</a></li>
                 <li><a href="/methodology/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Pipeline Methodology</a></li>
-                <li><a href="/media-kit/" class="text-sm font-inter text-audyora-cyan hover:text-audyora-indigo transition-colors font-semibold">Official Media Kit</a></li>
+                <li><a href="/media-kit/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Official Media Kit</a></li>
                 <li><a href="/work/" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Pipeline Showcase</a></li>
                 <li><a href="/contact/?source=footer" class="text-sm font-inter text-audyora-muted hover:text-slate-900 dark:hover:text-white transition-colors">Book Pipeline Audit</a></li>
               </ul>
