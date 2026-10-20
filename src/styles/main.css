@@ -710,3 +710,32 @@ html:not(.dark) .audyora-gradient-text {
 .btn-magnetic:active {
   transform: scale(0.985);
 }
+
+/* Continuous Seamless Infinite Moving Banner (Partners Marquee) */
+@keyframes audyoraMarquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.audyora-marquee-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: audyoraMarquee 40s linear infinite;
+}
+
+.audyora-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audyora-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
