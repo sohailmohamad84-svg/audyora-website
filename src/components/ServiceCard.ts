@@ -68,7 +68,7 @@ export class ServiceCard {
           <a href="/contact/?service=${encodeURIComponent(service.title)}" 
              class="inline-flex items-center gap-2 font-satoshi text-xs font-bold text-slate-900 dark:text-white hover:text-audyora-cyan transition-colors">
             <span>${service.ctaText}</span>
-            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none">
+            <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
               <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </a>

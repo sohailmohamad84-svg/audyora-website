@@ -22,6 +22,12 @@
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#090A0F" />
+    <!-- Google Fonts & Fontshare Preconnect (High-Performance Parallel Load) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap" />
   </head>
 
   <body class="bg-audyora-bg text-audyora-text font-inter antialiased overflow-x-hidden min-h-screen">
@@ -44,13 +50,13 @@
           <!-- Slide Navigator (Deck Mode) -->
           <div id="deck-nav-controls" class="flex items-center gap-2">
             <button id="slide-prev-btn" title="Previous Slide (Left Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/50 text-slate-800 dark:text-white hover:text-audyora-cyan flex items-center justify-center transition-all cursor-pointer shadow-sm">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
             </button>
             <span id="slide-indicator" class="font-satoshi text-xs font-bold text-slate-800 dark:text-white px-2 select-none">
               Slide 01 / 23
             </span>
             <button id="slide-next-btn" title="Next Slide (Right Arrow)" class="w-8 h-8 rounded-lg bg-audyora-card border border-audyora-border hover:border-audyora-cyan/50 text-slate-800 dark:text-white hover:text-audyora-cyan flex items-center justify-center transition-all cursor-pointer shadow-sm">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </button>
 
             <!-- Quick Slide Selector -->
@@ -87,7 +93,7 @@
           <button id="print-media-kit-btn" 
                   type="button"
                   class="btn-magnetic px-4 py-2 rounded-xl font-satoshi font-bold text-xs text-white bg-blue-600 hover:bg-blue-700 shadow-glow-indigo transition-all flex items-center gap-2 cursor-pointer">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
             <span>Print / Save as PDF</span>
           </button>
           <a href="/contact/?brief=Media%20Kit%20Sponsorship" 
@@ -110,7 +116,7 @@
         
         <!-- Abstract Flowing Wave SVG -->
         <div class="absolute inset-0 opacity-25 pointer-events-none flex items-center justify-center">
-          <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none">
+          <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none" aria-hidden="true" focusable="false">
             <path d="M-100 300 C 200 100, 400 500, 700 250 C 1000 50, 1100 450, 1300 300" stroke="url(#paint0_linear)" stroke-width="2.5" stroke-dasharray="6 6" />
             <path d="M-100 350 C 180 150, 420 520, 720 280 C 1020 80, 1120 480, 1300 350" stroke="url(#paint1_linear)" stroke-width="2" />
             <path d="M-100 400 C 160 200, 440 540, 740 310 C 1040 110, 1140 510, 1300 400" stroke="#00F5D4" stroke-width="1.2" stroke-opacity="0.6" />
@@ -302,7 +308,7 @@
               From search engine optimization (SEO) and email deliverability to qualified B2B appointment setting and content syndication, we seamlessly integrate cutting-edge strategies and innovative solutions to propel your enterprise forward in today's fiercely competitive landscape.
             </p>
             <div class="p-4 rounded-2xl bg-audyora-surface border border-audyora-border/60 text-xs font-inter text-audyora-cyan flex items-center gap-3">
-              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <svg class="w-5 h-5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
               <span>Trust Audyora to elevate your brand, amplify your message, and exceed your commercial targets with mathematical precision and disciplined execution.</span>
             </div>
           </div>
@@ -311,7 +317,7 @@
           <div class="lg:col-span-5">
             <div class="bg-gradient-to-br from-audyora-surface to-audyora-card border border-audyora-border rounded-3xl p-8 relative overflow-hidden">
               <div class="w-12 h-12 rounded-2xl bg-audyora-indigo/20 border border-audyora-indigo/40 flex items-center justify-center text-audyora-cyan mb-6">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
               </div>
               <h3 class="font-satoshi text-xl font-bold text-white mb-2">The Strategic Growth Mandate</h3>
               <p class="font-inter text-xs text-audyora-muted mb-6 leading-relaxed">
@@ -374,7 +380,7 @@
             <div class="bg-audyora-surface border border-audyora-border hover:border-blue-500/50 rounded-2xl p-6 transition-all shadow-card flex flex-col justify-between">
               <div>
                 <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
                 </div>
                 <span class="font-satoshi text-xs font-bold text-blue-400 uppercase tracking-widest block mb-1">Stage 01</span>
                 <h4 class="font-satoshi text-xl font-bold text-white mb-3">CREATE</h4>
@@ -393,7 +399,7 @@
             <div class="bg-audyora-surface border border-audyora-border hover:border-audyora-cyan/50 rounded-2xl p-6 transition-all shadow-card flex flex-col justify-between">
               <div>
                 <div class="w-10 h-10 rounded-xl bg-audyora-cyan/10 border border-audyora-cyan/30 flex items-center justify-center text-audyora-cyan mb-4">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
                 </div>
                 <span class="font-satoshi text-xs font-bold text-audyora-cyan uppercase tracking-widest block mb-1">Stage 02</span>
                 <h4 class="font-satoshi text-xl font-bold text-white mb-3">DISTRIBUTE</h4>
@@ -412,7 +418,7 @@
             <div class="bg-audyora-surface border border-audyora-border hover:border-audyora-indigo/50 rounded-2xl p-6 transition-all shadow-card flex flex-col justify-between">
               <div>
                 <div class="w-10 h-10 rounded-xl bg-audyora-indigo/10 border border-audyora-indigo/30 flex items-center justify-center text-audyora-indigo mb-4">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
                 </div>
                 <span class="font-satoshi text-xs font-bold text-audyora-indigo uppercase tracking-widest block mb-1">Stage 03</span>
                 <h4 class="font-satoshi text-xl font-bold text-white mb-3">ANALYZE</h4>
@@ -451,7 +457,7 @@
           <!-- MISSION -->
           <div class="bg-gradient-to-br from-audyora-surface to-audyora-card border border-audyora-border hover:border-audyora-cyan/40 rounded-3xl p-8 sm:p-10 transition-all shadow-xl relative overflow-hidden">
             <div class="w-12 h-12 rounded-2xl bg-audyora-cyan/10 border border-audyora-cyan/30 flex items-center justify-center text-audyora-cyan mb-6">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
             </div>
             <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-cyan block mb-2">Immediate Mandate</span>
             <h3 class="font-satoshi text-3xl font-extrabold text-white mb-4">Our Mission</h3>
@@ -466,7 +472,7 @@
           <!-- VISION -->
           <div class="bg-gradient-to-br from-audyora-surface to-audyora-card border border-audyora-border hover:border-audyora-indigo/40 rounded-3xl p-8 sm:p-10 transition-all shadow-xl relative overflow-hidden">
             <div class="w-12 h-12 rounded-2xl bg-audyora-indigo/10 border border-audyora-indigo/30 flex items-center justify-center text-audyora-indigo mb-6">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
             </div>
             <span class="font-satoshi text-xs font-bold uppercase tracking-widest text-audyora-indigo block mb-2">Long-Term Horizon</span>
             <h3 class="font-satoshi text-3xl font-extrabold text-white mb-4">Our Vision</h3>
@@ -506,7 +512,7 @@
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
               <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-audyora-cyan">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
               </div>
               <h4 class="font-satoshi text-sm font-bold text-white mb-1">Cloud &amp; DevOps</h4>
               <span class="font-inter text-[11px] text-audyora-muted block">Virtualization &amp; Hyperscalers</span>
@@ -514,7 +520,7 @@
 
             <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
               <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-audyora-indigo">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
               </div>
               <h4 class="font-satoshi text-sm font-bold text-white mb-1">Cybersecurity</h4>
               <span class="font-inter text-[11px] text-audyora-muted block">Threat Intel &amp; SOC Defense</span>
@@ -522,7 +528,7 @@
 
             <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
               <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-blue-400">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
               </div>
               <h4 class="font-satoshi text-sm font-bold text-white mb-1">Data &amp; Analytics</h4>
               <span class="font-inter text-[11px] text-audyora-muted block">Self-Service AI &amp; BI</span>
@@ -530,7 +536,7 @@
 
             <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
               <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-emerald-400">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
               </div>
               <h4 class="font-satoshi text-sm font-bold text-white mb-1">Interconnection</h4>
               <span class="font-inter text-[11px] text-audyora-muted block">Internet Exchanges &amp; IX</span>
@@ -538,7 +544,7 @@
 
             <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
               <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-amber-400">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
               </div>
               <h4 class="font-satoshi text-sm font-bold text-white mb-1">Open Source / OS</h4>
               <span class="font-inter text-[11px] text-audyora-muted block">Enterprise Linux &amp; K8s</span>
@@ -546,7 +552,7 @@
 
             <div class="bg-audyora-surface border border-audyora-border/80 rounded-2xl p-5 text-center hover:border-audyora-cyan/40 transition-all">
               <div class="w-10 h-10 rounded-xl bg-audyora-card border border-audyora-border flex items-center justify-center mx-auto mb-3 text-purple-400">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
               </div>
               <h4 class="font-satoshi text-sm font-bold text-white mb-1">Supply Chain SaaS</h4>
               <span class="font-inter text-[11px] text-audyora-muted block">Enterprise Labeling &amp; ERP</span>
@@ -563,7 +569,7 @@
             </div>
             <a href="/work/" class="text-xs font-satoshi font-bold text-audyora-cyan hover:underline flex items-center gap-1.5 flex-shrink-0">
               <span>View Conceptual Case Models</span>
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
           </div>
         </div>
@@ -1410,7 +1416,7 @@
           <!-- Interactive SVG Donut Visualization -->
           <div class="lg:col-span-6 flex flex-col items-center justify-center p-6 bg-audyora-surface rounded-3xl border border-audyora-border">
             <div class="relative w-64 h-64 sm:w-72 sm:h-72">
-              <svg viewBox="0 0 100 100" class="w-full h-full transform -rotate-90">
+              <svg viewBox="0 0 100 100" class="w-full h-full transform -rotate-90" aria-hidden="true" focusable="false">
                 <!-- North America: 38.9% (stroke-dasharray: 38.9, 61.1) -->
                 <circle cx="50" cy="50" r="38" fill="transparent" stroke="#22D3EE" stroke-width="14" stroke-dasharray="38.9 61.1" stroke-dashoffset="0" />
                 <!-- EMEA: 35.2% -->
@@ -1478,7 +1484,7 @@
             <!-- Global Delivery Hub -->
             <div class="bg-audyora-surface border border-audyora-border rounded-2xl p-6">
               <div class="flex items-center gap-3 mb-2 text-audyora-cyan">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                 <span class="font-satoshi font-bold text-white text-base">Global Operational Hub</span>
               </div>
               <p class="font-inter text-xs text-audyora-muted leading-relaxed">
@@ -1490,7 +1496,7 @@
             <!-- Email & Direct Lines -->
             <div class="bg-audyora-surface border border-audyora-border rounded-2xl p-6">
               <div class="flex items-center gap-3 mb-2 text-audyora-indigo">
-                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 <span class="font-satoshi font-bold text-white text-base">Direct Channels</span>
               </div>
               <p class="font-inter text-xs text-audyora-muted leading-relaxed">

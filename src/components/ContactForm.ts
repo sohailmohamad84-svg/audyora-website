@@ -129,11 +129,11 @@ export class ContactForm {
                     type="submit" 
                     class="btn-magnetic w-full py-4 rounded-full font-satoshi font-bold text-base text-white bg-gradient-to-r from-audyora-indigo via-audyora-violet to-audyora-cyan hover:shadow-glow-indigo transition-all duration-300 flex items-center justify-center gap-2 group">
               <span id="btn-text">Submit Strategic Brief</span>
-              <svg id="btn-spinner" class="w-5 h-5 animate-spin hidden text-white" viewBox="0 0 24 24" fill="none">
+              <svg id="btn-spinner" class="w-5 h-5 animate-spin hidden text-white" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
                 <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                 <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
               </svg>
-              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none">
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
                 <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
@@ -255,7 +255,7 @@ export class ContactForm {
             modalIcon.className =
               "w-12 h-12 rounded-full mb-6 flex items-center justify-center bg-emerald-500/10 border border-emerald-500/30 text-emerald-400";
             modalIcon.innerHTML = `
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
               </svg>
             `;
@@ -264,7 +264,7 @@ export class ContactForm {
             modalIcon.className =
               "w-12 h-12 rounded-full mb-6 flex items-center justify-center bg-rose-500/10 border border-rose-500/30 text-rose-400";
             modalIcon.innerHTML = `
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
             `;

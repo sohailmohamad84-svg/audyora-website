@@ -62,8 +62,21 @@ export class HeroCanvas {
     );
     observer.observe(this.canvas);
 
+    // Visibility change listener to stop animation in background tabs
+    document.addEventListener("visibilitychange", () => {
+      this.isVisible = !document.hidden;
+      if (this.isVisible && !this.animationFrameId) {
+        this.animate();
+      }
+    });
+
     this.createParticles();
-    this.animate();
+    // Defer initial animation frame to ensure main thread FCP is unblocked
+    if (typeof requestIdleCallback !== "undefined") {
+      requestIdleCallback(() => this.animate());
+    } else {
+      setTimeout(() => this.animate(), 120);
+    }
   }
 
   private resize(): void {
@@ -72,7 +85,8 @@ export class HeroCanvas {
 
     this.width = parent.clientWidth;
     this.height = parent.clientHeight || 600;
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const isMobile = window.innerWidth < 768 || window.matchMedia("(pointer: coarse)").matches;
+    const dpr = isMobile ? 1 : Math.min(window.devicePixelRatio || 1, 2);
 
     this.canvas.width = this.width * dpr;
     this.canvas.height = this.height * dpr;
@@ -82,7 +96,9 @@ export class HeroCanvas {
 
   private createParticles(): void {
     this.particles = [];
-    const particleCount = Math.floor(Math.min(this.width / 18, 55));
+    const isMobile = window.innerWidth < 768 || window.matchMedia("(pointer: coarse)").matches;
+    const maxParticles = isMobile ? 14 : 50;
+    const particleCount = Math.floor(Math.min(this.width / 24, maxParticles));
     const colors = ["#6366F1", "#38BDF8", "#8B5CF6", "#A855F7"];
 
     for (let i = 0; i < particleCount; i++) {

@@ -108,6 +108,9 @@ export class MotionEngine {
   }
 
   private static initMagneticButtons(): void {
+    if (typeof window !== "undefined" && window.matchMedia("(pointer: coarse)").matches) {
+      return; // Touch devices do not need magnetic cursor physics
+    }
     const magneticButtons = document.querySelectorAll<HTMLElement>(".btn-magnetic");
     magneticButtons.forEach((btn) => {
       btn.addEventListener("mousemove", (e: MouseEvent) => {

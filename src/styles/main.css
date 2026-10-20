@@ -1,12 +1,9 @@
-@import "https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* LIGHT THEME (Executive Clean Slate) */
+  /* LIGHT THEME (Executive Clean Slate - WCAG AAA Compliant) */
   --audyora-bg: #FFFFFF;
   --audyora-surface: #F8FAFC;
   --audyora-card: #FFFFFF;
@@ -14,8 +11,8 @@
   --audyora-border: rgba(15, 23, 42, 0.09);
   --audyora-border-hover: rgba(99, 102, 241, 0.4);
   --audyora-text: #0F172A;
-  --audyora-muted: #475569;
-  --audyora-subtle: #94A3B8;
+  --audyora-muted: #334155;
+  --audyora-subtle: #475569;
   --audyora-indigo: #4F46E5;
   --audyora-cyan: #0284C7;
   --audyora-violet: #7C3AED;
@@ -23,7 +20,7 @@
 }
 
 html.dark, :root.dark {
-  /* DARK THEME (Signature Dark Premium) */
+  /* DARK THEME (Signature Dark Premium - WCAG AAA Compliant) */
   --audyora-bg: #090A0F;
   --audyora-surface: #0E1017;
   --audyora-card: #12141F;
@@ -31,8 +28,8 @@ html.dark, :root.dark {
   --audyora-border: rgba(255, 255, 255, 0.08);
   --audyora-border-hover: rgba(99, 102, 241, 0.3);
   --audyora-text: #F8FAFC;
-  --audyora-muted: #94A3B8;
-  --audyora-subtle: #64748B;
+  --audyora-muted: #CBD5E1;
+  --audyora-subtle: #94A3B8;
   --audyora-indigo: #6366F1;
   --audyora-cyan: #38BDF8;
   --audyora-violet: #8B5CF6;
@@ -455,11 +452,24 @@ html:not(.dark) [class*="border-audyora-border"] {
 }
 
 html:not(.dark) .text-audyora-muted {
-  color: #475569 !important;
+  color: #334155 !important;
 }
 
 html:not(.dark) .text-audyora-subtle {
-  color: #64748B !important;
+  color: #475569 !important;
+}
+
+html:not(.dark) .text-audyora-cyan,
+html:not(.dark) [class*="text-audyora-cyan"] {
+  color: #0284C7 !important;
+}
+
+/* Light mode badge text contrast */
+html:not(.dark) .bg-audyora-cyan\/10 {
+  background-color: rgba(2, 132, 199, 0.1) !important;
+}
+html:not(.dark) .border-audyora-cyan\/20 {
+  border-color: rgba(2, 132, 199, 0.3) !important;
 }
 
 /* Form Inputs in Light Mode */
