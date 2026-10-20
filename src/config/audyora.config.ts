@@ -7,8 +7,8 @@ export const siteConfig: SiteConfig = {
     "We don't just generate leads. We build predictable, scalable B2B revenue engines for the world's most ambitious IT, Cybersecurity, and SaaS companies across North America and Europe.",
   description:
     "Audyora is a specialized B2B pipeline architecture and growth agency. We engineer custom outbound infrastructure, ABM campaigns, BANT-qualified prospect meetings, and high-deliverability email systems.",
-  productionDomain: "https://homdo.services/",
-  canonicalUrl: "https://homdo.services/",
+  productionDomain: "https://www.audyora.com/",
+  canonicalUrl: "https://www.audyora.com/",
 
   coordinates: {
     emailPlaceholder: "pipeline@audyora.com",

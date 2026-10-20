@@ -4,8 +4,8 @@ import { siteConfig } from "../src/config/audyora.config";
 describe("Audyora Site Configuration", () => {
   it("has exact branding specifications", () => {
     expect(siteConfig.companyName).toBe("Audyora");
-    expect(siteConfig.productionDomain).toBe("https://homdo.services/");
-    expect(siteConfig.canonicalUrl).toBe("https://homdo.services/");
+    expect(siteConfig.productionDomain).toBe("https://www.audyora.com/");
+    expect(siteConfig.canonicalUrl).toBe("https://www.audyora.com/");
     expect(siteConfig.tagline).toBe("Engineer Pipeline. Accelerate Revenue.");
   });
 
