@@ -9,6 +9,7 @@ export class AudyoraLogo {
   public static renderSymbol(size = 36, className = "text-audyora-indigo"): string {
     return `
       <svg width="${size}" height="${size}" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="${className} shrink-0" aria-hidden="true" focusable="false">
+        <title>Audyora Emblem</title>
         <defs>
           <linearGradient id="audyora-sym-grad" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" stop-color="#6366F1" />

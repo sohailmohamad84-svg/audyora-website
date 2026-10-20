@@ -79,6 +79,7 @@ export class Navbar {
                class="btn-magnetic relative inline-flex items-center justify-center px-6 py-2.5 rounded-full font-satoshi text-sm font-bold text-white bg-gradient-to-r from-audyora-indigo to-audyora-violet hover:shadow-glow-indigo transition-all duration-300">
               <span>Let's Talk</span>
               <svg class="w-4 h-4 ml-1.5 transition-transform group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" aria-hidden="true" focusable="false">
+                <title>Arrow right</title>
                 <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </a>

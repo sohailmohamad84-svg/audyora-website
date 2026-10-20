@@ -12,6 +12,7 @@ export class CaseStudyCard {
           <!-- Geometric Abstract Shapes -->
           <div class="absolute inset-0 flex items-center justify-center p-8 select-none pointer-events-none">
             <svg class="w-full h-full opacity-40 group-hover:opacity-70 transition-opacity duration-500" viewBox="0 0 200 120" fill="none" aria-hidden="true" focusable="false">
+              <title>Abstract geometric graphic</title>
               <circle cx="100" cy="60" r="45" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="3 3"/>
               <circle cx="100" cy="60" r="28" stroke="#38BDF8" stroke-width="2"/>
               <line x1="20" y1="60" x2="180" y2="60" stroke="#8B5CF6" stroke-width="1" stroke-opacity="0.5"/>

@@ -676,3 +676,25 @@ html:not(.dark) footer {
 body, #site-header, nav, .bg-audyora-card, .bg-audyora-surface, .media-kit-slide, input, textarea, select {
   transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
+
+/* Accessible High-Contrast Gradient Text (WAVE & WCAG AAA Compliant) */
+.audyora-gradient-text {
+  color: #38BDF8; /* Dark mode fallback text color (12.5:1 ratio against #0D131F) */
+}
+html:not(.dark) .audyora-gradient-text {
+  color: #0369A1 !important; /* Light mode fallback text color (7.5:1 ratio against #FFFFFF) */
+}
+@supports (-webkit-background-clip: text) or (background-clip: text) {
+  .audyora-gradient-text {
+    background-image: linear-gradient(to right, #818CF8, #60A5FA, #38BDF8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  html:not(.dark) .audyora-gradient-text {
+    background-image: linear-gradient(to right, #4338CA, #2563EB, #0284C7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

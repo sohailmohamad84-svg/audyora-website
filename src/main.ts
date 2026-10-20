@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .map(
         (stage) => `
         <div class="relative bg-audyora-card rounded-3xl p-8 border border-audyora-border hover:border-audyora-indigo/40 transition-all duration-300 shadow-card stagger-item">
-          <span class="font-satoshi text-4xl font-black text-audyora-border block mb-4">
+          <span class="font-satoshi text-4xl font-black text-slate-400 dark:text-slate-500 block mb-4">
             ${stage.number}
           </span>
           <h3 class="font-satoshi text-xl font-bold text-slate-900 dark:text-white mb-1">
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${stage.description}
           </p>
           ${stage.aiAutomationLayer ? `
-            <div class="mb-5 flex items-center gap-2 px-3 py-1.5 rounded-xl bg-audyora-surface border border-audyora-border text-[11px] font-mono text-audyora-cyan">
+            <div class="mb-5 flex items-center gap-2 px-3 py-1.5 rounded-xl bg-audyora-surface border border-audyora-border text-xs font-mono text-audyora-cyan">
               <span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan animate-pulse shrink-0"></span>
               <span class="truncate">${stage.aiAutomationLayer}</span>
             </div>
