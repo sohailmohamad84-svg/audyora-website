@@ -21,7 +21,7 @@ export class CaseStudyCard {
 
           <!-- Conceptual Flag Badge -->
           <div class="absolute top-4 left-4 z-10">
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-satoshi font-bold uppercase tracking-wider bg-black/70 backdrop-blur-md text-audyora-cyan border border-white/20">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-satoshi font-bold uppercase tracking-wider bg-audyora-card/90 backdrop-blur-md text-slate-800 dark:text-white border border-audyora-border shadow-sm">
               <span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan animate-pulse"></span>
               Conceptual Showcase
             </span>
