@@ -146,6 +146,7 @@ html.dark, :root.dark {
 .media-kit-slide {
   width: 100% !important;
   box-sizing: border-box !important;
+  scroll-margin-top: 180px;
 }
 .media-kit-slide > * {
   width: 100% !important;

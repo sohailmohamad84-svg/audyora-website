@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const viewDocBtn = document.getElementById("view-mode-doc");
   const deckControls = document.getElementById("deck-nav-controls");
 
-  function goToSlide(slideNum: number) {
+  function goToSlide(slideNum: number, shouldScroll = true) {
     if (slideNum < 1) slideNum = 1;
     if (slideNum > totalSlides) slideNum = totalSlides;
     currentSlide = slideNum;
@@ -62,10 +62,13 @@ document.addEventListener("DOMContentLoaded", () => {
       slideSelect.value = currentSlide.toString();
     }
 
-    // Smoothly scroll slide into view if needed
-    const activeElem = document.querySelector<HTMLElement>(`.media-kit-slide[data-slide="${currentSlide}"]`);
-    if (activeElem && mainContainer?.classList.contains("deck-mode")) {
-      window.scrollTo({ top: activeElem.offsetTop - 120, behavior: "smooth" });
+    // Smoothly scroll slide into view if needed, leaving ample clearance below sticky toolbar so rounded corners stay visible
+    if (shouldScroll) {
+      const activeElem = document.querySelector<HTMLElement>(`.media-kit-slide[data-slide="${currentSlide}"]`);
+      if (activeElem && mainContainer?.classList.contains("deck-mode")) {
+        const targetTop = Math.max(0, activeElem.offsetTop - 180);
+        window.scrollTo({ top: targetTop, behavior: "smooth" });
+      }
     }
   }
 
@@ -130,8 +133,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Initialize first slide
-  goToSlide(1);
+  // Initialize first slide without forcing premature scroll
+  goToSlide(1, false);
 
   MotionEngine.init();
 });
