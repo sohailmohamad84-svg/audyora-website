@@ -99,8 +99,21 @@ html.dark, :root.dark {
   }
 
   ::selection {
-    background-color: #6366F1;
-    color: #FFFFFF;
+    background-color: #4F46E5 !important;
+    color: #FFFFFF !important;
+  }
+  ::-moz-selection {
+    background-color: #4F46E5 !important;
+    color: #FFFFFF !important;
+  }
+
+  html.dark ::selection {
+    background-color: #6366F1 !important;
+    color: #FFFFFF !important;
+  }
+  html.dark ::-moz-selection {
+    background-color: #6366F1 !important;
+    color: #FFFFFF !important;
   }
 
   /* Subtle Custom Scrollbar */
@@ -339,9 +352,34 @@ html:not(.dark) h6:not(.no-theme-invert *):not([class*="no-theme-invert"] *) {
   color: #020617 !important;
 }
 
-/* Override ANY text-white class (including opacity variants like text-white/90, text-white/80, etc.) outside of buttons and preserved dark banners */
-html:not(.dark) [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *):not([class*="bg-blue-"]):not([class*="bg-blue-"] *):not([class*="bg-indigo-"]):not([class*="bg-indigo-"] *):not([class*="bg-gradient-"]):not([class*="bg-gradient-"] *):not([class*="bg-emerald-"]):not([class*="bg-emerald-"] *):not([class*="bg-[#25D366]"]):not([class*="bg-[#25D366]"] *):not(.no-theme-invert):not(.no-theme-invert *) {
+/* Override text-white outside of buttons, colored backgrounds, active badges, and preserved dark banners */
+html:not(.dark) [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *):not([class*="bg-blue-"]):not([class*="bg-blue-"] *):not([class*="bg-indigo-"]):not([class*="bg-indigo-"] *):not([class*="bg-audyora-indigo"]):not([class*="bg-audyora-indigo"] *):not([class*="bg-audyora-cyan"]):not([class*="bg-audyora-cyan"] *):not([class*="bg-gradient-"]):not([class*="bg-gradient-"] *):not([class*="bg-emerald-"]):not([class*="bg-emerald-"] *):not([class*="bg-[#25D366]"]):not([class*="bg-[#25D366]"] *):not(.discipline-pill):not(.discipline-pill *):not([class*="active"]):not(.no-theme-invert):not(.no-theme-invert *) {
   color: #0F172A !important;
+}
+
+/* Discipline pill active/selected states in both Light and Dark themes */
+.discipline-pill.active,
+.discipline-pill[class*="bg-audyora-indigo"],
+.discipline-pill.bg-audyora-indigo {
+  background-color: #4338CA !important;
+  color: #FFFFFF !important;
+  border-color: #4338CA !important;
+}
+
+html:not(.dark) .discipline-pill.active,
+html:not(.dark) .discipline-pill[class*="bg-audyora-indigo"],
+html:not(.dark) .discipline-pill.bg-audyora-indigo {
+  background-color: #4338CA !important;
+  color: #FFFFFF !important;
+  border-color: #4338CA !important;
+}
+
+html.dark .discipline-pill.active,
+html.dark .discipline-pill[class*="bg-audyora-indigo"],
+html.dark .discipline-pill.bg-audyora-indigo {
+  background-color: #6366F1 !important;
+  color: #FFFFFF !important;
+  border-color: #6366F1 !important;
 }
 
 /* Header & Navigation in Light Mode */

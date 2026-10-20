@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", () => {
     disciplinePills.forEach((pill) => {
       const isMatch = pill.getAttribute("href") === hash;
       if (isMatch) {
-        pill.classList.add("bg-audyora-indigo", "text-white", "shadow-glow-indigo", "border-audyora-indigo");
+        pill.classList.add("active", "bg-audyora-indigo", "text-white", "shadow-glow-indigo", "border-audyora-indigo");
         pill.classList.remove("bg-audyora-card", "text-slate-700", "dark:text-audyora-muted");
       } else {
-        pill.classList.remove("bg-audyora-indigo", "text-white", "shadow-glow-indigo", "border-audyora-indigo");
+        pill.classList.remove("active", "bg-audyora-indigo", "text-white", "shadow-glow-indigo", "border-audyora-indigo");
         pill.classList.add("bg-audyora-card", "text-slate-700", "dark:text-audyora-muted");
       }
     });
