@@ -149,15 +149,15 @@ export class ContactForm {
           <div class="bg-audyora-card border border-audyora-border rounded-3xl p-8 max-w-lg w-full shadow-2xl relative">
             <div id="modal-icon-container" class="w-12 h-12 rounded-full mb-6 flex items-center justify-center"></div>
             
-            <h4 id="modal-title" class="font-satoshi text-2xl font-bold text-white mb-3"></h4>
-            <p id="modal-message" class="font-inter text-sm text-audyora-muted leading-relaxed mb-4"></p>
+            <h4 id="modal-title" class="font-satoshi text-2xl font-bold text-slate-900 dark:text-white mb-3"></h4>
+            <p id="modal-message" class="font-inter text-sm text-slate-700 dark:text-audyora-muted leading-relaxed mb-4"></p>
             
-            <div id="modal-details-box" class="p-4 rounded-xl bg-audyora-surface border border-audyora-border/80 font-inter text-xs text-audyora-subtle leading-relaxed mb-6 hidden"></div>
+            <div id="modal-details-box" class="p-4 rounded-xl bg-audyora-surface border border-audyora-border/80 font-inter text-xs text-slate-700 dark:text-audyora-subtle leading-relaxed mb-6 hidden"></div>
 
             <div class="flex justify-end">
               <button id="modal-close-btn" 
                       type="button" 
-                      class="px-6 py-2.5 rounded-full font-satoshi text-sm font-semibold text-white bg-audyora-surface hover:bg-white/10 border border-audyora-border transition-colors">
+                      class="btn-magnetic px-6 py-2.5 rounded-full font-satoshi text-sm font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-glow-indigo transition-all cursor-pointer">
                 Dismiss
               </button>
             </div>

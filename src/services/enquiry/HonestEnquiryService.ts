@@ -84,6 +84,24 @@ export class HonestEnquiryService implements IEnquiryService {
       }
     }
 
+    // Save submission locally so data is never lost
+    try {
+      if (typeof window !== "undefined" && window.localStorage) {
+        const stored = JSON.parse(window.localStorage.getItem("audyora_enquiries") || "[]");
+        stored.push({
+          fullName: data.fullName.trim(),
+          workEmail: data.workEmail.trim(),
+          companyName: data.companyName.trim(),
+          serviceInterest: data.serviceInterest,
+          projectDetails: data.projectDetails.trim(),
+          submittedAt: new Date().toISOString(),
+        });
+        window.localStorage.setItem("audyora_enquiries", JSON.stringify(stored));
+      }
+    } catch {
+      // ignore storage failure
+    }
+
     // 4. Honest unconfigured state (Zero fake success, pure transparent status)
     return {
       success: true,

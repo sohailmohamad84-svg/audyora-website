@@ -366,6 +366,31 @@ html:not(.dark) #slide-select {
   border-color: #CBD5E1 !important;
 }
 
+/* Contact result modal in Light Mode */
+html:not(.dark) #form-result-modal .bg-audyora-card {
+  background-color: #FFFFFF !important;
+  border-color: #E2E8F0 !important;
+}
+
+html:not(.dark) #modal-title {
+  color: #0F172A !important;
+}
+
+html:not(.dark) #modal-message {
+  color: #334155 !important;
+}
+
+html:not(.dark) #modal-details-box {
+  background-color: #F8FAFC !important;
+  border-color: #E2E8F0 !important;
+  color: #475569 !important;
+}
+
+html:not(.dark) #modal-close-btn {
+  background-color: #2563EB !important;
+  color: #FFFFFF !important;
+}
+
 html:not(.dark) nav[aria-label="Main Navigation"] {
   background-color: #F1F5F9 !important;
   border-color: #E2E8F0 !important;
