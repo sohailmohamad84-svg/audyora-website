@@ -8,6 +8,7 @@ export class Navbar {
       { name: "About", href: "/about/" },
       { name: "Services", href: "/services/" },
       { name: "Industries", href: "/industries/" },
+      { name: "Methodology", href: "/methodology/" },
       { name: "Media Kit", href: "/media-kit/" },
       { name: "Work", href: "/work/" },
       { name: "Contact", href: "/contact/" },
@@ -21,7 +22,7 @@ export class Navbar {
           (link.href !== "/#hero" && link.href !== "/" && activeRoute.startsWith(link.href));
         return `
           <a href="${link.href}" 
-             class="relative px-4 py-2 font-inter text-sm font-medium transition-colors duration-200 group ${
+             class="relative px-3 lg:px-4 py-2 font-inter text-sm font-medium transition-colors duration-200 group ${
                isActive
                  ? "text-slate-900 dark:text-white"
                  : "text-audyora-muted hover:text-slate-900 dark:hover:text-white"
@@ -29,8 +30,8 @@ export class Navbar {
             ${link.name}
             ${
               isActive
-                ? `<span class="absolute bottom-0 left-4 right-4 h-0.5 bg-gradient-to-r from-audyora-indigo to-audyora-cyan rounded-full"></span>`
-                : `<span class="absolute bottom-0 left-4 right-4 h-0.5 bg-slate-900/0 dark:bg-white/0 group-hover:bg-slate-900/40 dark:group-hover:bg-white/40 transition-all rounded-full scale-x-0 group-hover:scale-x-100"></span>`
+                ? `<span class="absolute bottom-0 left-3 right-3 lg:left-4 lg:right-4 h-0.5 bg-gradient-to-r from-audyora-indigo to-audyora-cyan rounded-full"></span>`
+                : `<span class="absolute bottom-0 left-3 right-3 lg:left-4 lg:right-4 h-0.5 bg-slate-900/0 dark:bg-white/0 group-hover:bg-slate-900/40 dark:group-hover:bg-white/40 transition-all rounded-full scale-x-0 group-hover:scale-x-100"></span>`
             }
           </a>
         `;
