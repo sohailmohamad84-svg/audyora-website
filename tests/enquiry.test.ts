@@ -29,6 +29,11 @@ describe("HonestEnquiryService", () => {
     expect(service.isConfigured()).toBe(true);
   });
 
+  it("defaults to the active form routing endpoint when instantiated with no arguments", () => {
+    const service = new HonestEnquiryService();
+    expect(service.isConfigured()).toBe(true);
+  });
+
   it("fails early if submitted data fails validation", async () => {
     const service = new HonestEnquiryService("");
     const result = await service.submitEnquiry({ ...validData, fullName: "" });
