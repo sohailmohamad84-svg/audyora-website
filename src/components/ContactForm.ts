@@ -9,7 +9,7 @@ export class ContactForm {
 
   public static render(): string {
     const serviceOptions = siteConfig.services
-      .map((s) => `<option value="${s.title}" class="bg-audyora-surface text-white">${s.title}</option>`)
+      .map((s) => `<option value="${s.title}" class="bg-audyora-surface text-slate-900 dark:text-white">${s.title}</option>`)
       .join("");
 
     return `
@@ -18,7 +18,7 @@ export class ContactForm {
           <span class="inline-block px-3.5 py-1.5 rounded-full text-xs font-satoshi font-semibold tracking-wider uppercase text-audyora-cyan bg-audyora-cyan/10 border border-audyora-cyan/20 mb-3">
             Commercial Inquiries & Project Briefs
           </span>
-          <h3 class="font-satoshi text-3xl font-extrabold text-white">
+          <h3 class="font-satoshi text-3xl font-extrabold text-slate-900 dark:text-white">
             Initiate a Strategic Dialogue
           </h3>
           <p class="font-inter text-sm text-audyora-muted mt-2">
@@ -44,7 +44,7 @@ export class ContactForm {
                      name="fullName"
                      placeholder="e.g., Alexandra Chen"
                      required
-                     class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all" />
+                     class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-slate-900 dark:text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all" />
               <p id="err-fullName" class="text-xs text-rose-400 mt-1.5 hidden font-inter" role="alert"></p>
             </div>
 
@@ -58,7 +58,7 @@ export class ContactForm {
                      name="workEmail"
                      placeholder="alexandra@company.com"
                      required
-                     class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all" />
+                     class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-slate-900 dark:text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all" />
               <p id="err-workEmail" class="text-xs text-rose-400 mt-1.5 hidden font-inter" role="alert"></p>
             </div>
           </div>
@@ -74,7 +74,7 @@ export class ContactForm {
                      name="companyName"
                      placeholder="e.g., Meridian Technologies"
                      required
-                     class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all" />
+                     class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-slate-900 dark:text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all" />
               <p id="err-companyName" class="text-xs text-rose-400 mt-1.5 hidden font-inter" role="alert"></p>
             </div>
 
@@ -86,11 +86,11 @@ export class ContactForm {
               <select id="form-serviceInterest" 
                       name="serviceInterest"
                       required
-                      class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-white text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all">
+                      class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-slate-900 dark:text-white text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all">
                 <option value="" class="bg-audyora-surface text-audyora-muted">Select a discipline...</option>
                 ${serviceOptions}
-                <option value="Enterprise Marketing Transformation" class="bg-audyora-surface text-white">Full-Funnel Commercial Retainer</option>
-                <option value="General Strategic Inquiry" class="bg-audyora-surface text-white">General Strategic Inquiry</option>
+                <option value="Enterprise Marketing Transformation" class="bg-audyora-surface text-slate-900 dark:text-white">Full-Funnel Commercial Retainer</option>
+                <option value="General Strategic Inquiry" class="bg-audyora-surface text-slate-900 dark:text-white">General Strategic Inquiry</option>
               </select>
               <p id="err-serviceInterest" class="text-xs text-rose-400 mt-1.5 hidden font-inter" role="alert"></p>
             </div>
@@ -106,7 +106,7 @@ export class ContactForm {
                       rows="4"
                       placeholder="Outline your primary challenges, timeline, target audiences, or commercial goals..."
                       required
-                      class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all resize-y"></textarea>
+                      class="w-full px-4 py-3.5 rounded-xl bg-audyora-surface border border-audyora-border text-slate-900 dark:text-white placeholder-audyora-subtle/50 text-sm focus:outline-none focus:border-audyora-cyan focus:ring-1 focus:ring-audyora-cyan transition-all resize-y"></textarea>
             <p id="err-projectDetails" class="text-xs text-rose-400 mt-1.5 hidden font-inter" role="alert"></p>
           </div>
 

@@ -65,7 +65,7 @@ export class CaseStudyCard {
               Built as a demonstration of creative methodology.
             </span>
             <a href="/contact/?brief=${encodeURIComponent(item.title)}" 
-               class="font-satoshi text-xs font-bold text-audyora-cyan hover:text-white transition-colors">
+               class="font-satoshi text-xs font-bold text-audyora-cyan hover:text-audyora-indigo dark:hover:text-white transition-colors">
               Request Similar Brief →
             </a>
           </div>

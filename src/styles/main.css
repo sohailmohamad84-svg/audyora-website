@@ -352,9 +352,64 @@ html:not(.dark) h6:not(.no-theme-invert *):not([class*="no-theme-invert"] *) {
   color: #020617 !important;
 }
 
-/* Override text-white outside of buttons, colored backgrounds, active badges, and preserved dark banners */
-html:not(.dark) [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *):not([class*="bg-blue-"]):not([class*="bg-blue-"] *):not([class*="bg-indigo-"]):not([class*="bg-indigo-"] *):not([class*="bg-audyora-indigo"]):not([class*="bg-audyora-indigo"] *):not([class*="bg-audyora-cyan"]):not([class*="bg-audyora-cyan"] *):not([class*="bg-gradient-"]):not([class*="bg-gradient-"] *):not([class*="bg-emerald-"]):not([class*="bg-emerald-"] *):not([class*="bg-[#25D366]"]):not([class*="bg-[#25D366]"] *):not(.discipline-pill):not(.discipline-pill *):not([class*="active"]):not(.no-theme-invert):not(.no-theme-invert *) {
+/* Override text-white outside of buttons, colored backgrounds, and preserved dark banners */
+html:not(.dark) [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *):not([class*="bg-blue-600"]):not([class*="bg-blue-600"] *):not([class*="bg-indigo-600"]):not([class*="bg-indigo-600"] *):not([class*="bg-audyora-indigo"]):not([class*="bg-audyora-indigo"] *):not([class*="bg-emerald-"]):not([class*="bg-emerald-"] *):not([class*="bg-[#25D366]"]):not([class*="bg-[#25D366]"] *):not(.discipline-pill):not(.discipline-pill *):not(.no-theme-invert):not(.no-theme-invert *) {
   color: #0F172A !important;
+}
+
+/* Comprehensive Card, Surface, and Media Kit Slide Typography in Light Mode */
+html:not(.dark) .bg-audyora-surface,
+html:not(.dark) .bg-audyora-card,
+html:not(.dark) .media-kit-slide {
+  color: #0F172A;
+}
+
+html:not(.dark) .bg-audyora-surface h1,
+html:not(.dark) .bg-audyora-surface h2,
+html:not(.dark) .bg-audyora-surface h3,
+html:not(.dark) .bg-audyora-surface h4,
+html:not(.dark) .bg-audyora-surface h5,
+html:not(.dark) .bg-audyora-surface h6,
+html:not(.dark) .bg-audyora-card h1,
+html:not(.dark) .bg-audyora-card h2,
+html:not(.dark) .bg-audyora-card h3,
+html:not(.dark) .bg-audyora-card h4,
+html:not(.dark) .bg-audyora-card h5,
+html:not(.dark) .bg-audyora-card h6,
+html:not(.dark) .media-kit-slide h1,
+html:not(.dark) .media-kit-slide h2,
+html:not(.dark) .media-kit-slide h3,
+html:not(.dark) .media-kit-slide h4,
+html:not(.dark) .media-kit-slide h5,
+html:not(.dark) .media-kit-slide h6 {
+  color: #0F172A !important;
+}
+
+html:not(.dark) .bg-audyora-surface [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *),
+html:not(.dark) .bg-audyora-card [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *),
+html:not(.dark) .media-kit-slide [class*="text-white"]:not(.btn-magnetic):not(.btn-magnetic *):not(button):not(button *) {
+  color: #0F172A !important;
+}
+
+html:not(.dark) .bg-audyora-surface ul,
+html:not(.dark) .bg-audyora-surface ol,
+html:not(.dark) .bg-audyora-surface li,
+html:not(.dark) .bg-audyora-card ul,
+html:not(.dark) .bg-audyora-card ol,
+html:not(.dark) .bg-audyora-card li,
+html:not(.dark) .media-kit-slide ul,
+html:not(.dark) .media-kit-slide ol,
+html:not(.dark) .media-kit-slide li {
+  color: #334155 !important;
+}
+
+html:not(.dark) .media-kit-slide table,
+html:not(.dark) .media-kit-slide tbody,
+html:not(.dark) .media-kit-slide tr,
+html:not(.dark) .media-kit-slide td,
+html:not(.dark) .media-kit-slide th {
+  color: #0F172A !important;
+  border-color: #E2E8F0 !important;
 }
 
 /* Discipline pill active/selected states in both Light and Dark themes */
