@@ -37,8 +37,9 @@ export const siteConfig: SiteConfig = {
       clientValue:
         "We deploy hyper-targeted multi-touch outbound campaigns that identify, engage, and deliver Sales Qualified Leads (SQLs) directly onto your account executives' calendars.",
       keyDeliverables: [
-        "TAM & Account Mapping",
-        "Multi-Touch Outbound Cadences (Email + Phone + Social)",
+        "TAM & Account Intent Mapping",
+        "AI Buying-Signal & Technographic Trigger Tracking",
+        "Automated Multi-Touch Cadences (Email + Phone + Social)",
         "Verified C-Level & VP-Level Decision Makers",
         "Guaranteed Meeting Attendance Protocols",
       ],
@@ -56,9 +57,10 @@ export const siteConfig: SiteConfig = {
         "We orchestrate 1:1 and 1:few bespoke ABM campaigns surrounding key enterprise accounts with tailored messaging, personalized assets, and multi-channel coverage.",
       keyDeliverables: [
         "Tier-1 Account Selection & Intent Profiling",
+        "AI-Synthesized 1:1 Executive Research Dossiers",
         "Buying Committee Mapping (Economic, Technical, User Buyers)",
         "Bespoke Hyper-Personalized Collateral",
-        "Account-Level Engagement Tracking",
+        "Automated Account-Level Engagement Tracking",
       ],
       iconSvg: "account-based-marketing",
       ctaText: "Launch ABM Motion",
@@ -128,9 +130,9 @@ export const siteConfig: SiteConfig = {
         "We build dedicated outbound domain ecosystems with SPF, DKIM, DMARC, custom tracking domains, automated warmups, and inbox rotation to guarantee primary inbox placement.",
       keyDeliverables: [
         "Secondary Domain Architecture & DNS Hardening",
-        "Automated Warmup & Deliverability Monitoring",
+        "Autonomous Warmup AI & Real-Time Inbox Rotation",
+        "Automated Deliverability & Reputation Sentinels",
         "Spam-Trigger-Free Copywriting Architecture",
-        "High-Volume Inbox Rotation Protocols",
       ],
       iconSvg: "email-infrastructure",
       ctaText: "Harden Deliverability",
@@ -146,9 +148,10 @@ export const siteConfig: SiteConfig = {
         "We clean, enrich, and verify every contact record in your Total Addressable Market through multi-layered waterfall enrichment, phone verification, and real-time SMTP pinging.",
       keyDeliverables: [
         "Ideal Customer Profile (ICP) Blueprinting",
+        "Automated Waterfall Data Enrichment Engine",
         "Real-Time SMTP & Catch-All Email Verification",
-        "Direct Dial & Mobile Number Enrichment",
-        "Technographic & Firmographic Tagging",
+        "Direct Dial & Mobile Number AI Verification",
+        "Technographic & Firmographic Intent Tagging",
       ],
       iconSvg: "data-cleansing",
       ctaText: "Cleanse Target Data",
@@ -163,10 +166,11 @@ export const siteConfig: SiteConfig = {
       clientValue:
         "We integrate your CRM (Salesforce, HubSpot), configure automated cadences (Outreach, Apollo, Salesloft), and run rigorous weekly A/B tests to maximize reply and meeting rates.",
       keyDeliverables: [
+        "Automated Bi-Directional CRM Webhooks (Salesforce / HubSpot)",
+        "AI Sentiment & Reply Intent Classification",
         "CRM & Sales Engagement Stack Setup",
         "Scientific A/B Hook & Subject Line Testing",
         "Attribution & Pipeline Conversion Reporting",
-        "SDR Playbook & Objection Handling Frameworks",
       ],
       iconSvg: "revenue-operations",
       ctaText: "Optimize RevOps",
@@ -270,34 +274,38 @@ export const siteConfig: SiteConfig = {
     {
       number: "01",
       name: "Strategy & TAM Discovery",
-      headline: "Mapping your total addressable market",
+      headline: "AI signal mapping & TAM discovery",
       description:
-        "We dissect your Ideal Customer Profile (ICP), map total market penetration opportunities, and build a verified database of target accounts and decision-makers.",
-      deliverables: ["ICP Architecture Matrix", "Target Account List (TAL)", "Competitor Gap Analysis"],
+        "We dissect your ICP, deploy automated scraping across 108M+ verified decision-makers, and map real-time buying signals (funding, headcount growth, tech stack changes).",
+      deliverables: ["AI Intent Signal & TAM Matrix", "Automated Waterfall-Enriched TAL", "Competitor Tech Gap Analysis"],
+      aiAutomationLayer: "Multi-Source AI Signal Scraping & Technographic Matching",
     },
     {
       number: "02",
       name: "Infrastructure & Outbound Engine",
-      headline: "Hardening deliverability and cadences",
+      headline: "Autonomous deliverability & AI-assisted copy",
       description:
-        "We deploy secondary domain ecosystems, configure DNS security (SPF/DKIM/DMARC), and write hyper-personalized, value-first multi-touch sequences.",
-      deliverables: ["Warm Inbox Ecosystem", "Hyper-Personalized Copy Cadence", "Domain Health Dashboard"],
+        "We deploy isolated secondary domain networks with autonomous warmup algorithms, automated IP rotation, and deep LLM account synthesis audited by senior copywriters.",
+      deliverables: ["Autonomous Warmup Inbox Ecosystem", "AI-Synthesized 1:1 Value Cadences", "Real-Time Deliverability Watchdogs"],
+      aiAutomationLayer: "Autonomous Mailbox Warmup & Dynamic IP Rotation",
     },
     {
       number: "03",
       name: "Outreach & BANT Qualification",
-      headline: "Engaging prospects and screening intent",
+      headline: "Coordinated outreach & human BANT screening",
       description:
-        "Our team executes coordinated outreach across email, phone, and social, rigorously screening interested prospects for Budget, Authority, Need, and Timeline.",
-      deliverables: ["Active Outbound Outreach", "BANT Lead Scorecard", "Confirmed Calendar Bookings"],
+        "Our outbound engine executes multi-touch sequences while human SDRs engage, handle complex objections, and rigorously screen executives for Budget, Authority, Need, and Timeline.",
+      deliverables: ["Multi-Channel Outbound Execution", "Human-Verified BANT Scorecard", "Confirmed Calendar Bookings"],
+      aiAutomationLayer: "AI Response Classification + Human SDR Verification",
     },
     {
       number: "04",
       name: "Pipeline Scaling & RevOps",
-      headline: "Iterative optimization and CRM alignment",
+      headline: "Automated CRM attribution & scaling",
       description:
-        "We analyze conversion bottlenecks, optimize messaging based on live market feedback, and scale outbound volume without compromising lead quality.",
-      deliverables: ["A/B Conversion Report", "CRM Workflow Synchronization", "Quarterly Growth Roadmap"],
+        "Zero manual data entry. We deploy bi-directional webhooks syncing call recordings and transcripts into your CRM, analyze conversion bottlenecks, and scale outreach volume systematically.",
+      deliverables: ["Algorithmic A/B Multivariate Testing", "Automated Bi-Directional CRM Sync", "Quarterly Growth Roadmap"],
+      aiAutomationLayer: "Bi-Directional Webhooks & Closed-Loop Attribution",
     },
   ],
 };

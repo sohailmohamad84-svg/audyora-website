@@ -84,9 +84,15 @@ document.addEventListener("DOMContentLoaded", () => {
           <span class="font-inter text-xs text-audyora-cyan font-semibold block mb-4">
             ${stage.headline}
           </span>
-          <p class="font-inter text-xs text-audyora-muted leading-relaxed mb-6">
+          <p class="font-inter text-xs text-audyora-muted leading-relaxed mb-4">
             ${stage.description}
           </p>
+          ${stage.aiAutomationLayer ? `
+            <div class="mb-5 flex items-center gap-2 px-3 py-1.5 rounded-xl bg-audyora-surface border border-audyora-border text-[11px] font-mono text-audyora-cyan">
+              <span class="w-1.5 h-1.5 rounded-full bg-audyora-cyan animate-pulse shrink-0"></span>
+              <span class="truncate">${stage.aiAutomationLayer}</span>
+            </div>
+          ` : ""}
           <div class="border-t border-audyora-border pt-4">
             <span class="block font-satoshi text-xs font-bold uppercase tracking-wider text-audyora-muted mb-2">Deliverables</span>
             <ul class="space-y-1.5">

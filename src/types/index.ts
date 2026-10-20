@@ -50,6 +50,7 @@ export interface ProcessStage {
   headline: string;
   description: string;
   deliverables: string[];
+  aiAutomationLayer?: string;
 }
 
 export interface SiteConfig {
